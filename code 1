@@ -1,0 +1,398 @@
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 3,
+        "fields": {
+            "year": 2012,
+            "summary": "<p>America is in crisis. The War in Iraq, which so fiercely divided the country, is now spiralling out of control. Hurricane Katrina has devastated New Orleans, and left thousands destitute. The corruption of the Bush government is finally seeing the light of day. Wall Street is gambling with the mortgages of hard-working Americans. Now is not the time for half-measures. Now is the time to build <b>One America</b>.\n<p>\nAnd John Edwards is the man to do it.",
+            "image_url": "https://i.imgur.com/QN5pdJZ.jpeg",
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "https://i.imgur.com/NyBfHlm.jpeg",
+            "recommended_reading": "<h4 style=\"margin-top: 0.5em;\">Political News and Analysis</h4> <a href=\"http://www.realclearpolitics.com/\" target=\"_blank\">Real Clear Politics</a> -- <a href=\"http://www.theatlantic.com/\" target=\"_blank\">The Atlantic</a> -- <a href=\"http://www.politico.com/\" target=\"_blank\">Politico</a> -- <a href=\"http://www.huffingtonpost.com/\" target=\"_blank\">Huffington Post</a> -- <a href=\"http://www.foxnews.com/politics/index.html\" target=\"_blank\">Fox News Politics</a> <h4>Books by the Candidates</h4>Barack Obama - <a href=\"http://www.amazon.com/exec/obidos/ASIN/1400082773/amhius20-20\" target=\"_blank\">Dreams from My Father: A Story of Race and Inheritance</a><br>Barack Obama - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0307455874/amhius20-20\" target=\"_blank\">The Audacity of Hope: Thoughts on Reclaiming the American Dream (Vintage)</a><br> Mitt Romney - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0312671733/amhius20-20\" target=\"_blank\">No Apology: Believe in America</a><br> Gary Johnson - <a href=\"http://www.amazon.com/exec/obidos/ASIN/B008PXW0C0/amhius20-20\" target=\"_blank\">Seven Principles of Good Government</a><h4>Politics in 2012</h4> Edward Klein - <a href=\"http://www.amazon.com/exec/obidos/ASIN/1596987855/amhius20-20\" target=\"_blank\">The Amateur</a><br>Michael Kranish & Scott Helman - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0062123289/amhius20-20\" target=\"_blank\">The Real Romney</a><br>Lawrence Lessig - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0446576433/amhius20-20\" target=\"_blank\">Republic, Lost: How Money Corrupts Congress--and a Plan to Stop It</a><br>Ron Suskind - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0061429252/amhius20-20\" target=\"_blank\">Confidence Men: Wall Street, Washington, and the Education of a President</a><h4>The Financial Crisis</h4> Johan Norberg - <a href=\"http://www.amazon.com/exec/obidos/ASIN/1935308130/amhius20-20\" target=\"_blank\">Financial Fiasco: How America's Infatuation with Home Ownership and Easy Money Created the Economic Crisis</a><br>John Bellamy Foster & Fred Magdoff - <a href=\"http://www.amazon.com/exec/obidos/ASIN/1583671846/amhius20-20\" target=\"_blank\">The Great Financial Crisis: Causes and Consequences</a>",
+            "has_visits": 1,
+            "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/2012-no-majority.jpg",
+            "creator": "Dan Bryan",
+            "display_year": "2008: One America"
+        }
+    }
+]
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 16,
+        "fields": {
+            "first_name": "John",
+            "last_name": "Edwards",
+            "election": 3,
+            "party": "Democrat",
+            "state": "North Carolina",
+            "priority": 1,
+            "description": "<p>John Edwards has a youthful face and a boyish haircut. He speaks with a thick southern accent and poses for photos with a winning smile. But don’t underestimate him: he’s the only candidate willing to fight -- truly fight -- for working people. \n<p>His path to the presidency has been thrown off course by John Kerry’s loss in 2004 with Edwards on the ticket, but this loss can't be the end of his story. Edwards has what it takes to win, to reduce inequality, to defeat poverty once and for all, and to build One America.\n",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 1,
+            "image_url": "https://i.imgur.com/hsxaypv.jpeg",
+            "electoral_victory_message": "",
+            "electoral_loss_message": "",
+            "no_electoral_majority_message": "",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 17,
+        "fields": {
+            "first_name": "John",
+            "last_name": "McCain",
+            "election": 3,
+            "party": "Republican",
+            "state": "Arizona",
+            "priority": 2,
+            "description": "",
+            "color_hex": "#FF0000",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "",
+            "electoral_loss_message": "",
+            "no_electoral_majority_message": "",
+            "description_as_running_mate": null,
+            "candidate_score": 0.8,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 18,
+        "fields": {
+            "first_name": "Bob",
+            "last_name": "Barr",
+            "election": 3,
+            "party": "Libertarian",
+            "state": "Georgia",
+            "priority": 3,
+            "description": "",
+            "color_hex": "#FFFF00",
+            "secondary_color_hex": "#FFFFC0",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/gary-johnson-2012.jpg",
+            "electoral_victory_message": "",
+            "electoral_loss_message": "",
+            "no_electoral_majority_message": "",
+            "description_as_running_mate": "",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 19,
+        "fields": {
+            "first_name": "Cynthia",
+            "last_name": "McKinney",
+            "election": 3,
+            "party": "Green",
+            "state": "Georgia",
+            "priority": 4,
+            "description": "",
+            "color_hex": "#00C100",
+            "secondary_color_hex": "#A1FFA1",
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "",
+            "electoral_loss_message": "",
+            "no_electoral_majority_message": "",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 30,
+        "fields": {
+            "first_name": "Joe",
+            "last_name": "Biden",
+            "election": 3,
+            "party": "Democrat",
+            "state": "Delaware",
+            "priority": 7,
+            "description": "<p>V.P. </p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/Yu8aelQ.jpeg",
+            "electoral_victory_message": "n/a",
+            "electoral_loss_message": "n/a",
+            "no_electoral_majority_message": "n/a",
+            "description_as_running_mate": "<p>Joe Biden has been the senator for Delaware since 1972, and is now one of the longest continuously serving Democrats in the senate. He is the chair of the senate foreign relations committee, and thus would bring foreign policy experience to the ticket. He is a charismatic speaker, though he can be somewhat gaffe-prone, and is well respected by both parties. \n<p>However, his vote in favor of the Iraq War may turn off the party base, and his reputation as a centrist New Democrat may undermine your appeal as a populist. Delaware will not be competitive this year, and Biden won’t help you in any particular region of the country. \n</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 34,
+        "fields": {
+            "first_name": "Hillary",
+            "last_name": "Clinton",
+            "election": 3,
+            "party": "Democrat",
+            "state": "New York",
+            "priority": 11,
+            "description": "n/a",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/gkeWae1.jpeg",
+            "electoral_victory_message": "n/a",
+            "electoral_loss_message": "n/a",
+            "no_electoral_majority_message": "n/a",
+            "description_as_running_mate": "<p>Hillary Clinton needs no introduction, and she’s not particularly happy to be stuck in the Number Two spot. She has accepted this position only at the assurance that she will not be a typical figurehead Vice President. She will be deeply involved in important executive decisions - particularly involving foreign affairs.\n<p>She is appealing to women, to working class white voters, and to the professional class. Young voters think she’s too hawkish. Republicans hate her guts. But she got you across the finish line to the nomination, and you believe she’ll do it again. \n</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50001,
+        "fields": {
+            "first_name": "Barack",
+            "last_name": "Obama",
+            "election": 3,
+            "party": "Democrat",
+            "state": "Illinois",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/SaK7Xq0.jpeg",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>\nBarack Obama is the junior senator from Illinois - and thanks to your deal, he's now your running mate. He’s young, handsome, extremely telegenic, a gifted orator, and a solid liberal to rival yourself. He ran an impressive primary campaign on the theme of hope and change, and he can bring this inspiring optimism to your campaign as well. He was also an outspoken critic of the Iraq war from the start, which gives him a lot of credibility with voters opposed to the war. \n\n<p>However, he’s not particularly experienced, and his liberalism may turn some voters off. In addition, Illinois shouldn't be competitive this year, and he won't exactly help you in the rest of the midwest.\n</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50002,
+        "fields": {
+            "first_name": "Bill",
+            "last_name": "Richardson",
+            "election": 3,
+            "party": "Democrat",
+            "state": "New Mexico",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/3jLtYn9.jpeg",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>\nBill Richardson is the democratic governor of New Mexico and a former cabinet secretary in the Clinton administration. His executive experience compliments your time in the senate, and his expertise in foreign policy will be an asset if the election continues to be about Iraq. His experience as the head of the chair of the Democratic Governors Association could also help you with the implementation of your agenda, if you manage to get elected. \n<p>New Mexico is unlikely to be a competitive state this year, but it’s possible Richardson could help you in the rest of the southwest. However, you’re running significantly to the left of Richardson, and there are some additional questions about his business interests. \n</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50003,
+        "fields": {
+            "first_name": "Ed",
+            "last_name": "Rendell",
+            "election": 3,
+            "party": "Democrat",
+            "state": "Pennsylvania",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/CDEG2C3.jpeg",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>\nEd Rendell is the popular democratic governor of Pennsylvania, and former mayor of Philadelphia. Famous for his straight-talking persona, Rendell would be a good choice if you want to double down on your appeal as a populist while adding executive experience to the ticket.\n<p>Pennsylvania is a must-win state for any Democrat, and Rendell could help you out in the rest of the Rust Belt. However, he doesn’t add any foreign policy expertise to the ticket, and some on your team argue that picking a white man for VP would fail to capture any energy from the Clinton or Obama campaigns. Also, he holds some unorthodox positions for a democrat: such as his support for the death penalty and shale gas extraction.\n</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50004,
+        "fields": {
+            "first_name": "Kathleen",
+            "last_name": "Sebelius",
+            "election": 3,
+            "party": "Democrat",
+            "state": "Kansas",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/0ewcF1D.jpeg",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Kathleen Sebelius is the democratic governor of Kansas, elected twice. She would be an inspiring choice for Clinton voters disappointed that they won’t get to elect the first woman president, and her experience as governor of a red state would lend bipartisanship and moderation to the campaign. She is also experienced in healthcare policy, and served as the state insurance commissioner before she was governor. <p>Kansas is unlikely to be competitive this year, but Sebelius could potentially help you in other farm states. She is not well known nationally, however, and is significantly more moderate than yourself.</p>\n",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50005,
+        "fields": {
+            "first_name": "Caroline",
+            "last_name": "Kennedy",
+            "election": 3,
+            "party": "Democrat",
+            "state": "New York",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/DPUCDg5.jpeg",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>On paper, Caroline Kennedy would be a strange choice for a running mate. She resides in the safest state in the country, she has no direct experience in government, and she’s a descendent of America’s most famous political dynasty — hardly the best compliment to a populist campaign.\n<p>But as you’ve been considering the history-making factor of the Obama and Clinton campaigns, the thought lingers in your mind: the first woman ever to hold the vice presidency, and the first Kennedy in the white house since 1963. Bunny did always say you reminded her of Jack…\n</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    }
+]
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 1,
+        "fields": {
+            "candidate": 16,
+            "running_mate": 30
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 2,
+        "fields": {
+            "candidate": 16,
+            "running_mate": 34
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 93111,
+        "fields": {
+            "candidate": 16,
+            "running_mate": 50005
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 99733,
+        "fields": {
+            "candidate": 16,
+            "running_mate": 50004
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 81004,
+        "fields": {
+            "candidate": 16,
+            "running_mate": 50003
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 120698,
+        "fields": {
+            "candidate": 16,
+            "running_mate": 50002
+        }
+    }
+]
+
+campaignTrail_temp.credits = "The Main Street Express"
+
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 35,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 3,
+        "candidates": [
+            16,
+            17,
+            18,
+            19
+        ]
+    }
+]
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 3,
+        "candidates": [
+            16,
+            17,
+            18,
+            19
+        ]
+    }
+]
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 3,
+        "year": 2012,
+        "is_premium": 0,
+        "display_year": "2008: One America"
+    }
+]
+
+jet_data = {
+    "headerColor": "#1d4065",
+    "windowColor": "#a2b9d6",
+    "containerColor": "#d8e4e2",
+    "innerWindowColor": "#a2b9d6",
+    "bannerImageUrl": "https://i.imgur.com/p66GtNU.png",
+    "backgroundImageUrl": "https://i.imgur.com/wgaigow.jpeg",
+    "endingTextColor": "#000000",
+    "customQuote": "\"I don't think God's through with me.\" - John Edwards",
+    "gameTitle": "THE MAIN STREET EXPRESS!"
+}
+
