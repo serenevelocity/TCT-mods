@@ -91,10 +91,10 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
-        "pk": 1,
+        "pk": 1238,
         "fields": {
             "priority": 2,
-            "description": "The votes have been counted, and Iowa is yours. You’ve managed to secure a plurality of pledged delegates and votes, with Obama close behind you and Hillary, shockingly, in third place. The fight isn’t over, far from it, but you can celebrate a little now.\n",
+            "description": "The votes have been counted, and Iowa is lost. Senator Obama managed to secure a plurality of pledged delegates and votes, with you in second place and Hillary, shockingly, in third place. This is a setback, no doubt about that, but the battle isn’t lost yet. \n",
             "likelihood": 1
         }
     },
@@ -118,10 +118,10 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
-        "pk": 21,
+        "pk": 1285,
         "fields": {
             "priority": 2,
-            "description": "After your conversation with Bruce Raynor, he agreed that the CWU would endorse your campaign. From there, Nevada was yours for the taking, thwarting the efforts of Obama and Clinton. This momentum couldn't carry you to first place in South Carolina, unfortunately, however your second-place showing is still something of a win, given how dominant Obama was in that state. You're still in this thing, John. Now get out there and say something to ‘em.",
+            "description": "The votes are in, and I'm sorry to say neither state went our way. Obama was victorious both in Nevada and South Carolina, launching him into frontrunner status. I'm sorry, John. You should probably get out there and say something to ‘em.",
             "likelihood": 1
         }
     },
@@ -136,10 +136,10 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
-        "pk": 40,
+        "pk": 1295,
         "fields": {
             "priority": 2,
-            "description": "Perhaps it was your ground game, perhaps it was your advertising, perhaps it was the strategic endorsements of Al Gore and Dick Gephardt; your hard work has finally paid off. You’ve won the hearts and minds of enough democrats in enough states to secure a lead in Super Tuesday delegates. Combined with your previous wins, it’s a mandate; Obama and Hillary see the writing on the wall. Congratulations, John, you’ll be the Democratic nominee for president.\n",
+            "description": "The results are in, and it’s something of an anticlimax. You’ve made a strong showing in the midwest, but not enough to counter the margins of Obama and Clinton in the tri state area and the south, respectively. In the end, nobody wins a commanding enough majority on Super Tuesday, and a contested convention looks likely.",
             "likelihood": 1
         }
     },
@@ -226,132 +226,6 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
-        "pk": 1238,
-        "fields": {
-            "priority": 2,
-            "description": "The votes have been counted, and Iowa is lost. Senator Obama managed to secure a plurality of pledged delegates and votes, with you in second place and Hillary, shockingly, in third place. This is a setback, no doubt about that, but the battle isn’t lost yet. \n",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1249,
-        "fields": {
-            "priority": 2,
-            "description": "The field has narrowed to the three frontrunners and the few hangers-on. It’s you, Clinton, and Obama onstage, and primary voters are watching. Tonight you need to convince America that they’re looking at their next president. What will be your strategy in this debate?\n",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1278,
-        "fields": {
-            "priority": 2,
-            "description": "Your loss in Nevada, demoralizing as it was, didn’t rattle the campaign one bit: your chips were on the state of South Carolina and everyone knew it. As more and more precincts got called, the story wasn’t Obama’s sky high performance with black voters, or even your surprising strength: it was Hillary’s utter collapse. In the end, your performance with women voters carried you to a razor thin plurality win in South Carolina. But a win’s a win. Now get out there and say something to ‘em.",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1285,
-        "fields": {
-            "priority": 2,
-            "description": "The votes are in, and I'm sorry to say neither state went our way. Obama was victorious both in Nevada and South Carolina, launching him into frontrunner status. I'm sorry, John. You should probably get out there and say something to ‘em.",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1291,
-        "fields": {
-            "priority": 2,
-            "description": "When you called for endorsements in advance of Super Tuesday, you expected some high-profile senators, some governors, maybe even an endorsement from a former presidential candidate. But you’re shocked at the phone call you get: Ted Kennedy, lion of the senate, has agreed to endorse your campaign, citing your support for progressive causes including the cause of his life: universal healthcare. With his endorsement it’s a sweep. You’ve won the majority of delegates in Super Tuesday, and your two opponents see the writing on the wall. Congratulations, John, you’ll be the Democratic nominee for president.",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1295,
-        "fields": {
-            "priority": 2,
-            "description": "The results are in, and it’s something of an anticlimax. You’ve made a strong showing in the midwest, but not enough to counter the margins of Obama and Clinton in the tri state area and the south, respectively. In the end, nobody wins a commanding enough majority on Super Tuesday, and a contested convention looks likely.",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1299,
-        "fields": {
-            "priority": 1,
-            "description": "You’re approached by Brumberger, Rubey, Ginsberg, and some other pissant staffers. They present you with an ultimatum: drop out, now, or they’ll spill their guts to the media. It’s ‘for the good of the party’, they tell you. You know what they’re talking about. Surrender doesn’t suit you, but in the pit of your stomach you can feel that this is the end. \n",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1319,
-        "fields": {
-            "priority": 2,
-            "description": "For your vice presidential pick, you’ve chosen Joe Biden, a man with three decades of experience as a senator, including being the chair of the Foreign Relations Committee. He’s qualified, no doubt, but he also whipped votes for the Iraq war, spearheaded Bill Clinton’s Crime Bill, and is something of a turnoff to more progressive democrats. What comments will you make about your decision?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1333,
-        "fields": {
-            "priority": 2,
-            "description": "For your Vice Presidential nominee, you’ve chosen Kansas governor Kathleen Sebelius. She’s been successful in implementing her agenda by reaching out to republicans in the state legislature, but she’s no squish on social issues. Plus, nominating the first woman vice president is exciting to voters disappointed in Clinton’s loss. What comments will you make about your decision?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1349,
-        "fields": {
-            "priority": 2,
-            "description": " For your Vice Presidential nominee, you’ve chosen Pennsylvania governor Ed Rendell. A populist and a straight talker with executive experience, Rendell is a confident choice. However, some of his positions, such as his support of the death penalty and high-profile fights with public sector unions, may cause trouble among the party base. What comments will you make about your decision?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1365,
-        "fields": {
-            "priority": 2,
-            "description": "As a result of your deal with Obama, he’s the vice president on the ticket. Pundits have taken to calling this the ABC ticket, standing for “Anyone But Clinton,” and her supporters are predictably unhappy about this development. His selection will make history as the first black candidate on a presidential ticket, but some fear that his liberal record in the senate and lack of significant government experience will drag down the candidacy. Still, he’s not without his strengths: his DNC address in 2004 has gone down in history as one of the best modern political speeches; hopefully he can bring that magic to your campaign. What comments will you make about him?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1389,
-        "fields": {
-            "priority": 2,
-            "description": "As a result of your deal with Hillary Clinton, she’ll be your candidate for Vice President. She needs no introduction to America, but many are curious about her role on the campaign and in your cabinet. She’s significantly to the right of you, and significantly more hawkish. She’s also just about the most insider candidate you could’ve chosen, which some of your more progressive supporters are perplexed by. How will you introduce this partnership to America?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1411,
-        "fields": {
-            "priority": 2,
-            "description": "For your vice presidential nominee, you’ve chosen Caroline Kennedy. She’s the last surviving relative from John’s immediate family, and is generally beloved by the public. Though she has no direct experience in government, she’s worked several high profile jobs in NGOs, nonprofits, and public institutions throughout her career. Many have speculated when she might finally enter politics, and now you’ve given the people what they want. What will you say about Caroline Kennedy?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1510,
-        "fields": {
-            "priority": 2,
-            "description": "The story won’t die. Your bodyman’s affair is becoming your problem. Every time he leaves his compound in Beverly Hills to buy diapers or formula, he’s photographed by some paparazzi prick asking him about how much you knew, what you saw. This type of thing can’t really go on. They won’t tell you this of course, but some of your staffers are whispering about this whole situation. Whether it’s true or not, it casts an ugly light on the campaign. What’s our move here, John?\n",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
         "pk": 1518,
         "fields": {
             "priority": 0,
@@ -388,15 +262,6 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
-        "pk": 1569,
-        "fields": {
-            "priority": 1,
-            "description": "Your phone rings. It’s Andrew’s number, but as you pick up the phone, you’re shocked to hear Rielle’s voice. “John, I’ve had enough. All this moving around California, hiding in hotel rooms with the baby. It’s no way to live. You know, Bob says I should just come clean, and I’m beginning to think so too. It makes me sick to hide away like this. It’s making me sick and it’s making the whole country sick. You don’t love me anymore, I know it. You wish your baby was never born.” Think fast. ",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
         "pk": 1578,
         "fields": {
             "priority": 1,
@@ -424,91 +289,10 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
-        "pk": 1605,
-        "fields": {
-            "priority": 0,
-            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1615,
-        "fields": {
-            "priority": 0,
-            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1625,
-        "fields": {
-            "priority": 0,
-            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1635,
-        "fields": {
-            "priority": 0,
-            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1645,
-        "fields": {
-            "priority": 0,
-            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1655,
-        "fields": {
-            "priority": 0,
-            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
         "pk": 1665,
         "fields": {
             "priority": 0,
             "description": "John McCain, having united republicans and most independents behind him, has now pledged to run a “bipartisan administration” with a cabinet made up of members of both parties. As a result, Democrats are shifting to McCain in numbers not seen since 1984. Feeling confident, McCain and Palin have cancelled their remaining debate appearances, and a record number of Americans are curious about the campaigns of Ralph Nader and Cynthia McKinney. It seems nobody thinks of you as a legitimate candidate anymore. Do you have any response to this?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1675,
-        "fields": {
-            "priority": 0,
-            "description": "John McCain, having united republicans and most independents behind him, has now pledged to run a “bipartisan administration” with a cabinet made up of members of both parties. As a result, Democrats are shifting to McCain in numbers not seen since 1984. Feeling confident, McCain and Palin have cancelled their remaining debate appearances, and a record number of Americans are curious about the campaigns of Ralph Nader and Cynthia McKinney. It seems nobody thinks of you as a legitimate candidate anymore. Do you have any response to this?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1685,
-        "fields": {
-            "priority": 0,
-            "description": "The evidence mounts. The shame collects. At this point, America’s hatred for you is incandescent, and your denials have only made things worse. Is there anything, anything you can do to win the people back?\n",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 1757,
-        "fields": {
-            "priority": 0,
-            "description": "The evidence mounts. The shame collects. At this point, America’s hatred for you is incandescent, and your admissions of guilt have only made things worse. Is there anything, anything you can do to win the people back?\n",
             "likelihood": 1
         }
     },
@@ -664,9 +448,226 @@ campaignTrail_temp.questions_json = [
             "description": "You’ve almost proved it. To America, to Kerry, to Cheney, to everyone who ever doubted you. The most powerful office in the world, nearly in the palm of your hand. But you have to be sure. Where will you spend the last few days of the campaign to secure your victory? \n",
             "likelihood": 1
         }
-    }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1,
+        "fields": {
+            "priority": 2,
+            "description": "The votes have been counted, and Iowa is yours. You’ve managed to secure a plurality of pledged delegates and votes, with Obama close behind you and Hillary, shockingly, in third place. The fight isn’t over, far from it, but you can celebrate a little now.\n",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1249,
+        "fields": {
+            "priority": 2,
+            "description": "The field has narrowed to the three frontrunners and the few hangers-on. It’s you, Clinton, and Obama onstage, and primary voters are watching. Tonight you need to convince America that they’re looking at their next president. What will be your strategy in this debate?\n",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1278,
+        "fields": {
+            "priority": 2,
+            "description": "Your loss in Nevada, demoralizing as it was, didn’t rattle the campaign one bit: your chips were on the state of South Carolina and everyone knew it. As more and more precincts got called, the story wasn’t Obama’s sky high performance with black voters, or even your surprising strength: it was Hillary’s utter collapse. In the end, your performance with women voters carried you to a razor thin plurality win in South Carolina. But a win’s a win. Now get out there and say something to ‘em.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 21,
+        "fields": {
+            "priority": 2,
+            "description": "After your conversation with Bruce Raynor, he agreed that the CWU would endorse your campaign. From there, Nevada was yours for the taking, thwarting the efforts of Obama and Clinton. This momentum couldn't carry you to first place in South Carolina, unfortunately, however your second-place showing is still something of a win, given how dominant Obama was in that state. You're still in this thing, John. Now get out there and say something to ‘em.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1291,
+        "fields": {
+            "priority": 2,
+            "description": "When you called for endorsements in advance of Super Tuesday, you expected some high-profile senators, some governors, maybe even an endorsement from a former presidential candidate. But you’re shocked at the phone call you get: Ted Kennedy, lion of the senate, has agreed to endorse your campaign, citing your support for progressive causes including the cause of his life: universal healthcare. With his endorsement it’s a sweep. You’ve won the majority of delegates in Super Tuesday, and your two opponents see the writing on the wall. Congratulations, John, you’ll be the Democratic nominee for president.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1299,
+        "fields": {
+            "priority": 1,
+            "description": "You’re approached by Brumberger, Rubey, Ginsberg, and some other pissant staffers. They present you with an ultimatum: drop out, now, or they’ll spill their guts to the media. It’s ‘for the good of the party’, they tell you. You know what they’re talking about. Surrender doesn’t suit you, but in the pit of your stomach you can feel that this is the end. \n",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 40,
+        "fields": {
+            "priority": 2,
+            "description": "Perhaps it was your ground game, perhaps it was your advertising, perhaps it was the strategic endorsements of Al Gore and Dick Gephardt; your hard work has finally paid off. You’ve won the hearts and minds of enough democrats in enough states to secure a lead in Super Tuesday delegates. Combined with your previous wins, it’s a mandate; Obama and Hillary see the writing on the wall. Congratulations, John, you’ll be the Democratic nominee for president.\n",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1319,
+        "fields": {
+            "priority": 2,
+            "description": "For your vice presidential pick, you’ve chosen Joe Biden, a man with three decades of experience as a senator, including being the chair of the Foreign Relations Committee. He’s qualified, no doubt, but he also whipped votes for the Iraq war, spearheaded Bill Clinton’s Crime Bill, and is something of a turnoff to more progressive democrats. What comments will you make about your decision?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1333,
+        "fields": {
+            "priority": 2,
+            "description": "For your Vice Presidential nominee, you’ve chosen Kansas governor Kathleen Sebelius. She’s been successful in implementing her agenda by reaching out to republicans in the state legislature, but she’s no squish on social issues. Plus, nominating the first woman vice president is exciting to voters disappointed in Clinton’s loss. What comments will you make about your decision?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1349,
+        "fields": {
+            "priority": 2,
+            "description": " For your Vice Presidential nominee, you’ve chosen Pennsylvania governor Ed Rendell. A populist and a straight talker with executive experience, Rendell is a confident choice. However, some of his positions, such as his support of the death penalty and high-profile fights with public sector unions, may cause trouble among the party base. What comments will you make about your decision?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1365,
+        "fields": {
+            "priority": 2,
+            "description": "As a result of your deal with Obama, he’s the vice president on the ticket. Pundits have taken to calling this the ABC ticket, standing for “Anyone But Clinton,” and her supporters are predictably unhappy about this development. His selection will make history as the first black candidate on a presidential ticket, but some fear that his liberal record in the senate and lack of significant government experience will drag down the candidacy. Still, he’s not without his strengths: his DNC address in 2004 has gone down in history as one of the best modern political speeches; hopefully he can bring that magic to your campaign. What comments will you make about him?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1389,
+        "fields": {
+            "priority": 2,
+            "description": "As a result of your deal with Hillary Clinton, she’ll be your candidate for Vice President. She needs no introduction to America, but many are curious about her role on the campaign and in your cabinet. She’s significantly to the right of you, and significantly more hawkish. She’s also just about the most insider candidate you could’ve chosen, which some of your more progressive supporters are perplexed by. How will you introduce this partnership to America?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1411,
+        "fields": {
+            "priority": 2,
+            "description": "For your vice presidential nominee, you’ve chosen Caroline Kennedy. She’s the last surviving relative from John’s immediate family, and is generally beloved by the public. Though she has no direct experience in government, she’s worked several high profile jobs in NGOs, nonprofits, and public institutions throughout her career. Many have speculated when she might finally enter politics, and now you’ve given the people what they want. What will you say about Caroline Kennedy?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1510,
+        "fields": {
+            "priority": 2,
+            "description": "The story won’t die. Your bodyman’s affair is becoming your problem. Every time he leaves his compound in Beverly Hills to buy diapers or formula, he’s photographed by some paparazzi prick asking him about how much you knew, what you saw. This type of thing can’t really go on. They won’t tell you this of course, but some of your staffers are whispering about this whole situation. Whether it’s true or not, it casts an ugly light on the campaign. What’s our move here, John?\n",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1569,
+        "fields": {
+            "priority": 1,
+            "description": "Your phone rings. It’s Andrew’s number, but as you pick up the phone, you’re shocked to hear Rielle’s voice. “John, I’ve had enough. All this moving around California, hiding in hotel rooms with the baby. It’s no way to live. You know, Bob says I should just come clean, and I’m beginning to think so too. It makes me sick to hide away like this. It’s making me sick and it’s making the whole country sick. You don’t love me anymore, I know it. You wish your baby was never born.” Think fast. ",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1605,
+        "fields": {
+            "priority": 0,
+            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1615,
+        "fields": {
+            "priority": 0,
+            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1625,
+        "fields": {
+            "priority": 0,
+            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1635,
+        "fields": {
+            "priority": 0,
+            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
+            "likelihood": 1
+        }
+    },
+    
+    {
+        "model": "campaign_trail.question",
+        "pk": 1645,
+        "fields": {
+            "priority": 0,
+            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1655,
+        "fields": {
+            "priority": 0,
+            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1675,
+        "fields": {
+            "priority": 0,
+            "description": "John McCain, having united republicans and most independents behind him, has now pledged to run a “bipartisan administration” with a cabinet made up of members of both parties. As a result, Democrats are shifting to McCain in numbers not seen since 1984. Feeling confident, McCain and Palin have cancelled their remaining debate appearances, and a record number of Americans are curious about the campaigns of Ralph Nader and Cynthia McKinney. It seems nobody thinks of you as a legitimate candidate anymore. Do you have any response to this?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1757,
+        "fields": {
+            "priority": 0,
+            "description": "The evidence mounts. The shame collects. At this point, America’s hatred for you is incandescent, and your admissions of guilt have only made things worse. Is there anything, anything you can do to win the people back?\n",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1685,
+        "fields": {
+            "priority": 0,
+            "description": "The evidence mounts. The shame collects. At this point, America’s hatred for you is incandescent, and your denials have only made things worse. Is there anything, anything you can do to win the people back?\n",
+            "likelihood": 1
+        }
+    },
 ]
-
+// questions end
 campaignTrail_temp.answers_json = [
     {
         "model": "campaign_trail.answer",
@@ -13663,8 +13664,6 @@ var hillary = 0;
 var kennedy = 0;
 
 // tracked variables for affair management
-var liz = 0;
-var rielle = 0;
 var deny = false;
 var admit = false;
 
@@ -14206,3 +14205,108 @@ if(ans == 1981){
     console.log("This is a Populist answer.")
     rhetoric +=1;
 }
+
+//cyoa implementation (pseudocode)
+// for 'wins' and 'losses' the loss is always default, and the win is 'pushed' only if specific conditions are met
+//
+// question 11
+// if (answer == x AND iavp_center >= 5) or if (answer == y AND iavp_east >=5) or if (answer == z AND iavp_west >=5) or if (answer == z2 AND iavp_east >=3 AND iavp_east >=3 AND iavp_center >=3)
+// push pk victory for question 11
+// 
+//question 12
+// if (rhetoric < 0)
+// push pk moderate debate
+//
+// question 14
+// if (answer == x AND nvvp >=5)
+// push pk nevada victory for question 14
+// else if (answer == x AND scvp >=5)
+// push pk sc victory for question 14
+//
+//question 15
+// if (opsec < 0)
+// push pk ambush for question 15
+//
+//question 16
+// if (ckp = 5)
+// push pk ted kennedy for question 16
+// else if (answer == x AND funds > 3 AND rhetoric >) OR if (answer == x AND funds > 3 AND rhetoric < 0) OR if (answer == x AND funds > 3 AND obama > 3) OR if (answer == x AND funds > 3 AND hillary > 3)
+// push pk super tuesday victory
+//
+//question 17
+// if (ans == x)
+// push pk ambush
+// else if (vp = sebelius)
+// push 31 pk sebelius intro
+// else if (vp = biden)
+// push 31 pk biden intro
+// else if (vp = rendell)
+// push 31 pk rendell intro
+// else if (vp = hillary)
+// push 31 pk hillary intro
+// else if (vp = obama)
+// push 31 pk obama intro
+// else if (vp = kennedy)
+// push 31 pk kennedy intro
+
+// question 25
+// if (ans == x)
+// push pk rielle stays home
+//
+// question 29
+// if (ans == x) OR (ans == y)
+// push pk rielle encounter
+// 
+// questions 30-35
+// if (ans == x) OR (ans == y) OR (ans == z) OR (ans == z1)
+// push pk 30 victory, 32 victory, 33 victory, 34 victory, 35 victory
+// if (vp = sebelius)
+// push 31 pk sebelius debate
+// else if (vp = biden)
+// push 31 pk biden debate
+// else if (vp = rendell)
+// push 31 pk rendell debate
+// else if (vp = hillary)
+// push 31 pk hillary debate
+// else if (vp = obama)
+// push 31 pk obama debate
+// else if (vp = kennedy)
+// push 31 pk kennedy debate
+
+// question 32
+// if (ans == x)
+// push pk 32 sex tape, 33 jail 
+else if (vp = sebelius)
+// push 31 pk sebelius surrender
+// else if (vp = biden)
+// push 31 pk biden surrender
+// else if (vp = rendell)
+// push 31 pk rendell surrender
+// else if (vp = hillary)
+// push 31 pk hillary surrender
+// else if (vp = obama)
+// push 31 pk obama surrender
+// else if (vp = kennedy)
+// push 31 pk kennedy surrender
+//
+// question 34
+// if (deny = true AND admit = false)
+// push pk possible denial
+// else if (deny = false AND admit = true)
+// push pk posisble admitting
+// 
+// question 35
+// if (ans == x) OR (any vp surrender answer)
+// push pk surrender
+
+//vp implementation (pseudocode)
+// if (ans==x AND ans==z)
+//push obama vp
+// else if (ans == y and ans == z)
+// push clinton vp
+// else 
+// push richardson, sebelius, biden vp
+// if rhetoric > 4 AND NOT hillary or obama
+// push rendell vp
+// if ckp = 5 AND NOT hillary or obama
+// push kennedy vp
