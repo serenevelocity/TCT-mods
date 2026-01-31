@@ -14063,14 +14063,6 @@ if(ans == 197){
 }
 
 // rhetoric (this is the big one)
-if(ans == x){
-    console.log("This is a Moderate answer.")
-    rhetoric -=1;
-}
-if(ans == x){
-    console.log("This is a Populist answer.")
-    rhetoric +=1;
-}
 if(ans == 332){
     console.log("This is a Populist answer.")
     rhetoric +=1;
