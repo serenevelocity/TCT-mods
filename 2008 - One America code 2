@@ -13674,6 +13674,14 @@ var rhetoric = 0;
 var funds = 0;
 var opsec = 3;
 
+//edwards hq strings
+var rhetoricScore = 'middle of the road.'
+var fundsScore = 'dry.'
+var opsecScore = 'secure.'
+var obamaScore = 'cordial.'
+var hillaryScore = 'cordial.'
+
+
 //winning iowa points
 if(ans == 726){
     console.log("The people of Eastern Iowa will appreciate this answer.");
@@ -14460,8 +14468,8 @@ function openHeadquarter() {
     if (funds = 2){
         fundsScore = 'adequate.'
     }
-    if (funds = 3){
-        fundsScore = ''
+    if (funds >= 3){
+        fundsScore = 'flush.'
     }
 
     if (opsec >= 0){
