@@ -1,3 +1,28 @@
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 35,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+
 campaignTrail_temp.election_json = [
     {
         "model": "campaign_trail.election",
@@ -321,35 +346,18 @@ campaignTrail_temp.running_mate_json = [
             "candidate": 16,
             "running_mate": 50002
         }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 151760,
+        "fields": {
+            "candidate": 16,
+            "running_mate": 50001
+        }
     }
 ]
 
 campaignTrail_temp.credits = "The Main Street Express"
-
-campaignTrail_temp.global_parameter_json = [
-    {
-        "model": "campaign_trail.global_parameter",
-        "pk": 1,
-        "fields": {
-            "vote_variable": 1.125,
-            "max_swing": 0.12,
-            "start_point": 0.94,
-            "candidate_issue_weight": 10,
-            "running_mate_issue_weight": 3,
-            "issue_stance_1_max": -0.71,
-            "issue_stance_2_max": -0.3,
-            "issue_stance_3_max": -0.125,
-            "issue_stance_4_max": 0.125,
-            "issue_stance_5_max": 0.3,
-            "issue_stance_6_max": 0.71,
-            "global_variance": 0.01,
-            "state_variance": 0.005,
-            "question_count": 35,
-            "default_map_color_hex": "#C9C9C9",
-            "no_state_map_color_hex": "#999999"
-        }
-    }
-]
 
 campaignTrail_temp.opponents_default_json = [
     {
@@ -396,3 +404,26 @@ jet_data = {
     "gameTitle": "THE MAIN STREET EXPRESS!"
 }
 
+//#startcode
+
+
+corrr = '\n              <h2>THE MAIN STREET EXPRESS!</h2><font id="wittyquote" size="4" color="white"><em>"I don't think God's through with me." - John Edwards</em></font>\n            ';
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#1d4065";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#a2b9d6";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#d8e4e2";
+
+document.getElementById("header").src = "https://i.imgur.com/p66GtNU.png";
+
+document.body.background = "https://i.imgur.com/wgaigow.jpeg";
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#a2b9d6!important;}</style>";
+
+//#endcode
