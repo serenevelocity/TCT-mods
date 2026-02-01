@@ -13725,7 +13725,7 @@ if(ans == 168){
 }
 if(ans == 395){
     console.log("The people of Central Iowa will appreciate this answer.");
-    iavp_central += 1;
+    iavp_center += 1;
 }
 if(ans == 396){
     console.log("The people of Iowa will appreciate this answer.");
@@ -14286,115 +14286,157 @@ if(ans == 1585){
     admit = true;
 }
 
-//cyoa implementation (pseudocode)
-// for 'wins' and 'losses' the loss is always default, and the win is 'pushed' only if specific conditions are met
-//
+//cyoa implementation 
+//for 'wins' and 'losses' the loss is always default, and the win is 'pushed' only if specific conditions are met
+
 // question 11, push iowa victory
-// if (answer == 287 AND iavp_center >= 5) or if (answer == 286 AND iavp_east >=5) or if (answer == 288 AND iavp_west >=5) or if (answer == 1232 AND iavp_east >=3 AND iavp_east >=3 AND iavp_center >=3)
-// push pk 1 for question 11
-// 
+if((ans == 287 && iavp_center >= 5) || (ans == 286 && iavp_east >=5) || (ans == 288 && iavp_west >=5) || (ans == 1232 && iavp_east >=3 && iavp_east >=3 && iavp_center >=3)){
+    campaignTrail_temp.questions_json[12] = tunnel(1);
+}
+
 //question 12, push moderate debate variant
-// if (rhetoric < 0)
-// push pk 1249 for question 12 (moderate debate)
-//
+if(rhetoric < 0){
+    campaignTrail_temp.questions_json[13] = tunnel(1249);
+}
+
 // question 14, push nevada or south carolina victory
-// if (answer == 1269 AND nvvp >=5)
-// push pk 21 for question 14 (nevada victory)
-// else if (answer == 230 AND scvp >=5)
-// push pk 1278 for question 14 (sc victory)
-//
+if(ans == 1269 && nvvp >=5){  //nevada
+    campaignTrail_temp.questions_json[15] = tunnel(21);
+}
+else if (ans == 230 && scvp >=5){ //sc
+    campaignTrail_temp.questions_json[15] = tunnel(1278);
+}
+
 //question 15, push ambush
-// if (opsec < 0)
-// push pk 1299 for question 15 (ambush)
+if (opsec < 0) {
+    campaignTrail_temp.questions_json[16] = tunnel(1299);
+}
 //
 //question 16, push win, loss, or ted kennedy win
-// if (ckp = 5 AND answer == 162)
-// push pk 1291
-// else if (answer == 161 AND funds > 3 AND rhetoric > 0) OR if (answer == 162 AND funds > 3 AND rhetoric < 0) OR if (answer == 163 AND funds > 3 AND obama > 3) OR if (answer == 164 AND funds > 3 AND hillary > 3)
-// push pk 40
-//
+if(ckp = 5 && funds > 3 && ans == 162){ // ted
+    campaignTrail_temp.questions_json[17] = tunnel(1291);
+}
+else if((ans == 161 && funds > 3 && rhetoric > 0) || (ans == 162 && funds > 3 && rhetoric < 0) || (ans == 163 && funds > 3 && obama > 3) || (ans == 164 && funds > 3 && hillary > 3)){
+    campaignTrail_temp.questions_json[17] = tunnel(40);
+}//regular victory
+
 //question 17, push vp question or ambush
-// if (ans == 1296)
-// push pk 1299
-// else if (vp = sebelius)
-// push pk 1333 
-// else if (vp = biden)
-// push pk 1319 
-// else if (vp = rendell)
-// push pk 1349
-// else if (vp = hillary)
-// push pk 1389
-// else if (vp = obama)
-// push pk 1365
-// else if (vp = kennedy)
-// push pk 1411
+if (ans == 1296){
+    campaignTrail_temp.questions_json[18] = tunnel(1299);
+}// contested convention triggers ambush
+else if(e.running_mate_last_name==="Sebelius"){
+    campaignTrail_temp.questions_json[18] = tunnel(1333);
+}
+else if(e.running_mate_last_name==="Biden"){
+    campaignTrail_temp.questions_json[18] = tunnel(1319);
+}
+else if(e.running_mate_last_name==="Rendell"){
+    campaignTrail_temp.questions_json[18] = tunnel(1349);
+}
+else if(e.running_mate_last_name==="Clinton"){
+    campaignTrail_temp.questions_json[18] = tunnel(1389);
+}
+else if(e.running_mate_last_name==="Obama"){
+    campaignTrail_temp.questions_json[18] = tunnel(1365);
+}
+else if(e.running_mate_last_name==="Kennedy"){
+    campaignTrail_temp.questions_json[18] = tunnel(1411);
+}
+
 
 // question 25, push rielle encounter
-// if (ans == 197)
-// push pk 1510
+if(ans == 197){
+    campaignTrail_temp.questions_json[26] = tunnel(1510);
+}
 //
 // question 29, push rielle encounter
-// if (ans == 1511) OR (ans == 38)
-// push pk 1569
+if ((ans == 1511) || (ans == 38)){
+    campaignTrail_temp.questions_json[30] = tunnel(1569);
+}
 // 
 // questions 30-35,  total victory path
-// if (ans == 1562) OR (ans == 1563) OR (ans == 1572) OR (ans == 1574)
-// question 30 push pk 1830, 
-// question 31
-// if (vp = richardson)
-// push pk 1871,
-// else if (vp = sebelius)
-// push pk 1883,
-// else if (vp = biden)
-// push pk 1895,
-// else if (vp = rendell)
-// push pk 1907,
-// else if (vp = hillary)
-// push pk 1936,
-// else if (vp = obama)
-// push pk 1923,
-// else if (vp = kennedy)
-// push pk 1949,
-// question 32 push pk 1853, 
-// question 33 push pk 1962, 
-// question 34 push pk 1978, 
-// question 35 push pk 1988,
+//30
+if ((ans == 1562) || (ans == 1563) || (ans == 1572) || (ans == 1574)){
+    campaignTrail_temp.questions_json[31] = tunnel(1830);
+
+    if (e.running_mate_last_name==="Richardson"){
+        campaignTrail_temp.questions_json[32] = tunnel(1871);
+    }
+    else if (e.running_mate_last_name==="Sebelius"){
+        campaignTrail_temp.questions_json[32] = tunnel(1883);
+    }
+    else if (e.running_mate_last_name==="Biden"){
+        campaignTrail_temp.questions_json[32] = tunnel(1895);
+    }
+    else if (e.running_mate_last_name==="Rendell"){
+        campaignTrail_temp.questions_json[32] = tunnel(1907);
+    }
+    else if (e.running_mate_last_name==="Clinton"){
+        campaignTrail_temp.questions_json[32] = tunnel(1936);
+    }
+    else if (e.running_mate_last_name==="Obama"){
+    campaignTrail_temp.questions_json[32] = tunnel(1923);
+    }
+    else if (e.running_mate_last_name==="Kennedy"){
+    campaignTrail_temp.questions_json[32] = tunnel(1949);
+    }
+
+    campaignTrail_temp.questions_json[33] = tunnel(1853);
+    campaignTrail_temp.questions_json[34] = tunnel(1962);
+    campaignTrail_temp.questions_json[35] = tunnel(1978);
+    campaignTrail_temp.questions_json[36] = tunnel(1988);
+
+}
 
 // question 32 sex tape path
-// if (ans == 1586)
-// question 32 push pk 1819,
-// question 33 push pk 1820,
-// trigger early end 
+if (ans == 1586){
+    campaignTrail_temp.questions_json[33] = tunnel(1819);
+    campaignTrail_temp.questions_json[34] = tunnel(1820);
+    // trigger early end 
+}
 // alternate question 32 veep surrender options
-// if (vp = sebelius)
-// qustion 32 push pk 1605,
-// else if (vp = biden)
-// qustion 32 push pk 1615,
-// else if (vp = rendell)
-// qustion 32 push pk 1625,
-// else if (vp = hillary)
-// qustion 32 push pk 1635,
-// else if (vp = obama)
-// qustion 32 push pk 1645,
-// else if (vp = kennedy)
-// qustion 32 push pk 1655,
-//
+
+if (e.running_mate_last_name==="Sebelius"){
+    campaignTrail_temp.questions_json[33] = tunnel(1605);
+}
+else if (e.running_mate_last_name==="Biden"){
+    campaignTrail_temp.questions_json[33] = tunnel(1615);
+}
+else if (e.running_mate_last_name==="Rendell"){
+    campaignTrail_temp.questions_json[33] = tunnel(1625);
+}
+else if (e.running_mate_last_name==="Clinton"){
+    campaignTrail_temp.questions_json[33] = tunnel(1635);
+}
+else if (e.running_mate_last_name==="Obama"){
+    campaignTrail_temp.questions_json[33] = tunnel(1645);
+}
+else if (e.running_mate_last_name==="Kennedy"){
+    campaignTrail_temp.questions_json[33] = tunnel(1655);
+}
+
 // alternate question 33 veep options
-// if (vp = clinton) or (vp = biden) or (vp = obama) or (vp = kennedy)
-// else question 33 push pk 1665
+if ((e.running_mate_last_name==="Clinton") || (e.running_mate_last_name==="Biden") || (e.running_mate_last_name==="Obama") || (e.running_mate_last_name==="Kennedy")){
+    campaignTrail_temp.questions_json[34] = tunnel(1665);
+}
 
 // question 34 successes
-// if (deny = true AND admit = false)
-// push pk 1685,
-// else if (deny = false AND admit = true)
-// push pk 1757,
-// 
+
+if (deny === true && admit === false){
+    campaignTrail_temp.questions_json[35] = tunnel(1685);
+} else if (deny === false && admit === true){
+    campaignTrail_temp.questions_json[35] = tunnel(1757);
+}
+
 // question 35 surrender
-// if (ans == 1598) OR (ans == 1612) or (ans == 1622) or (ans== 1632) or (ans==1642) or (ans==1652) or (ans==1662) or (ans==1686)
-// push pk 1810,
-// trigger early end
+if ((ans == 1598) || (ans == 1612) || (ans == 1622) || (ans== 1632) || (ans==1642) || (ans==1652) || (ans==1662) || (ans==1686)){
+    campaignTrail_temp.questions_json[35] = tunnel(1810);
+    //trigger early end
+}
+
 
 //vp implementation (pseudocode)
+//set vp screen to trigger on question 17
 //if (ans == 163 AND ans==157)
 //push obama vp
 //else if (ans == 164 and ans == 157)
