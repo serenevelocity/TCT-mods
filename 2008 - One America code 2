@@ -1,6 +1,3 @@
-if (!campaignTrail_temp.loaded){
-    campaignTrail_temp.loaded = true
-
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -13681,6 +13678,8 @@ var opsecScore = 'secure.'
 var obamaScore = 'cordial.'
 var hillaryScore = 'cordial.'
 
+cyoAdventure = function (a) {
+    ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
 
 //winning iowa points
 if(ans == 726){
@@ -14407,8 +14406,8 @@ if(ans == 1585){
 //if (ans == 1292)
 //push kennedy vp
 
-
 }
+
 
 
 e=campaignTrail_temp
@@ -14539,7 +14538,7 @@ function openHeadquarter() {
     hqDiv.style.display = 'flex'; // Set layout to flex to allow columns
     hqDiv.style.color = 'white';
     hqDiv.style.backgroundColor = '#383838';
-    // hqDiv.style.backgroundImage = 'url(https://itsastronomical.com/assets/1924/coolidgehqbg.png)'; // Set background image. I would recommend using the same file size as the original image, ~959 x 327. Otherwise it will stretch the image. Comment or remove this line of text if you don't want a background image and instead want hqDiv.style.backgroundColor to set your background color
+    hqDiv.style.backgroundImage = 'url(https://i.imgur.com/KD2niCy.png)';
     hqDiv.style.border = '5px solid black';
     hqDiv.style.borderRadius = '10px';
     hqDiv.style.height = '56%';
@@ -14564,14 +14563,6 @@ function openHeadquarter() {
         questions.style.display = '';
     }
     headerDiv.appendChild(backButton);
-
-    /* This is a header text that you can add if you want to. It is not necessary. - Astro
-    let headerText = document.createElement('h3');
-    headerText.textContent = 'Chief of Staff - Campaign Info';
-    headerText.style.textAlign = 'center';  // Center the text
-    headerText.style.flexGrow = '1';  // Make h3 take up the maximum space available
-    headerDiv.appendChild(headerText);
-    */
 
     // Append headerDiv to the main hqDiv
     hqDiv.appendChild(headerDiv);
@@ -14601,48 +14592,41 @@ function openHeadquarter() {
     // Create Bulk of the Text
     // Duplicate this section to add more lines of text. Make sure to change the variable name "a" to something else. In this case, I changed it to "b".
     let a = document.createElement('p');
-    a.textContent = 'Your war chest is ' + fundsScore + '(' + funds + ')'; // This is the text that will be displayed. You can change this to whatever you want. ' + function + ' will display the number from the function.
-    // a.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
+    a.innerHTML = 'Your war chest is <b><u><i>' + fundsScore + '</b></u></i> (' + funds + ')'; // This is the text that will be displayed. You can change this to whatever you want. ' + function + ' will display the number from the function.
+    a.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
     a.style.color = 'white'; // Can be used to change the color of the text
-    a.style.margin = '15px'; // Can be used to change the space in between the text. Useful if you have a lot of functions.
+    a.style.margin = '10px'; // Can be used to change the space in between the text. Useful if you have a lot of functions.
     hqDiv.appendChild(a);
 
     let b = document.createElement('p');
-    b.textContent = 'Your rhetoric has been ' + rhetoricScore + '(' + rhetoric + ')';
-    // b.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
+    b.innerHTML = 'Your rhetoric has been <b><u><i>' + rhetoricScore + '</b></u></i> (' + rhetoric + ')';
+    b.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
     b.style.color = 'white';
-    b.style.margin = '15px';
+    b.style.margin = '10px';
     hqDiv.appendChild(b);
 
     let c = document.createElement('p');
-    c.textContent = 'Your OPSEC is ' + opsecScore + '(' + opsec + ')';
-    // c.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
+    c.innerHTML = 'Your OPSEC is <b><u><i>' + opsecScore + '</b></u></i> (' + opsec + ')';
+    c.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
     c.style.color = 'white';
-    c.style.margin = '20px';
+    c.style.margin = '10px';
     hqDiv.appendChild(c);
 
     let d = document.createElement('p');
-    d.textContent = 'Relations with Obama are ' + obamaScore + '(' + obama + ')';
-    // d.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
+    d.innerHTML = 'Relations with Obama are <b><u><i>' + obamaScore + '</b></u></i> (' + obama + ')';
+    d.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
     d.style.color = 'white';
-    d.style.margin = '20px';
+    d.style.margin = '10px';
     hqDiv.appendChild(d);
 
     let e = document.createElement('p');
-    e.textContent = 'Relations with Hillary are ' + hillaryScore + '(' + hillary + ')';
-    // e.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
+    e.innerHTML = 'Relations with Hillary are <b><u><i>' + hillaryScore + '</b></u></i> (' + hillary + ')';
+    e.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
     e.style.color = 'white';
-    e.style.margin = '20px';
+    e.style.margin = '10px';
     hqDiv.appendChild(e);
-
-    // Image
-    let img = document.createElement('img');
-    img.src = 'https://itsastronomical.com/assets/1996_EOH/woffordbanner.png';
-    img.style.height = '30%';
-    img.style.marginLeft = '1em';
-    img.style.flexGrow = '0.1';
-    img.style.border = '3px solid white';  // Add thin white border to the image
-    hqDiv.appendChild(img);
+//<b><u><i>
+//</b></u></i>
     
 }
 
