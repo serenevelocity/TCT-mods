@@ -426,4 +426,104 @@ document.body.background = "https://i.imgur.com/wgaigow.jpeg";
 
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#a2b9d6!important;}</style>";
 
+
+
+// This is just so that we can prevent the VP observer
+// from running running more than once. taken from 2012LBM
+(function() {
+    'use strict';
+
+    function handleNavigation() {
+        const gameWindow = document.getElementById("game_window");
+        if (!gameWindow) return;
+
+        // detect VP screen
+        const summary = document.getElementById("running_mate_summary");
+        
+        if (summary) {
+            // check if we are moving backwards (triggered by the opponent screen back button)
+            const isGoingBack = window.sessionStorage.getItem("skip_direction") === "backward";
+
+            if (isGoingBack) {
+                const backBtn = document.getElementById("running_mate_id_back");
+                if (backBtn && !backBtn.dataset.autoClicked) {
+                    console.log("VP selection screen detected. Skipping...");
+                    // clear the flag so forward movement works next time
+                    window.sessionStorage.removeItem("skip_direction");
+                    backBtn.dataset.autoClicked = "true";
+                    backBtn.click();
+                }
+            } else {
+                // move forward
+                const nextBtn = document.getElementById("running_mate_id_button");
+                // ensure we don't click buttons with custom switchers
+                if (nextBtn && !nextBtn.hasAttribute("data-custom-switcher") && !nextBtn.dataset.autoClicked) {
+                    console.log("VP selection screen detected. Skipping...");
+                    nextBtn.dataset.autoClicked = "true"; 
+                    nextBtn.click();
+                }
+            }
+        }
+
+        // detect opponent selection screen
+        const opponentBack = document.getElementById("opponent_selection_id_back");
+        if (opponentBack && !opponentBack.dataset.skipListener) {
+            // when user clicks Back, set flag to 'backward'
+            opponentBack.addEventListener("click", () => {
+                window.sessionStorage.setItem("skip_direction", "backward");
+            });
+            opponentBack.dataset.skipListener = "true";
+        }
+    }
+
+    window.handleNavigation = handleNavigation;
+})();
+
+// This is a catch-all mutation observer so that
+// we keep one having them all run at once. taken from 2012LBM
+(function() {
+    'use strict';
+
+    if (window.glorble) {
+        window.glorble.disconnect();
+    }
+	
+	window.glorbleTasks = [];
+	
+	const initialTasks = () => {
+        // VP screen skipper
+        if (document.getElementById("game_window") && typeof window.handleNavigation === 'function') {
+            window.handleNavigation();
+        }
+
+        // candidate blocking
+		if (window.tctAutoStart?.tick) {
+			window.tctAutoStart.tick();
+		}
+    };
+	
+	window.glorbleTasks.push(initialTasks);
+	
+	const handleMutations = (mutationsList) => {
+        if (!window.glorbleTasks) return;
+        
+        for (let i = 0; i < window.glorbleTasks.length; i++) {
+            try {
+                window.glorbleTasks[i]();
+            } catch (e) {
+                console.error("Zoinks! Error in glorble task:", e);
+            }
+        }
+    };
+
+    const targetNode = document.getElementById("game_window");
+    const config = { childList: true, subtree: true };
+
+    window.glorble = new MutationObserver(handleMutations);
+    window.glorble.observe(targetNode, config);
+
+    handleMutations();
+    //console.log("glorble...");
+})();
+
 //#endcode
