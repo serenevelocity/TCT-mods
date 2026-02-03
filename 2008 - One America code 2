@@ -14483,7 +14483,7 @@ function addHeadquarterButton() {
 
 function openHeadquarter() {
 
-    if (rhetoric = 0){
+    if (rhetoric == 0){
         rhetoricScore = 'middle of the road.'
     }
     if (rhetoric > 0 && rhetoric < 5) {
@@ -14499,13 +14499,13 @@ function openHeadquarter() {
         rhetoricScore = 'strongly moderate.'
     }
 
-    if (funds = 0){
+    if (funds == 0){
         fundsScore = 'dry.'
     }
-    if (funds = 1){
+    if (funds == 1){
         fundsScore = 'meager.'
     }
-    if (funds = 2){
+    if (funds == 2){
         fundsScore = 'adequate.'
     }
     if (funds >= 3){
@@ -14525,7 +14525,7 @@ function openHeadquarter() {
         opsecScore = 'blown.'
     }
 
-    if (obama = 0){
+    if (obama == 0){
         obamaScore = 'cordial.'
     }
     if (obama > 0 && obama < 3){
@@ -14534,17 +14534,17 @@ function openHeadquarter() {
     if (obama >= 3){
         obamaScore = 'warm.'
     }
-    if (obama = -1){
+    if (obama == -1){
         obamaScore = 'chilly.'
     }
-    if (obama = -2){
+    if (obama == -2){
         obamaScore = 'unfriendly.'
     }
     if (obama <= -3){
         obamaScore = 'hostile.'
     }
     
-    if (hillary = 0){
+    if (hillary == 0){
         hillaryScore = 'cordial.'
     }
     if (hillary > 0 && obama < 3){
@@ -14553,10 +14553,10 @@ function openHeadquarter() {
     if (hillary >= 3){
         hillaryScore = 'warm.'
     }
-    if (hillary = -1){
+    if (hillary == -1){
         hillaryScore = 'chilly.'
     }
-    if (hillary = -2){
+    if (hillary == -2){
         hillaryScore = 'unfriendly.'
     }
     if (hillary <= -3){
