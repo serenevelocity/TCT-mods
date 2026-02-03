@@ -14290,7 +14290,7 @@ if(ans == 1585){
 //for 'wins' and 'losses' the loss is always default, and the win is 'pushed' only if specific conditions are met
 
 // question 11, push iowa victory
-if((ans == 287 && iavp_center >= 5) || (ans == 286 && iavp_east >=5) || (ans == 288 && iavp_west >=5) || (ans == 1232 && iavp_east >=3 && iavp_east >=3 && iavp_center >=3)){
+if((ans == 287 && iavp_center >= 4) || (ans == 286 && iavp_east >=4) || (ans == 288 && iavp_west >=4) || (ans == 1232 && iavp_east >=3 && iavp_east >=3 && iavp_center >=3)){
     campaignTrail_temp.questions_json[10] = tunnel(1);
 }
 
@@ -14313,10 +14313,10 @@ if (opsec < 0) {
 }
 //
 //question 16, push win, loss, or ted kennedy win
-if(ckp = 5 && funds > 3 && ans == 162){ // ted
+if(ckp == 5 && funds > 3 && ans == 162){ // ted
     campaignTrail_temp.questions_json[15] = tunnel(1291);
 }
-else if((ans == 161 && funds > 3 && rhetoric > 0) || (ans == 162 && funds > 3 && rhetoric < 0) || (ans == 163 && funds > 3 && obama > 3) || (ans == 164 && funds > 3 && hillary > 3)){
+else if((ans == 161 && funds > 3 && rhetoric > 0) || (ans == 162 && funds > 3 && rhetoric < 0) || (ans == 163 && funds > 3 && obama >= 3) || (ans == 164 && funds > 3 && hillary >= 3)){
     campaignTrail_temp.questions_json[15] = tunnel(40);
 }//regular victory
 
