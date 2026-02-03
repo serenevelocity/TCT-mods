@@ -14313,7 +14313,7 @@ if (opsec < 0) {
 }
 //
 //question 16, push win, loss, or ted kennedy win
-if(ckp == 5 && funds > 3 && ans == 162){ // ted
+if(kennedy == 5 && funds > 3 && ans == 162){ // ted
     campaignTrail_temp.questions_json[15] = tunnel(1291);
 }
 else if((ans == 161 && funds > 3 && rhetoric > 0) || (ans == 162 && funds > 3 && rhetoric < 0) || (ans == 163 && funds > 3 && obama >= 3) || (ans == 164 && funds > 3 && hillary >= 3)){
