@@ -57,7 +57,7 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#0000FF",
             "secondary_color_hex": "#90C0FF",
             "is_active": 1,
-            "image_url": "https://i.imgur.com/hsxaypv.jpeg",
+            "image_url": "https://i.postimg.cc/fLF9kF5r/johnedwards2008.jpg",
             "electoral_victory_message": "",
             "electoral_loss_message": "",
             "no_electoral_majority_message": "",
