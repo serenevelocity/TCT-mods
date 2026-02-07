@@ -14298,7 +14298,7 @@ else if (ans == 230 && scvp >=4){ //sc
 }
 
 //question 15, push ambush
-if ((opsec < 0)) {
+if (( ans == 62 || ans == 21 || ans == 1279 || ans == 1282) && opsec <= -1) {
     campaignTrail_temp.questions_json[14] = tunnel(1299);
 }
 //
@@ -14310,10 +14310,12 @@ else if((ans == 161 && funds >= 3 && rhetoric > 0) || (ans == 162 && funds > 3 &
     campaignTrail_temp.questions_json[15] = tunnel(40);
 }//regular victory
 
-//question 17, push vp question or ambush
-if (ans == 1296){
+//question 17, push  ambush
+if (ans == 1296){ // contested convention triggers ambush
     campaignTrail_temp.questions_json[16] = tunnel(1299);
-}// contested convention triggers ambush
+}
+
+//question 18, push vp question
  if(e.running_mate_last_name==="Sebelius"){
     campaignTrail_temp.questions_json[17] = tunnel(1333);
 }
