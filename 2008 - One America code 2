@@ -13635,6 +13635,11 @@ campaignTrail_temp.jet_data = [{
 }
 ]
 
+campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/fLF9kF5r/johnedwards2008.jpg';
+campaignTrail_temp.candidate_last_name = 'Edwards';
+campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/xZfxgv7.png';
+campaignTrail_temp.running_mate_last_name = 'for America';
+
 e=campaignTrail_temp
 
 campaignTrail_temp.cyoa = true
