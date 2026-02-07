@@ -14455,7 +14455,7 @@ if((ans == 163) && (ans == 157)){ // obama deal
         }
     )
 }
-else{ //push richardson, sebelius, biden if no deal
+else if ((ans == 1292 || ans == 157) && !(ans == 163 || ans == 164)) { //push richardson, sebelius, biden if no deal
     console.log("Normal Veepstakes");
     campaignTrail_temp.running_mate_json.push({
         "model":"campaign_trail.running_mate",
@@ -14485,7 +14485,7 @@ else{ //push richardson, sebelius, biden if no deal
         }
     )
 }
-if ((rhetoric >= 4) && !(ans == 163 || ans == 164)){ //push rendell vp
+if ((rhetoric >= 4) && (ans == 1292 || ans == 157) && !(ans == 163 || ans == 164)){ //push rendell vp
     console.log("America's Mayor");
     campaignTrail_temp.running_mate_json.push({
         "model":"campaign_trail.running_mate",
