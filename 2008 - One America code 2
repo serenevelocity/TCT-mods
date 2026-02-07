@@ -14409,7 +14409,7 @@ if((ans == 1519 || ans== 1520 || ans == 1521 || ans == 1522) && rhetoric >= 4){
     campaignTrail_temp.questions_json[26] = tunnel(2013);
 
 }
-if ((ans == 1519 || ans== 1520 || ans == 1521 || ans == 1522)) && rhetoric >= 8){
+if ((ans == 1519 || ans== 1520 || ans == 1521 || ans == 1522) && rhetoric >= 8){
     campaignTrail_temp.questions_json[26] = tunnel(2022);
 }
 
