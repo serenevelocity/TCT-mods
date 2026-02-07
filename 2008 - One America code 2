@@ -14298,7 +14298,7 @@ else if (ans == 230 && scvp >=4){ //sc
 }
 
 //question 15, push ambush
-if (opsec < 0) {
+if ((opsec < 0)) {
     campaignTrail_temp.questions_json[14] = tunnel(1299);
 }
 //
@@ -14498,7 +14498,7 @@ if ((rhetoric >= 4) && (ans == 1292 || ans == 157) && !(ans == 163 || ans == 164
     )
 }
 
-if ((ans == 1292) && !(ans == 163 || ans == 164)){ //push kennedy vp
+if (ans == 1292){ //push kennedy vp
     console.log("Camelot");
     campaignTrail_temp.running_mate_json.push({
         "model":"campaign_trail.running_mate",
