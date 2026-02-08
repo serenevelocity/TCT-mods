@@ -437,6 +437,9 @@ style.innerHTML = `
   a:-webkit-any-link {
     color: #000000;
   }
+.overlay_window {
+            height: auto;
+		}
 `;
 
 document.head.appendChild(style);
