@@ -4,7 +4,7 @@ campaignTrail_temp.questions_json = [
         "pk": 130,
         "fields": {
             "priority": 0,
-            "description": "October 5, 2004. You’re seated for the Vice Presidential debate, opposite Dick Cheney. VP Debates typically have a small impact on the election, but since Cheney is one of the most powerful and hated men to ever hold the office, tonight could be different. You’ve started to make a point about Halliburton, but Cheney pivots to your record in the Senate, listing the amount of important votes you’ve missed and your absences on the judiciary committee. He concludes: “I’m the president of the Senate, and the first time I’ve met you is tonight.” \n",
+            "description": "October 5, 2004. You’re seated for the VP debate opposite Dick Cheney. His people insisted on this debate being seated, since the old gargoyle can barely stand without his heart giving out. You’ve started to make a point about Halliburton, but Cheney, eager to get off the subject, makes a quick pivot to your record in the Senate. He lists the important votes you’ve missed, tallies your absences on the judiciary committee. He concludes: “I’m the president of the Senate, and the first time I’ve met you is tonight.” Don’t let him get away with this.",
             "likelihood": 1
         }
     },
@@ -13,7 +13,7 @@ campaignTrail_temp.questions_json = [
         "pk": 93,
         "fields": {
             "priority": 0,
-            "description": "It’s not much of a secret: you can’t stand Kerry, and he can’t stand you. He sees you as an inexperienced country bumpkin, you see him as an elitist, blue blood asshole. You know in your heart that Kerry can’t win this, and you believe it should’ve been you at the top of the ticket. Now’s your chance to make the country believe that too. How will you attack Cheney?\n",
+            "description": "It’s a thankless job being the token hick on the Kerry ticket. You’d dread being his vice president for four years if you believed he could win this thing, but if you’re honest with yourself, you know he can’t. Still, as much as Kerry might want to marginalize you, you’re the one who gets to debate the real president. Now go in for the kill.",
             "likelihood": 1
         }
     },
@@ -22,7 +22,7 @@ campaignTrail_temp.questions_json = [
         "pk": 7,
         "fields": {
             "priority": 1,
-            "description": "November 3, 2004. You haven’t felt this lost in years. Bush has been re-elected, and this time has won the popular vote. After you make your concession speech, you bring Liz to the doctor, who informs you that the lump on her breast is cancer. Treatment must start immediately. You should probably make an announcement to the press on your own terms.\n",
+            "description": "November 3, 2004. Kerry blew it, just as you knew he would. He even lost the popular vote, not that he even really tried to win it. He’ll own this loss, but it’ll rub off on you all the same. Still, there are bigger things on your mind: Liz’s doctor has informed you that the lump on her breast is cancer, and that treatment must start immediately. It'll get out soon enough, so you should probably make a statement to the press on your own terms.",
             "likelihood": 1
         }
     },
@@ -31,7 +31,7 @@ campaignTrail_temp.questions_json = [
         "pk": 42,
         "fields": {
             "priority": 1,
-            "description": "Your presidential ambitions for 2008 are quite clear, so there’s no use playing coy. Best to announce your campaign early and get the ball rolling. Your announcement in 2004, in front of the shuttered mill your father worked in, emphasized your focus on domestic issues, manufacturing, and workers. You’ve got a chance now to make another splash. Where will you announce your campaign for the presidency?\n",
+            "description": "December 28, 2006. Not much has gotten better since you and Kerry lost the white house. America has slipped into a recession, top-ranking Bush officials have resigned in disgrace, and the incompetent FEMA leadership has let Hurricane Katrina ravage the gulf coast. In 2004, you announced your candidacy for president in front of the shuttered mill your father worked in. Now, there are far more shuttered buildings in America, more people ready to listen. You’ve got a chance now to announce early and get the ball rolling. How will you announce your campaign for the presidency?\n",
             "likelihood": 1
         }
     },
@@ -40,7 +40,7 @@ campaignTrail_temp.questions_json = [
         "pk": 114,
         "fields": {
             "priority": 1,
-            "description": "Your campaign is currently funded by two major donors: your old colleague Fred Barron, president of the American Association of Trial Lawyers; and Bunny Mellon, an eccentric heiress to the Mellon fortune, who’s given you millions of dollars because you “remind her of Jack Kennedy.” They’ve been very generous, but they aren’t enough to bring a presidential campaign to the finish line, especially as your funds don’t seem to be going as far as they did last time. What will be your strategy for fundraising?\n",
+            "description": "Two things kept you from victory last time: a late start, and an empty war chest. Your campaign is currently funded by two major donors: your old legal colleague Fred Barron, and the eccentric Bunny Mellon, who’s given you millions of dollars because you “remind her of Jack Kennedy.” They've been very generous, but on their own they can't bring a campaign to the finish line. Where will the money come from this time?",
             "likelihood": 1
         }
     },
@@ -49,7 +49,7 @@ campaignTrail_temp.questions_json = [
         "pk": 22,
         "fields": {
             "priority": 1,
-            "description": "The question hanging over this primary is set to be the same as the last one: the Iraq War. Then and now, you’ve faced criticism for voting in favor of the war, but there has been a seemingly-successful troop surge this year which has scrambled the whole issue. What will be your line on Iraq in this campaign?\n",
+            "description": "The Iraq War is the foul stench that won't leave the room. You, unfortunately, voted for the war, and have only come out against it in the intervening years. This is something of a 'worst of both worlds' position: hawks and doves both think you're a hypocrite. Not only that, there has been a seemingly-successful troop surge this year which has scrambled the whole issue. You've got to pick a lane on this issue, and fast, before it derails the whole campaign.\n",
             "likelihood": 1
         }
     },
@@ -58,7 +58,7 @@ campaignTrail_temp.questions_json = [
         "pk": 25,
         "fields": {
             "priority": 1,
-            "description": "Sorry to break this to you John, but someone leaked a story to the press that you’ve used a campaign credit card to purchase a $400 haircut. I’m sure it was just an honest mistake, and we’re dealing with this internally, but… well, it looks bad. You better decide on your line now, when people ask.\n",
+            "description": "Four years ago some right wing operatives sabotaged John Kerry by planting the 'swiftboating' story. Now, they're doing the same to you: they've found a receipt for a $400 haircut you received in Beverly Hills using campaign funds. It's a dirty trick, but it has the potential to wreck your image if you're not careful. Get us back on track.",
             "likelihood": 1
         }
     },
@@ -67,7 +67,7 @@ campaignTrail_temp.questions_json = [
         "pk": 30,
         "fields": {
             "priority": 2,
-            "description": "More bad news, I’m afraid: the National Enquirer has just published an article about you. It’s accusing you of an affair with some documentary filmmaker named Rielle Hunter who worked on the campaign last year. We’re confident our voters won’t believe this garbage, but you should still decide on your approach here. \n",
+            "description": "Haircut-gate wasn't enough to take you down, so they've come back for a second round. The National Enquirer has just published an article accusing you of an affair with some documentary filmmaker named Rielle Hunter who made some 'webisodes' for the campaign last year. They've got absolutely nothing: no proof, no named sources, just a famous man's name and some innuendo. Set the record straight on this.\n",
             "likelihood": 1
         }
     },
@@ -85,7 +85,7 @@ campaignTrail_temp.questions_json = [
         "pk": 80,
         "fields": {
             "priority": 2,
-            "description": "Your path to victory in these Democratic primaries lies in Iowa. You need a strong showing here in order to secure the momentum that will allow you to fundraise and compete for the following states. Where would you like to focus your campaigning?\n",
+            "description": "There's only one way out of Iowa: first place. Clinton and Obama could console themselves with a second-place victory, but not you. You have to prove yourself here, in the first primary in the country, on the ass end of the rust belt. The people of Iowa are despondent after eight long years of Bush, and suffering from the new economy leaving them behind. But Iowa isn't a monolith: it's a diverse state where different regions appeal to different strands of the Democratic party. Where will you focus your campaign?",
             "likelihood": 1
         }
     },
@@ -103,7 +103,7 @@ campaignTrail_temp.questions_json = [
         "pk": 46,
         "fields": {
             "priority": 2,
-            "description": "The field has narrowed to the three frontrunners and the few hangers-on. It’s you, Clinton, and Obama onstage, and primary voters are watching. Tonight you need to convince America that they’re looking at their next president. What will be your strategy in this debate?\n",
+            "description": "The field has narrowed to the three frontrunners and the few hangers-on. It’s you, Clinton, and Obama onstage, and primary voters are watching. Tonight you need to convince America that they’re looking at their next president. What will be your strategy in this debate?",
             "likelihood": 1
         }
     },
@@ -727,7 +727,7 @@ campaignTrail_temp.answers_json = [
         "pk": 85,
         "fields": {
             "question": 22,
-            "description": "If I’d known then what I know now, I’d have certainly not voted that way. But Bush, Cheney and Rumsfeld are to blame for presenting the Senate with faulty intelligence, and leading the American people into an unjustified war.\n"
+            "description": "If I’d known then what I know now, I’d have certainly not voted in favor of the resolution. But Bush, Cheney and Rumsfeld are the ones to blame for presenting the Senate with fraudulent intelligence. \n"
         }
     },
     {
@@ -735,7 +735,7 @@ campaignTrail_temp.answers_json = [
         "pk": 86,
         "fields": {
             "question": 22,
-            "description": "I was wrong to vote in favor of the resolution, and it’s something I deeply regret. \n"
+            "description": "I was wrong to vote in favor of the resolution, and it’s something I deeply regret."
         }
     },
     {
@@ -775,7 +775,7 @@ campaignTrail_temp.answers_json = [
         "pk": 97,
         "fields": {
             "question": 25,
-            "description": "David, I want you to find me some story about Hillary Clinton spending money on some bullshit like this. Anything at all to get this out of the press.\n"
+            "description": "If they want to play dirty, we'll play dirty. I bet Hillary's gotten some pretty expensive haircuts over this campaign. I'm sure that's the least of it. Let's get our guys on this and see what we can find. "
         }
     },
     {
@@ -791,7 +791,7 @@ campaignTrail_temp.answers_json = [
         "pk": 99,
         "fields": {
             "question": 25,
-            "description": "I worked very hard to get where I am. Nobody expected me to graduate high school, or college, or become a senator. I apologize for this expense, and promise you that I’ll fight for you every chance I get. \n"
+            "description": "Come on now, this isn't an accident. I'm out here speaking about ending poverty, creating universal healthcare, and they want to shut me up. That's what this is about. It's a silly, frivolous distraction from the real issues of this campaign, and it won't work."
         }
     },
     {
@@ -799,7 +799,7 @@ campaignTrail_temp.answers_json = [
         "pk": 100,
         "fields": {
             "question": 25,
-            "description": "Who on god’s green earth is leaking this shit? David, interrogate every last one of them. Don’t let a staffer leave without asking who leaked my fucking haircut. \n"
+            "description": "Who on god’s green earth is leaking this shit? David, interrogate every last one of them. Don’t let a staffer leave without asking who leaked the cost of my fucking haircut. \n"
         }
     },
     {
@@ -807,7 +807,7 @@ campaignTrail_temp.answers_json = [
         "pk": 117,
         "fields": {
             "question": 30,
-            "description": "I mean, this is tabloid trash. We should have a campaign surrogate issue a denial of this story immediately, but I’m not going to mention it personally.\n"
+            "description": "I mean, this is tabloid trash. We'll have a campaign surrogate issue a denial of this story immediately, but I’m not going to mention it personally. The less said about this bullshit the better."
         }
     },
     {
@@ -815,7 +815,7 @@ campaignTrail_temp.answers_json = [
         "pk": 118,
         "fields": {
             "question": 30,
-            "description": "They’re gonna accuse me of this while my wife is battling cancer? This is absurd. I’m going to make a statement denying this story. Politics is serious business and we need to confront spurious bullshit like this head on.\n"
+            "description": "They’re gonna accuse me of this while my wife is battling cancer? This is absurd. I’m going to make a statement denying this story. Politics is serious business and we need to confront lies like this head on.\n"
         }
     },
     {
@@ -823,7 +823,7 @@ campaignTrail_temp.answers_json = [
         "pk": 119,
         "fields": {
             "question": 30,
-            "description": "This garbage isn’t worth the paper it’s printed on. We’re not going to address it directly, and in the future we shouldn’t be shy about including my wife on the campaign trail.\n"
+            "description": "It wasn't enough to take aim at my job, at my integrity? Now they're coming for my family? This is foolish. We're not touching it. And in the future, let's not be shy about including Elizabeth on the campaign trail."
         }
     },
     {
@@ -831,7 +831,7 @@ campaignTrail_temp.answers_json = [
         "pk": 120,
         "fields": {
             "question": 30,
-            "description": "Come on, let’s not be naive here. They planted this story because I’m the only candidate who poses a threat to big money interests. They want to silence me, but it’s not going to work.\n"
+            "description": "Come on, let’s not be naive here. I'm the only Democrat in this primary that poses a real threat to the special interests in Washington. They know that, and so they're trying to flood my campaign with phony scandals. I've got news for them: I will never be silenced!"
         }
     },
     {
@@ -903,7 +903,7 @@ campaignTrail_temp.answers_json = [
         "pk": 166,
         "fields": {
             "question": 42,
-            "description": "The best thing we should do is highlight what I’ve been doing since leaving the Senate. We’ll announce at the Center for Work and Poverty in Chapel Hill, and run our campaign on the theme of fighting poverty.\n"
+            "description": "Ending poverty in America is the great cause of my life. We’ll highlight that by announcing at the Center for Work and Poverty in Chapel Hill, where I've devoted my career after the senate."
         }
     },
     {
@@ -911,7 +911,7 @@ campaignTrail_temp.answers_json = [
         "pk": 167,
         "fields": {
             "question": 42,
-            "description": "I want to announce in front of the UNC Medical Center. This is the hospital where my children were born. The hospital where I said my last goodbye to Wade. Where Elizabeth has her treatments. And it’s where we’re going to highlight Healthcare as the issue of my campaign.\n"
+            "description": "I want to announce in front of the UNC Medical Center. This is the hospital where my children were born. The hospital where I said my last goodbye to Wade. Where Elizabeth has her treatments. And it’s where we’re going to highlight Universal Healthcare as the central issue of my campaign.\n"
         }
     },
     {
@@ -919,7 +919,7 @@ campaignTrail_temp.answers_json = [
         "pk": 168,
         "fields": {
             "question": 42,
-            "description": "Let’s go back to Seneca South Carolina, where I was born. I want to highlight my humble beginnings, and orient this campaign towards fighting for working people.\n"
+            "description": "Let’s go back to my birthplace: Seneca South Carolina. What we're going to highlight here is my life story: I was born the poor son of a mill worker. In this great country, every child deserves a chance at success.\n"
         }
     },
     {
@@ -967,7 +967,7 @@ campaignTrail_temp.answers_json = [
         "pk": 180,
         "fields": {
             "question": 46,
-            "description": "I need to go on the attack here. Senator Clinton has her fingerprints on everything beating down this country’s working people, from NAFTA to Welfare Reform. How she can lead a party that’s supposed to stick up for the poor is beyond me.\n"
+            "description": "I need to go on the attack here. Senator Clinton has her fingerprints on everything beating down this country’s working people, from NAFTA to Welfare Reform. How she can lead a party that’s supposed to stick up for the poor is beyond me."
         }
     },
     {
@@ -1036,14 +1036,6 @@ campaignTrail_temp.answers_json = [
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 229,
-        "fields": {
-            "question": 62,
-            "description": "We won South Carolina in 2004, and we’ll do it again. We need to seriously make inroads with the black community there if we’re going to compete against Obama. Let’s see if Clyburn wants to make an endorsement.\n"
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
         "pk": 230,
         "fields": {
             "question": 62,
@@ -1103,7 +1095,7 @@ campaignTrail_temp.answers_json = [
         "pk": 331,
         "fields": {
             "question": 93,
-            "description": "Cheney will talk about Iraq now as a beacon of democracy, but the truth is that it’s controlled by warlords and now produces a third of the world’s supply of opium. Iraq and America would be safer under a Kerry administration than a Cheney administration.\n"
+            "description": "Cheney is lying to the American people about Iraq. Democracy is not around the corner, and the WMDs did not exist. Iraq is now controlled by warlords and produces a third of the world’s supply of opium. Nothing about Cheney and Bush's intervention has made those people freer or better off."
         }
     },
     {
@@ -1111,7 +1103,7 @@ campaignTrail_temp.answers_json = [
         "pk": 332,
         "fields": {
             "question": 93,
-            "description": "While Dick Cheney was the CEO of Halliburton it engaged in fraud and deception beyond even other oil companies, and it now stands to directly profit off the Iraq war. It’s the ultimate example of the kind of corruption that big corporations have been allowed to engage in under this administration.\n"
+            "description": "I'm staying on Halliburton. Cheney made north of $30 million in severance in 2000, he's still collecting checks from the company, and now that he's Vice President it's getting exclusive government contracts in Iraq. And the American people are supposed to believe that's just a coincidence?"
         }
     },
     {
@@ -1119,7 +1111,7 @@ campaignTrail_temp.answers_json = [
         "pk": 333,
         "fields": {
             "question": 93,
-            "description": "Cheney and Bush squandered Clinton’s surplus on a massive tax cut for the rich, and now they’re cutting programs that everyday Americans benefit from. Programs like the VA, farm supports, and medicaid. That’s bad for working people and it’s bad for the future of this country.\n"
+            "description": "Cheney and Bush entered office with a historic surplus and squandered it within a year on handouts to the wealthy and foreign wars. Now that their math didn't add up, they're gutting programs that the most vulnerable people in this country rely on: Medicaid, farm supports, the VA. Cheney stands for a government that lines his pocket by picking yours."
         }
     },
     {
@@ -1159,7 +1151,7 @@ campaignTrail_temp.answers_json = [
         "pk": 395,
         "fields": {
             "question": 114,
-            "description": "I was impressed by what Howard Dean achieved in 2004 with small-dollar internet donations. We’re trying to run as a man of the people, right? Why not let the people fund this campaign themselves?\n"
+            "description": "I brought on Trippi because I was so impressed with what Howard Dean achieved in 2004. Small-dollar internet donations are the future of political campaigns. We’re running as a man of the people, and the people will fund this campaign, not special interests."
         }
     },
     {
@@ -1183,7 +1175,7 @@ campaignTrail_temp.answers_json = [
         "pk": 398,
         "fields": {
             "question": 114,
-            "description": "After everything I’ve said about big money interests, It’d look phony to turn around and take corporate money. But the big unions have always loved me, and they’ve got money to spare. Let’s see if we can’t set something up with the UAW.\n"
+            "description": "After everything I’ve said about special interests, It’d look phony to turn around and take corporate money. But the big unions have always loved me, and they’ve got money to spare. Let’s see if we can’t set something up with the UAW.\n"
         }
     },
     {
@@ -1191,7 +1183,7 @@ campaignTrail_temp.answers_json = [
         "pk": 726,
         "fields": {
             "question": 130,
-            "description": "Vice President Cheney voted against Martin Luther King Jr. day. He voted against Head Start. He voted against demanding Nelson Mandela’s release from prison. The idea that he’s criticizing my record is outrageous.\n"
+            "description": "Vice President Cheney voted against Martin Luther King Jr. day. He voted against Head Start. He voted against demanding Nelson Mandela’s release from prison. I could go on, but the idea that he’s criticizing my record is outrageous given his record.\n"
         }
     },
     {
@@ -1199,7 +1191,7 @@ campaignTrail_temp.answers_json = [
         "pk": 727,
         "fields": {
             "question": 130,
-            "description": "That’s false, Mr. Cheney. We’ve met before several times, and I’ve been very involved in my activities in the Judiciary committee and the Intelligence committee. Anyone can see that.\n"
+            "description": "Mr. Cheney, How can you sit here and lie to the American people like that? We’ve met before, several times. And I take my senatorial duties very seriously. I've cosponsored over 200 bills, including the Patients' Bill of Rights with Senator McCain. If you can point to any accomplishment like that in your congressional record, I'm all ears."
         }
     },
     {
@@ -1207,7 +1199,7 @@ campaignTrail_temp.answers_json = [
         "pk": 728,
         "fields": {
             "question": 130,
-            "description": "In just my junior term I've cosponsored over 200 bills in the senate. I cosponsored consumer protection laws and the Patients’ Bill of Rights with Senator McCain. I’m proud of my record, and I’d hold it up against anyone else’s.\n"
+            "description": "It is one of the greatest harms to our Democracy that incumbent Senators are forced to spend as much or more time dialling the phone fundraising than sitting in committee. I've been outspoken about the need to remove the influence that special interests and donors have on our system. Cheney and the Republicans stand in the way of that change. "
         }
     },
     {
@@ -1256,14 +1248,6 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 1249,
             "description": "I don't wanna get bogged down in personal attacks. After eight long years of Cheney and Bush, Democrats want to back a sure thing in this primary. If I’m gonna win this, I need to convince them that I’m the candidate Republicans would least like to face. I need to act presidential.\n"
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 1268,
-        "fields": {
-            "question": 62,
-            "description": "Nevada is a state we can win, but only if we play it smart. Harry Reid could become the most powerful man in congress with a Democratic president. Let’s see if we can’t convince him that I’m the man to pull that off. "
         }
     },
     {
@@ -2464,6 +2448,22 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 2022,
             "description": "What we're seeing here is the beginnings of the worst financial crisis since the great depression. And like the great depression, it was preventable. It was caused by deregulation, cronyism, and fraud. Let's be clear: those same politicians that caused this crisis cannot be counted on to solve it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 2035,
+        "fields": {
+            "question": 62,
+            "description": "Nevada is a state we can win, but only if we play it smart. Harry Reid could become the most powerful man in congress with a democratic president. Let’s see if we can’t convince him that I’m the man to pull that off. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 2036,
+        "fields": {
+            "question": 62,
+            "description": "We won South Carolina in 2004, and we’ll do it again. We need to seriously make inroads with the black community there if we’re going to compete against Obama. Let’s see if Clyburn wants to make an endorsement."
         }
     }
 ]
@@ -8053,7 +8053,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 726,
             "candidate": 16,
             "affected_candidate": 16,
-            "global_multiplier": -0.008
+            "global_multiplier": -0.01
         }
     },
     {
@@ -8063,7 +8063,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 727,
             "candidate": 16,
             "affected_candidate": 16,
-            "global_multiplier": -0.003
+            "global_multiplier": -0.007
         }
     },
     {
@@ -8073,7 +8073,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 728,
             "candidate": 16,
             "affected_candidate": 16,
-            "global_multiplier": 0.007
+            "global_multiplier": -0.003
         }
     },
     {
@@ -11676,7 +11676,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 25,
             "candidate": 16,
-            "answer_feedback": "America’s hearts go out to you and Elizabeth. You’ll get through this, John. I know you will.\n"
+            "answer_feedback": "America's hearts are with you. This won't be the end for you, John. You'll make sure of that."
         }
     },
     {
@@ -11694,7 +11694,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 85,
             "candidate": 16,
-            "answer_feedback": "This is basically what Hillary is saying about her vote, and while it’s not exactly a bad answer, it does allow Senator Obama to outshine the both of you on this issue.\n"
+            "answer_feedback": "This is basically what Hillary is saying about her vote, and while it’s not exactly a bad answer, it does allow Senator Obama to outshine the both of you on this issue. \n"
         }
     },
     {
@@ -11703,7 +11703,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 86,
             "candidate": 16,
-            "answer_feedback": "Voting for the war is going to hurt you no matter what, but a straightforward statement of regret with no excuses does surprisingly well to smooth things over with the anti-war wing of the party -- and put the heat on Senator Clinton for giving more of a waffling answer.\n"
+            "answer_feedback": "Voting for the war is going to hurt you no matter what, but a straightforward statement of regret with no excuses is what you need to smooth things over with the anti-war wing of the party. It also puts the heat on Hillary for giving more of a waffling answer.\n"
         }
     },
     {
@@ -11712,7 +11712,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 87,
             "candidate": 16,
-            "answer_feedback": "Pivoting the conversation to foreign policy experience is a surefire way to get outshined by Clinton, Richardson and even Biden. \n"
+            "answer_feedback": "Pivoting the conversation to foreign policy experience is a surefire way to get outshined by Clinton, Richardson and even Biden. "
         }
     },
     {
@@ -11730,7 +11730,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 97,
             "candidate": 16,
-            "answer_feedback": "David finds out about some paid speeches Clinton made to Goldman Sachs, some on the order of $25,000. She hits back about your activities at the foundation, and as you both drag the race into the gutter, voters become drawn to the squeaky clean outsider talking about hope and change.\n"
+            "answer_feedback": "David finds out about some paid speeches Clinton made to Goldman Sachs, some on the order of $25,000. She hits back about your activities at Fortress, and as you both drag the race into the gutter, voters become drawn to the squeaky clean outsider talking about hope and change.\n"
         }
     },
     {
@@ -11739,7 +11739,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 98,
             "candidate": 16,
-            "answer_feedback": "You’re sidestepping the real issue here: it’s damaging to be seen spending so much money on a haircut while running on the theme of poverty. Perhaps moving quickly past this story is for the best. \n"
+            "answer_feedback": "It's clear you want to avoid talking about this, but you haven't actually gotten to the heart of the matter. You're running to abolish poverty in America, and you've been caught spending a family of four's monthly food budget on a single haircut."
         }
     },
     {
@@ -11748,7 +11748,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 99,
             "candidate": 16,
-            "answer_feedback": "Some on your staff feel you’ve gone a bit overboard here, but at least this apology gets to the heart of the matter. \n"
+            "answer_feedback": "You're probably right, and your diehard supporters are with you on this, but you've gone a little... overboard here.\n"
         }
     },
     {
@@ -11775,7 +11775,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 165,
             "candidate": 16,
-            "answer_feedback": "Poverty is an evergreen campaign theme which harkens back to the pre-Clintonite Democratic party. In order to win, you’ll have to tie this theme to the failures of Bush’s America, and this backdrop speaks a thousand words on that front. \n"
+            "answer_feedback": "Poverty is an evergreen campaign theme which harkens back to the pre-Clintonite Democratic party, but it's the backdrop that gives this announcement its bite. Bush's America is a boarded-up, waterlogged shotgun shack and you're a life raft.\n"
         }
     },
     {
@@ -11793,7 +11793,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 330,
             "candidate": 16,
-            "answer_feedback": "Trying to drive a wedge between the VP and the President on the gay issue is just too clever by half. The average Bush voter doesn’t care, and the average Democrat is confused. Cheney “thanks” you for your “kind words” about his family. You can tell he wants to rip your spine out.\n"
+            "answer_feedback": "This is just too clever by half. The average Bush voter doesn’t care, the average Democrat is confused, and Cheney is deeply pissed off. He “thanks” you for your “kind words” about his family. You can tell he wants to rip your spine out.\n"
         }
     },
     {
@@ -11802,7 +11802,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 331,
             "candidate": 16,
-            "answer_feedback": "Cheney retorts with the line he’s been sitting on all night: “You and John Kerry are simply not credible on this issue. You voted for the resolution to intervene in Iraq, and now you criticize it. You can’t have it both ways.” You start to talk about the WMD reports. You want to rip his spine out.\n"
+            "answer_feedback": "Cheney retorts with the line he’s been sitting on all night: “You and John Kerry are simply not credible on this issue. You voted for the resolution to intervene in Iraq, and now you criticize it. You can’t have it both ways.” He's right, and it makes you sick."
         }
     },
     {
@@ -11811,7 +11811,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 332,
             "candidate": 16,
-            "answer_feedback": "Turning these foreign policy questions into another way to talk about corporate greed is a good way to reinforce your central appeal as a populist. Cheney is a composed debater, but he seems genuinely rattled by this line of attack - a win for you.\n"
+            "answer_feedback": "Turning foreign policy questions into questions about big business and corruption is your best bet at neutralizing Cheney's biggest strength. He'd really rather not talk about Halliburton on TV, so he rapidly changes the subject. He seems genuinely rattled - a win for you. "
         }
     },
     {
@@ -11820,7 +11820,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 333,
             "candidate": 16,
-            "answer_feedback": "Working class Americans largely agree with the point you’re making, but domestic policy is clearly second fiddle in this election. Cheney starts talking about the dignity of work or something. You have to work to keep from rolling your eyes.\n"
+            "answer_feedback": "This fiery defense of the social safety net is inspiring to the working class people tuning into this debate; all twelve of them. Unfortunately, domestic policy is clearly second fiddle in this election. Cheney's answer, about the dignity of work or some other nonsense, is so banal you can feel TVs shutting off in the distance."
         }
     },
     {
@@ -11829,7 +11829,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 726,
             "candidate": 16,
-            "answer_feedback": "Most Democrats find these votes repugnant, but the damage to your image is already done. You feel so damn claustrophobic at this table.\n"
+            "answer_feedback": "On the one hand, these votes are pretty appalling. But you've missed a chance to defend your own record and turn the situation to your advantage."
         }
     },
     {
@@ -11847,7 +11847,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 728,
             "candidate": 16,
-            "answer_feedback": "You’ve defended your record and softened the blow. Tomorrow the Kerry campaign will circulate a list of legislation with your name on it to further nullify the damage from Cheney’s attack.\n"
+            "answer_feedback": "On the one hand, this is a bit of an awkward pivot. On the other hand, Americans mostly agree with the point that congress isn't exactly working for them."
         }
     },
     {
@@ -11937,7 +11937,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 118,
             "candidate": 16,
-            "answer_feedback": "On the plus side, the vast majority of democrats believe your denial. The downside is that you’ve drawn more attention to the story this way. \n"
+            "answer_feedback": "You've issued a strong denial, and you've \n"
         }
     },
     {
@@ -11946,7 +11946,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 119,
             "candidate": 16,
-            "answer_feedback": "Not addressing the story allows it to fester in the depths of right wing websites like Breitbart, but the vast majority of Democrats don’t believe it anyway. It helps that your wife is a figure of national sympathy, and a damn good campaigner.\n"
+            "answer_feedback": "Not addressing the story allows it to fester in the depths of right wing websites like Breitbart, but the vast majority of voters don’t believe it anyway. It helps that your wife is a figure of national sympathy, and a damn good campaigner in her own right.\n"
         }
     },
     {
@@ -11955,7 +11955,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 120,
             "candidate": 16,
-            "answer_feedback": "Using this story to pivot towards your populist agenda is interesting, if a bit strange. Most democrats don’t buy this story, even if they don’t necessarily buy your spin on it either. \n"
+            "answer_feedback": "This is the right call: most Americans are ready to believe you, and you've just given them a clear reason to. Stay the course John, this probably won't be the last time they try to pry at your campaign."
         }
     },
     {
@@ -12095,29 +12095,11 @@ campaignTrail_temp.answer_feedback_json = [
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 1266,
-        "fields": {
-            "answer": 229,
-            "candidate": 16,
-            "answer_feedback": "Clyburn is officially staying out of the primary, and unofficially committed to seeing America elect its first Black President. Besides, Obama’s numbers with the Black community are sky-high.\n"
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
         "pk": 1267,
         "fields": {
             "answer": 230,
             "candidate": 16,
             "answer_feedback": "The people love Elizabeth, and they love seeing you two campaign as husband and wife. The south is in very heavy competition this year, with Obama campaigning for the state’s black vote and you and Hillary campaigning for its white voters. Will you be victorious?\n"
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 1270,
-        "fields": {
-            "answer": 1268,
-            "candidate": 16,
-            "answer_feedback": "Nice try, but Reid is determined to withhold his endorsement for the sake of party unity. Your consolation prize is the endorsement of several no-name Nevada Representatives, but that’s cold comfort.\n"
         }
     },
     {
@@ -13676,6 +13658,24 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 16,
             "answer_feedback": "Being escorted into the White House by a senator less experienced than herself would be a hit to Hillary’s pride. But she knows that her path forward is contentious. Would a deal with you be better than blowing up the party at a contested convention?"
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 2037,
+        "fields": {
+            "answer": 2036,
+            "candidate": 16,
+            "answer_feedback": "Clyburn is officially staying out of the primary, and unofficially committed to seeing America elect its first Black President. Besides, Obama’s numbers with the Black community are sky-high."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 2038,
+        "fields": {
+            "answer": 2035,
+            "candidate": 16,
+            "answer_feedback": "Nice try, but Reid is determined to withhold his endorsement for the sake of party unity. Your consolation prize is the endorsement of several no-name Nevada Representatives, but that’s cold comfort.\n"
+        }
     }
 ]
 
@@ -13693,6 +13693,10 @@ campaignTrail_temp.jet_data = [{
     "cyoa_variables": {}
 }
 ]
+
+
+
+
 
 campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/fLF9kF5r/johnedwards2008.jpg';
 campaignTrail_temp.candidate_last_name = 'Edwards';
