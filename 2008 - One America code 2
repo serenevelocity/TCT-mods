@@ -103,7 +103,7 @@ campaignTrail_temp.questions_json = [
         "pk": 46,
         "fields": {
             "priority": 2,
-            "description": "The field has narrowed to the three frontrunners and the few hangers-on. It’s you, Clinton, and Obama onstage, and primary voters are watching. Tonight you need to convince America that they’re looking at their next president. What will be your strategy in this debate?",
+            "description": "Winning Iowa did for Obama what you were hoping it would do for you: it lent his campaign legitimacy against Clinton, and proved his appeal extended beyond his own region of the country. Hillary, after a day spent blubbering in a Portsmouth diner, notched an easy win in New Hampshire. You need a win before Super Tuesday or you're dead in the water. What state will you target?",
             "likelihood": 1
         }
     },
@@ -112,7 +112,7 @@ campaignTrail_temp.questions_json = [
         "pk": 62,
         "fields": {
             "priority": 2,
-            "description": "These next two primaries, Nevada and South Carolina, will be more challenging than Iowa. These states are the domain of powerful players in the Democratic party, as well as important racial minorities that will be key parts of any Democratic victory in the general election. You’re facing fierce competition now that the race has narrowed, but you’ve still got cards to play. Where, and how, will you focus your campaigning in the coming days?",
+            "description": "Monday, Jan 21, 2008. Martin Luther King Day. This candidates' debate is hosted in Myrtle Beach, SC, and hosted by the Congressional Black Caucus Institute. It doesn't take long for Obama and Clinton to get into a particularly heated back and forth. She attacks his comments about Reagan. He attacks her time as a corporate lawyer on the board of Walmart. She attacks his slum landlord friend Tony Rezko in Chicago. On and on. And the longer they talk, the more people forget you're up there. The moderators, knowing you haven't spoken for about five minutes now, interrupt the back and forth and give you an opportunity to speak. Think fast.",
             "likelihood": 1
         }
     },
@@ -121,7 +121,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1285,
         "fields": {
             "priority": 2,
-            "description": "The votes are in, and I'm sorry to say neither state went our way. Obama was victorious both in Nevada and South Carolina, launching him into frontrunner status. I'm sorry, John. You should probably get out there and say something to ‘em.",
+            "description": "After Bruce Raynor's endorsement of Senator Obama in Nevada, he took home the state. What's more, he took home South Carolina, due to sky-high numbers among the state's black population. Clinton's campaign probably won't recover from these two losses, but yours definitely won't. Better save some face now while you can. ",
             "likelihood": 1
         }
     },
@@ -463,7 +463,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1249,
         "fields": {
             "priority": 2,
-            "description": "The field has narrowed to the three frontrunners and the few hangers-on. It’s you, Clinton, and Obama onstage, and primary voters are watching. Tonight you need to convince America that they’re looking at their next president. What will be your strategy in this debate?\n",
+            "description": "Winning Iowa has electrified your campaign and proved you're no fluke. However, it has also lit a fire under the asses of your rivals. Hillary spent a day blubbering in a Portsmouth diner, and won New Hampshire easily. Obama, having lost both of the first states, is starting to swap his Hope and Change rhetoric for some much more cutting words about Clinton and yourself. It's a three way race, and you need to seize the momentum and pull ahead before this party tears itself apart. What's the next stop on the Main Street Express?",
             "likelihood": 1
         }
     },
@@ -677,6 +677,13 @@ campaignTrail_temp.questions_json = [
         "pk": 2022,
         "fields": {
             "description": "The subprime mortgage debacle, which started last year, has reached a breaking point. Lehman Brothers has declared bankruptcy, resulting in a 4.5% drop in the stock market -- the largest single day drop since 9/11. Ben Bernanke is in full crisis mode, and has called meetings with Pelosi, Reid, and President Bush. The American economy is in a state of complete and total freefall.\n"
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 2039,
+        "fields": {
+            "description": "Organized labor in America has been in a state of persistent decline since the 70s, but the Culinary Workers' Union of Las Vegas is a winner among losers. Its membership is growing, not shrinking. It's winning serious concessions from some of the most predatory corporations in the country. And it's become a power player in state politics. Bruce Raynor, leader of the CWU, has agreed to meet with you to discuss an endorsement of your campaign. It's clear that you're not the only candidate trying to win his endorsement, so give him your best shot."
         }
     }
 ]
@@ -956,26 +963,10 @@ campaignTrail_temp.answers_json = [
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 179,
-        "fields": {
-            "question": 46,
-            "description": "I need to go on the attack here. Senator Obama is talking a big game about change and compromise, but offering very little specifics. We need a president who will stand up and fight, and be honest about what they’re proposing.\n"
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 180,
-        "fields": {
-            "question": 46,
-            "description": "I need to go on the attack here. Senator Clinton has her fingerprints on everything beating down this country’s working people, from NAFTA to Welfare Reform. How she can lead a party that’s supposed to stick up for the poor is beyond me."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
         "pk": 181,
         "fields": {
             "question": 46,
-            "description": "I don’t wanna get bogged down in personal attacks. Ultimately, I want to focus on corruption and the way wealthy interests work the system. With respect to my opponents, I’m the only candidate on stage that’s able to really fight against those interests, because I’ve walked the walk.\n"
+            "description": "This may be a bit unexpected, but we're going to focus heavily on Nevada. That state, more than any other, represents the Two Americas living side by side: the wealth of Vegas and the working people who don't have their piece of it."
         }
     },
     {
@@ -983,7 +974,7 @@ campaignTrail_temp.answers_json = [
         "pk": 182,
         "fields": {
             "question": 46,
-            "description": "I don't wanna get bogged down in personal attacks. After eight long years of Cheney and Bush, Democrats want to back a sure thing in this primary. If I’m gonna win this, I need to convince them that I’m the candidate Republicans would least like to face. I need to act presidential.\n"
+            "description": "We're going all in on South Carolina. I won that state in 2004 and I'm going to win it again. It'll send a powerful message: I can appeal to the south in a way that Obama and Clinton can't."
         }
     },
     {
@@ -1032,14 +1023,6 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 59,
             "description": "The Keating Five were all Democrats besides McCain. Let’s not poke the bear.\n"
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 230,
-        "fields": {
-            "question": 62,
-            "description": "We won South Carolina in 2004, and we’ll do it again. If we can steal women voters from Hillary, we can contend. I’ll campaign with Liz and talk about the issues facing the women of the state.\n"
         }
     },
     {
@@ -1220,26 +1203,10 @@ campaignTrail_temp.answers_json = [
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 1250,
-        "fields": {
-            "question": 1249,
-            "description": "I need to go on the attack here. Senator Obama is talking a big game about change and compromise, but offering very little specifics. We need a president who will stand up and fight, and be honest about what they’re proposing.\n"
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 1253,
-        "fields": {
-            "question": 1249,
-            "description": "I need to go on the attack here. Senator Clinton has her fingerprints on everything beating down this country’s working people, from NAFTA to Welfare Reform. How she can lead a party that’s supposed to stick up for the poor is beyond me.\n"
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
         "pk": 1257,
         "fields": {
             "question": 1249,
-            "description": "I don’t wanna get bogged down in personal attacks. Ultimately, I want to focus on corruption and the way wealthy interests work the system. With respect to my opponents, I’m the only candidate on stage that’s able to really fight against those interests, because I’ve walked the walk.\n"
+            "description": "This may be a bit unexpected, but we're going to focus heavily on Nevada. Everyone knows I can win Southern states. We need to prove that I can win elsewhere on the map. "
         }
     },
     {
@@ -1247,7 +1214,7 @@ campaignTrail_temp.answers_json = [
         "pk": 1261,
         "fields": {
             "question": 1249,
-            "description": "I don't wanna get bogged down in personal attacks. After eight long years of Cheney and Bush, Democrats want to back a sure thing in this primary. If I’m gonna win this, I need to convince them that I’m the candidate Republicans would least like to face. I need to act presidential.\n"
+            "description": "South Carolina is my birthplace. It's next door to the state I represented in Congress. And it was my strongest showing in 2004. We'd be fools not to barnstorm the hell out of it."
         }
     },
     {
@@ -1255,7 +1222,7 @@ campaignTrail_temp.answers_json = [
         "pk": 1269,
         "fields": {
             "question": 62,
-            "description": "Nevada is a state we can win, but only if we play it smart. We’re going to campaign as the candidate who will fight for the state's unions, and we're going to seriously court the endorsement of Bruce Raynor, president of the CWU. If we win the rank and file, we win the state."
+            "description": "I respect both of my opponents on this stage, but this campaign is not going to be about personal issues between the three of us. It's not going to be about Walmart and Rezko. It has to be about how we're going to revive this country. Now, onto the question of fiscal responsibility, which I think was what you asked about all that time ago..."
         }
     },
     {
@@ -2455,7 +2422,7 @@ campaignTrail_temp.answers_json = [
         "pk": 2035,
         "fields": {
             "question": 62,
-            "description": "Nevada is a state we can win, but only if we play it smart. Harry Reid could become the most powerful man in congress with a democratic president. Let’s see if we can’t convince him that I’m the man to pull that off. "
+            "description": "What I want to say, first of all, is aren't there three people in this debate? Not two? And second of all, on behalf of the voters of South Carolina, how many children are going to get an education as a result of this squabbling? How many people are going to get healthcare because of all this? How many people are going to get into college?"
         }
     },
     {
@@ -2463,7 +2430,31 @@ campaignTrail_temp.answers_json = [
         "pk": 2036,
         "fields": {
             "question": 62,
-            "description": "We won South Carolina in 2004, and we’ll do it again. We need to seriously make inroads with the black community there if we’re going to compete against Obama. Let’s see if Clyburn wants to make an endorsement."
+            "description": "One year ago I was speaking to a single mother of three children. She worked full time. But still she couldn't pay both the heating bill and the rent. So she'd bundle the kids up in winter coats at night. And in the morning when she dropped them off for school, she'd tell them \"for goodness sakes don't tell anyone what's happening here. Because they'll come and take you away from me.\" This squabbling between you two, how is it going to help that woman? What's she supposed to think watching this?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 2040,
+        "fields": {
+            "question": 2039,
+            "description": "Obama and Hillary have probably met with Bruce already and talked about the EFCA and a Gephardt appointment. But our campaign is the only one who has spoken out against NAFTA and Peru, and promised to pause all new trade deals. I'm going to seriously emphasize that."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 2041,
+        "fields": {
+            "question": 2039,
+            "description": "The most fundamental right for working people is the right to strike. Our campaign has committed to ordering the Department of Labor to make it illegal for companies to replace striking workers. Can Clinton and Obama say the same?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 2042,
+        "fields": {
+            "question": 2039,
+            "description": "Our campaign has committed to protecting overtime, extending minimum wage benefits to tipped workers, and ending the 'independent contractor' scam. Those are policies that will help  give the CWU a stronger foundation to bargain."
         }
     }
 ]
@@ -7928,26 +7919,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 104,
-        "fields": {
-            "answer": 179,
-            "candidate": 16,
-            "affected_candidate": 16,
-            "global_multiplier": -0.01
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 106,
-        "fields": {
-            "answer": 180,
-            "candidate": 16,
-            "affected_candidate": 16,
-            "global_multiplier": 0.005
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 137,
         "fields": {
             "answer": 214,
@@ -8228,36 +8199,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 1245,
-        "fields": {
-            "answer": 182,
-            "candidate": 16,
-            "affected_candidate": 16,
-            "global_multiplier": -0.01
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 1252,
-        "fields": {
-            "answer": 1250,
-            "candidate": 16,
-            "affected_candidate": 16,
-            "global_multiplier": -0.01
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 1255,
-        "fields": {
-            "answer": 1253,
-            "candidate": 16,
-            "affected_candidate": 16,
-            "global_multiplier": 0.005
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 1263,
         "fields": {
             "answer": 1261,
@@ -8273,7 +8214,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 1257,
             "candidate": 16,
             "affected_candidate": 16,
-            "global_multiplier": -0.007
+            "global_multiplier": 0.007
         }
     },
     {
@@ -9891,16 +9832,6 @@ campaignTrail_temp.answer_score_issue_json = [
     },
     {
         "model": "campaign_trail.answer_score_issue",
-        "pk": 169,
-        "fields": {
-            "answer": 180,
-            "issue": 1,
-            "issue_score": 0.3,
-            "issue_importance": 4
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
         "pk": 275,
         "fields": {
             "answer": 344,
@@ -10067,36 +9998,6 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 5,
             "issue_score": 0.3,
             "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 1247,
-        "fields": {
-            "answer": 181,
-            "issue": 5,
-            "issue_score": -0.5,
-            "issue_importance": 5
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 1248,
-        "fields": {
-            "answer": 181,
-            "issue": 1,
-            "issue_score": 0.3,
-            "issue_importance": 4
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 1256,
-        "fields": {
-            "answer": 1253,
-            "issue": 1,
-            "issue_score": 0.3,
-            "issue_importance": 4
         }
     },
     {
@@ -12023,29 +11924,11 @@ campaignTrail_temp.answer_feedback_json = [
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 1242,
-        "fields": {
-            "answer": 179,
-            "candidate": 16,
-            "answer_feedback": "Obama is the target of the night, with Clinton hounding him for his inexperience and you for indecisiveness. This picture, of two slick politicians attacking a young Black upstart, feeds into Obama’s campaign narrative more than it hurts him."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 1243,
-        "fields": {
-            "answer": 180,
-            "candidate": 16,
-            "answer_feedback": "On the one hand, Clinton's centrism is a valid target, and your attacks on the stances she's taken . On the other hand, she's more than willing to hit back on your own voting record, claiming that your populist turn was opportunistic and ingenuine. The side effect of this spar is that it allows Obama to rise above the fray, and criticize the both of you for modeling the type of political dysfunction he's been talking about so far in this primary. He's seen as the winner of the night."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
         "pk": 1244,
         "fields": {
             "answer": 182,
             "candidate": 16,
-            "answer_feedback": "This just isn’t your strong suit. You can’t compete with Obama’s poise up there, and Hillary Clinton is essentially a president in waiting. In your efforts to stay above the fray, you failed to make an impression."
+            "answer_feedback": "This was the expected move. However, in 2004 you were facing a Yankee and a Masshole. This time, you're facing the most credible African American presidential nominee, and the wife of the last bonafide Southern Democrat president America ever had. It will not be the cakewalk it was last time. But you knew that already... right?"
         }
     },
     {
@@ -12054,25 +11937,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 181,
             "candidate": 16,
-            "answer_feedback": "It’s a fine line you’re walking: criticizing both candidates indirectly enough that it doesn’t feel like an attack, and painting yourself as a true fighter for the working people of America. Ultimately though, it’s true that on the issues, you’re a lot closer to the average Democratic voter than they are. This performance reminds people of that."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 1251,
-        "fields": {
-            "answer": 1250,
-            "candidate": 16,
-            "answer_feedback": "Obama is the target of the night, with Clinton hounding him for his inexperience and you for indecisiveness. This picture, of two slick politicians attacking a young Black upstart, feeds into Obama’s campaign narrative more than it hurts him."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 1254,
-        "fields": {
-            "answer": 1253,
-            "candidate": 16,
-            "answer_feedback": "On the one hand, Clinton's centrism is a valid target, and your attacks on the stances she's taken . On the other hand, she's more than willing to hit back on your own voting record, claiming that your populist turn was opportunistic and ingenuine. The side effect of this spar is that it allows Obama to rise above the fray, and criticize the both of you for modeling the type of political dysfunction he's been talking about so far in this primary. He's seen as the winner of the night."
+            "answer_feedback": "This comes as a bit of a shock to your campaign staff, who were planning to capitalize on your appeal in the South and to ignore a state where you finished behind Howard Dean. However, after beefing up your HQ and outlining your strategy, this pivot starts to make a little more sense. Plan A didn't work, time for... whatever comes after Plan A."
         }
     },
     {
@@ -12081,7 +11946,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 1257,
             "candidate": 16,
-            "answer_feedback": "It’s a fine line you’re walking: criticising both candidates indirectly enough that it doesn’t feel like an attack. Clinton and Obama, however, are willing to go negative on this, citing moments where you’ve been inconsistent in your convictions. Ultimately, the debate tonight is seen as a draw."
+            "answer_feedback": "This comes as a bit of a shock to your campaign staff, who were planning to capitalize on your appeal in the South and to ignore a state where you finished behind Howard Dean. However, the logic makes a strange kind of sense: while Obama and Hillary are fighting over one state, you sweep another from under their noses. At least that's the theory."
         }
     },
     {
@@ -12090,16 +11955,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 1261,
             "candidate": 16,
-            "answer_feedback": "This is something of a pivot for you, but perhaps it was necessary at this stage. Clinton feels like the underdog in this debate, and criticizes both you and Obama relentlessly, but neither of you fall into the trap of hitting back as hard. The debate is seen as something of a draw between you and Obama.\n"
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 1267,
-        "fields": {
-            "answer": 230,
-            "candidate": 16,
-            "answer_feedback": "The people love Elizabeth, and they love seeing you two campaign as husband and wife. The south is in very heavy competition this year, with Obama campaigning for the state’s black vote and you and Hillary campaigning for its white voters. Will you be victorious?\n"
+            "answer_feedback": "This was the expected move. You're a son of the south and you speak the language like nobody else. However, in 2004 you were facing a Yankee and a Masshole. This time around, your competition is a hell of a lot tougher. But then again, so are you."
         }
     },
     {
@@ -12108,7 +11964,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 1269,
             "candidate": 16,
-            "answer_feedback": "You sit down for a long conversation with Bruce Raynor. It’s clear you’re not the only Democratic leader trying this, but then again, you’ve got some serious credibility on issues of workers’ rights. Will it be enough?\n"
+            "answer_feedback": "Your desire to move on from the squabble and go back to the issues is admirable, and wholly inadequate for the environment you're actually campaigning in. "
         }
     },
     {
@@ -13665,7 +13521,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 2036,
             "candidate": 16,
-            "answer_feedback": "Clyburn is officially staying out of the primary, and unofficially committed to seeing America elect its first Black President. Besides, Obama’s numbers with the Black community are sky-high."
+            "answer_feedback": "Obama and Clinton tried to minimize you by monopolizing the debate stage with their petty bullshit. But in one fell swoop, you've seized the moment and made them look childish, immature, small. The rest of the debate is a foregone conclusion, and Obama and Clinton can barely contain their rage for what you pulled off at their expense."
         }
     },
     {
@@ -13674,12 +13530,37 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 2035,
             "candidate": 16,
-            "answer_feedback": "Nice try, but Reid is determined to withhold his endorsement for the sake of party unity. Your consolation prize is the endorsement of several no-name Nevada Representatives, but that’s cold comfort.\n"
+            "answer_feedback": "The diehards of the Obama and Clinton campaigns are eager to decide who won the back and forth between the two of them. But to the undecided voters of South Carolina, you've made a very effective critique of politics as usual. You're seen as the winner of this debate, though not by a lot."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 2043,
+        "fields": {
+            "answer": 2040,
+            "candidate": 16,
+            "answer_feedback": "If you were talking to the leader of just about any other union, this would probably have worked out. Unfortunately, NAFTA isn't nearly as salient an issue for service workers as it is for manufacturing workers. Raynor is unconvinced, and he's not shy telling you so."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 2044,
+        "fields": {
+            "answer": 2041,
+            "candidate": 16,
+            "answer_feedback": "This move would substantially strengthen the power of labor in America if, by some miracle, it passed the senate. Unfortunately for you, both Clinton and Obama are also promising this, so your promise isn't exactly unique."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 2045,
+        "fields": {
+            "answer": 2042,
+            "candidate": 16,
+            "answer_feedback": "Getting into the weeds on this topic has paid off. Bruce is confident that you know your stuff, and aren't just treating labor as a voting block to be courted but as a centerpiece of your campaign. Will it be enough to stand against Clinton and Obama?"
         }
     }
 ]
-
-
 
 campaignTrail_temp.jet_data = [{
     "nicknames": {
@@ -13694,9 +13575,7 @@ campaignTrail_temp.jet_data = [{
 }
 ]
 
-
-
-
+// end of base code
 
 campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/fLF9kF5r/johnedwards2008.jpg';
 campaignTrail_temp.candidate_last_name = 'Edwards';
@@ -13874,6 +13753,14 @@ if(ans == 1246){
     console.log("The people of Nevada will appreciate this answer.");
     nvvp += 1;
 }
+if (ans == 2041){// raynor convo partial win
+    console.log("The people of Nevada will appreciate this answer.");
+    nvvp += 1;
+} 
+if (ans == 2042){// raynor convo full win
+    console.log("The people of Nevada will REALLY appreciate this answer.");
+    nvvp +=2;
+}
 
 // south carolina points
 if(ans == 165){
@@ -13903,6 +13790,14 @@ if(ans == 119){
 if(ans == 1262){
     console.log("The people of South Carolina will appreciate this answer.");
     scvp += 1;
+}
+if (ans == 2035){// sc debate partial win
+    console.log("The people of South Carolina will appreciate this answer.");
+    scvp += 1;
+} 
+if (ans == 2036){// sc debate full win
+    console.log("The people of South Carolina will REALLY appreciate this answer.");
+    scvp +=2;
 }
 
 //obama points
@@ -13946,6 +13841,10 @@ if(ans == 1261){
     console.log("This pleases Obama.");
     obama += 1;
 }
+if (ans == 2036){
+    obama -=2;
+    console.log("You have embarrassed Obama.");
+}
 
 //hillary points
 if(ans == 85){
@@ -13983,6 +13882,10 @@ if(ans == 1257){
 if(ans == 1261){
     console.log("This pleases Hillary.");
     hillary += 1;
+}
+if (ans == 2036){
+    console.log("You have embarrassed Hillary.");
+    hillary -=2;
 }
 
 //kennedy points
@@ -14352,16 +14255,22 @@ if((ans == 287 && iavp_center >= 4) || (ans == 286 && iavp_east >=4) || (ans == 
     campaignTrail_temp.questions_json[10] = tunnel(1);
 }
 
-//question 12, push moderate debate variant
-if(rhetoric < 0){
+//question 12, push iowa victory reaction
+if(ans == 4){
     campaignTrail_temp.questions_json[11] = tunnel(1249);
 }
 
-// question 14, push nevada or south carolina victory
-if(ans == 1269 && nvvp >=4){  //nevada
+// q13 tunnel nevada path
+if (ans == 181 || ans == 1257){ 
+campaignTrail_temp.questions_json[12] = tunnel(2039);
+} // sc path default
+
+
+//question 14, push victory in sc or nevada
+if((ans == 2041 || ans == 2042) && nvvp >=4){  //nevada
     campaignTrail_temp.questions_json[13] = tunnel(21);
 }
-else if (ans == 230 && scvp >=4){ //sc
+else if ((ans == 2035 || ans == 2036) && scvp >=4){ //sc
     campaignTrail_temp.questions_json[13] = tunnel(1278);
 }
 
