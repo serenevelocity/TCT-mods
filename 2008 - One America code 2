@@ -139,7 +139,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1295,
         "fields": {
             "priority": 2,
-            "description": "The results are in, and it’s something of an anticlimax. You’ve made a strong showing in the midwest, but not enough to counter the margins of Obama and Clinton in the tri state area and the south, respectively. In the end, nobody wins a commanding enough majority on Super Tuesday, and a contested convention looks likely.",
+            "description": "The results are in, and it’s something of an anticlimax. You’ve made a strong showing in the Midwest, but not enough to counter the margins of Obama and Clinton in the tri-state area and the South, respectively. In the end, nobody wins a commanding enough majority on Super Tuesday, and a contested convention looks likely.",
             "likelihood": 1
         }
     },
@@ -175,7 +175,7 @@ campaignTrail_temp.questions_json = [
         "pk": 57,
         "fields": {
             "priority": 2,
-            "description": "At a town hall event, a Fox News reporter makes his way to the front of the line to ask: do you have any comment about that staffer who had an affair with the videographer and fathered a child with her? The same staffer you were reported having an affair with by the Enquirer? Is this the kind of conduct we can expect in an Edwards white house?\n",
+            "description": "At a town hall event, a Fox News reporter makes his way to the front of the line to ask: Do you have any comment about that staffer who had an affair with the videographer and fathered a child with her? The same staffer the National Enquirer reported you were having an affair with? Is this the kind of conduct we can expect in an Edwards White House?\n",
             "likelihood": 1
         }
     },
@@ -193,7 +193,7 @@ campaignTrail_temp.questions_json = [
         "pk": 44,
         "fields": {
             "priority": 2,
-            "description": "The most divisive issue of 2004 has reared its head again. Gay marriage has been legalized in two states, while civil unions have been legalized in several others. In 2004, several state-level referenda passed banning same sex marriage, and many theorize that these ballots increased support for republicans. What is your stance on the Gay issue, John?\n",
+            "description": "The most divisive issue of 2004 has reared its head again. Gay marriage has been legalized in two states, while civil unions have been legalized in several others. In 2004, several state-level referenda passed banning same-sex marriage, and many theorize that these ballots increased support for Republicans. What is your stance on gay marriage, John?\n",
             "likelihood": 1
         }
     },
@@ -6034,7 +6034,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 1,
-            "state_multiplier": 0.8618
+            "state_multiplier": 0.888518
         }
     },
     {
@@ -6061,7 +6061,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 4,
-            "state_multiplier": 0.8226
+            "state_multiplier": 0.9176
         }
     },
     {
@@ -6115,7 +6115,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 10,
-            "state_multiplier": 1.0095
+            "state_multiplier": 1.0595
         }
     },
     {
@@ -6160,7 +6160,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 15,
-            "state_multiplier": 1.028
+            "state_multiplier": 1.048
         }
     },
     {
@@ -6178,7 +6178,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 17,
-            "state_multiplier": 0.9087
+            "state_multiplier": 0.9187
         }
     },
     {
@@ -6187,7 +6187,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 18,
-            "state_multiplier": 0.8917
+            "state_multiplier": 0.9747
         }
     },
     {
@@ -6232,7 +6232,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 23,
-            "state_multiplier": 1.00085
+            "state_multiplier": 1.02285
         }
     },
     {
@@ -6241,7 +6241,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 24,
-            "state_multiplier": 1.0131
+            "state_multiplier": 1.0331
         }
     },
     {
@@ -6250,7 +6250,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 25,
-            "state_multiplier": 0.9084
+            "state_multiplier": 0.9584
         }
     },
     {
@@ -6349,7 +6349,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 36,
-            "state_multiplier": 0.8096
+            "state_multiplier": 0.8296
         }
     },
     {
@@ -6367,7 +6367,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 38,
-            "state_multiplier": 0.9869
+            "state_multiplier": 1.01731
         }
     },
     {
@@ -6403,7 +6403,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 42,
-            "state_multiplier": 0.8295
+            "state_multiplier": 0.847695
         }
     },
     {
@@ -6412,7 +6412,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 43,
-            "state_multiplier": 1.0248
+            "state_multiplier": 1.0427523
         }
     },
     {
@@ -6466,7 +6466,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 49,
-            "state_multiplier": 0.7072
+            "state_multiplier": 0.7372
         }
     },
     {
@@ -6475,7 +6475,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 50,
-            "state_multiplier": 1.024
+            "state_multiplier": 1.0351
         }
     },
     {
@@ -8084,7 +8084,17 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 25,
             "candidate": 16,
             "affected_candidate": 16,
-            "global_multiplier": 0.01
+            "global_multiplier": 0.015
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 1197,
+        "fields": {
+            "answer": 25,
+            "candidate": 16,
+            "affected_candidate": 17,
+            "global_multiplier": -0.015
         }
     },
     {
@@ -11667,7 +11677,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 161,
             "candidate": 16,
-            "answer_feedback": "The midwest loves you, it’s true. But New York and California are a tall order, especially given Hillary represents New York. You barnstorm union halls, town squares, church congregations and schools, talking about your plans to build One America, collecting the endorsements of local unions and local politicians. Will it be enough?\n"
+            "answer_feedback": "The Midwest loves you, it’s true. But New York and California are a tall order, especially given Hillary represents New York. You barnstorm union halls, town squares, church congregations and schools, talking about your plans to build One America, collecting the endorsements of local unions and local politicians. Will it be enough?\n"
         }
     },
     {
@@ -13577,10 +13587,12 @@ campaignTrail_temp.jet_data = [{
 
 // end of base code
 
-campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/fLF9kF5r/johnedwards2008.jpg';
-campaignTrail_temp.candidate_last_name = 'Edwards';
-campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/xZfxgv7.png';
-campaignTrail_temp.running_mate_last_name = 'for America';
+campaignTrail_temp.candidate_json[1]["fields"].last_name = "Bush";
+campaignTrail_temp.candidate_json[0]["fields"].last_name = "Kerry";
+campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/bvrQPNQr/johnkerry2004.png';
+campaignTrail_temp.candidate_last_name = 'Kerry';
+campaignTrail_temp.running_mate_image_url = 'https://i.postimg.cc/gJ0tfW0S/johnedwards2004.png';
+campaignTrail_temp.running_mate_last_name = 'Edwards';
 
 e=campaignTrail_temp
 
@@ -13770,6 +13782,14 @@ if(ans == 165){
 if(ans == 168){
     console.log("The people of South Carolina will appreciate this answer.");
     scvp += 1;
+}
+if(ans == 25){
+	campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/xZfxgv7.png';
+	campaignTrail_temp.running_mate_last_name = 'For President';
+    campaignTrail_temp.candidate_json[1]["fields"].last_name = "McCain";
+	campaignTrail_temp.candidate_json[0]["fields"].last_name = "Edwards";
+	campaignTrail_temp.candidate_last_name = 'Edwards';
+	campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/fLF9kF5r/johnedwards2008.jpg';
 }
 if(ans == 87){
     console.log("The people of South Carolina will appreciate this answer.");
