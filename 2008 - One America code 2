@@ -4,7 +4,7 @@ campaignTrail_temp.questions_json = [
         "pk": 130,
         "fields": {
             "priority": 0,
-            "description": "October 5, 2004. You’re seated for the VP debate opposite Dick Cheney. His people insisted on this debate being seated, since the old gargoyle can barely stand without his heart giving out. You’ve started to make a point about Halliburton, but Cheney, eager to get off the subject, makes a quick pivot to your record in the Senate. He lists the important votes you’ve missed, tallies your absences on the judiciary committee. He concludes: “I’m the president of the Senate, and the first time I’ve met you is tonight.” Don’t let him get away with this.",
+            "description": "October 5, 2004. You’re seated for the VP debate opposite Dick Cheney. His people insisted on this debate being seated, since the old gargoyle can barely stand without his heart giving out. You’ve started to make a point about Halliburton, but Cheney, eager to get off the subject, makes a quick pivot to your record in the Senate. He lists the important votes you’ve missed and tallies your absences on the judiciary committee. He concludes: “I’m the president of the Senate, and the first time I’ve met you is tonight.” Don’t let him get away with this.",
             "likelihood": 1
         }
     },
@@ -31,7 +31,7 @@ campaignTrail_temp.questions_json = [
         "pk": 42,
         "fields": {
             "priority": 1,
-            "description": "December 28, 2006. Not much has gotten better since you and Kerry lost the white house. America has slipped into a recession, top-ranking Bush officials have resigned in disgrace, and the incompetent FEMA leadership has let Hurricane Katrina ravage the gulf coast. In 2004, you announced your candidacy for president in front of the shuttered mill your father worked in. Now, there are far more shuttered buildings in America, more people ready to listen. You’ve got a chance now to announce early and get the ball rolling. How will you announce your campaign for the presidency?\n",
+            "description": "December 28, 2006. Not much has gotten better since you and Kerry lost the White House. America has slipped into a recession, top-ranking Bush officials have resigned in disgrace, and incompetent FEMA leadership has let Hurricane Katrina ravage the Gulf Coast. In 2004, you announced your candidacy for president in front of the shuttered mill your father worked in. Now, there are far more shuttered buildings in America, more people ready to listen. You’ve got a chance now to announce early and get the ball rolling. How will you announce your campaign for the presidency?\n",
             "likelihood": 1
         }
     },
@@ -85,7 +85,7 @@ campaignTrail_temp.questions_json = [
         "pk": 80,
         "fields": {
             "priority": 2,
-            "description": "There's only one way out of Iowa: first place. Clinton and Obama could console themselves with a second-place victory, but not you. You have to prove yourself here, in the first primary in the country, on the ass end of the rust belt. The people of Iowa are despondent after eight long years of Bush, and suffering from the new economy leaving them behind. But Iowa isn't a monolith: it's a diverse state where different regions appeal to different strands of the Democratic party. Where will you focus your campaign?",
+            "description": "There's only one way out of Iowa: first place. Clinton and Obama could console themselves with a second-place finish, but not you. You have to prove yourself here, in the first primary in the country, on the ass end of the Rust Belt. The people of Iowa are despondent after eight long years of Bush, and suffering from the new economy leaving them behind. But Iowa isn't a monolith: it's a diverse state where different regions appeal to different strands of the Democratic Party. Where will you focus your campaign?",
             "likelihood": 1
         }
     },
@@ -112,7 +112,7 @@ campaignTrail_temp.questions_json = [
         "pk": 62,
         "fields": {
             "priority": 2,
-            "description": "Monday, Jan 21, 2008. Martin Luther King Day. This candidates' debate is hosted in Myrtle Beach, SC, and hosted by the Congressional Black Caucus Institute. It doesn't take long for Obama and Clinton to get into a particularly heated back and forth. She attacks his comments about Reagan. He attacks her time as a corporate lawyer on the board of Walmart. She attacks his slum landlord friend Tony Rezko in Chicago. On and on. And the longer they talk, the more people forget you're up there. The moderators, knowing you haven't spoken for about five minutes now, interrupt the back and forth and give you an opportunity to speak. Think fast.",
+            "description": "Monday, Jan 21, 2008. Martin Luther King Day. This candidates' debate is hosted in Myrtle Beach, SC, by the Congressional Black Caucus Institute. It doesn't take long for Obama and Clinton to get into a particularly heated back and forth. She attacks his comments about Reagan. He attacks her time as a corporate lawyer and her work on the board of Walmart. She attacks his slum landlord friend, Tony Rezko, in Chicago. On and on. And the longer they talk, the more people forget you're up there. The moderators, knowing you haven't spoken for about five minutes now, interrupt the back and forth and give you an opportunity to speak. Think fast.",
             "likelihood": 1
         }
     },
@@ -166,7 +166,7 @@ campaignTrail_temp.questions_json = [
         "pk": 59,
         "fields": {
             "priority": 2,
-            "description": "The Republicans always seem to nominate the next old guy in line, and they haven’t surprised this time: you’ll be running against Arizona Senator John McCain, who you worked with long ago to pass the ill-fated Patients’ Bill of Rights. He strikes you as a formidable opponent: independent enough from Bush to contend in swing states, yet well liked enough by the base to keep them in line. But one opening which strikes you and your staff immediately is his role in the Keating Five scandal, for which he was cleared of wrongdoing by the senate ethics council but reprimanded for poor judgement.\n",
+            "description": "The Republicans always seem to nominate the next old guy in line, and they haven’t surprised this time: you’ll be running against Arizona Senator John McCain, who you worked with long ago to pass the ill-fated Patients’ Bill of Rights. He strikes you as a formidable opponent: independent enough of Bush to contend in swing states, yet well-liked enough by the base to keep them in line. But one opening that strikes you and your staff immediately is his role in the Keating Five scandal, for which he was cleared of wrongdoing by the Senate Ethics Committee but reprimanded for poor judgment.\n",
             "likelihood": 1
         }
     },
@@ -184,7 +184,7 @@ campaignTrail_temp.questions_json = [
         "pk": 51,
         "fields": {
             "priority": 2,
-            "description": "Andrew is on the phone. Furious. Ranting to you about all he’s been through. He can’t sleep, he’s drinking more than usual, and babysitting Rielle has driven him to the brink of insanity. Half his extended family isn’t speaking to him, and the other half is screaming at him. “This whole thing is going to destroy my marriage, and it wasn’t even my affair! Why am I paying the price for your fuckup?! I swear to god, John, I’ll go right to Elizabeth. I’ll go to the media. I can’t take this shit anymore.” You have no idea where this courage is coming from: Andrew’s been a reliable pussy his whole life. Is he serious?\n",
+            "description": "Andrew is on the phone. Furious. Ranting to you about all he’s been through. He can’t sleep, he’s drinking more than usual, and babysitting Rielle through this has driven him to the brink of insanity. Half his extended family isn’t speaking to him, and the other half is screaming at him. “This whole thing is going to destroy my marriage, and it wasn’t even my affair! Why am I paying the price for your fuckup?! I swear to God, John, I’ll go right to Elizabeth. I’ll go to the media. I can’t take this shit anymore.” You have no idea where this courage is coming from: Andrew’s been a reliable pussy his whole life. Is he serious?\n",
             "likelihood": 1
         }
     },
@@ -220,7 +220,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1510,
         "fields": {
             "priority": 2,
-            "description": "The story won’t die. Your bodyman’s affair is becoming your problem. Every time he leaves his compound in Beverly Hills to buy diapers or formula, he’s photographed by some paparazzi prick asking him about how much you knew, what you saw. This type of thing can’t really go on. They won’t tell you this of course, but some of your staffers are whispering about this whole situation. Whether it’s true or not, it casts an ugly light on the campaign. What’s our move here, John?\n",
+            "description": "The story won’t die. Your bodyman’s affair is becoming your problem. Every time he leaves his compound in Beverly Hills to buy diapers or formula, he’s photographed by some paparazzi prick, asking him how much you knew, what you saw. This type of thing can’t really go on. They won’t tell you this, of course, but some of your staffers are whispering about the whole situation. Whether it’s true or not, it casts an ugly light on the campaign. What’s our move here, John?\n",
             "likelihood": 1
         }
     },
@@ -283,7 +283,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1595,
         "fields": {
             "priority": 0,
-            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
+            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter, Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
             "likelihood": 1
         }
     },
@@ -292,7 +292,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1675,
         "fields": {
             "priority": 0,
-            "description": "John McCain, having united republicans and most independents behind him, has now pledged to run a “bipartisan administration” with a cabinet made up of members of both parties. As a result, Democrats are shifting to McCain in numbers not seen since 1984. Feeling confident, McCain and Palin have cancelled their remaining debate appearances, and a record number of Americans are curious about the campaigns of Ralph Nader and Cynthia McKinney. It seems nobody thinks of you as a legitimate candidate anymore. Do you have any response to this?",
+            "description": "John McCain, having united Republicans and most independents behind him, has now pledged to run a “bipartisan administration,” with a cabinet made up of members of both parties. As a result, Democrats are shifting to McCain in numbers not seen since 1984. Feeling confident, McCain and Palin have cancelled their remaining debate appearances, and a record number of Americans are now curious about the campaigns of Ralph Nader and Cynthia McKinney. It seems nobody thinks of you as a legitimate candidate anymore. Do you have any response to this?",
             "likelihood": 1
         }
     },
@@ -427,7 +427,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1962,
         "fields": {
             "priority": 1,
-            "description": "It’s the third and final debate, and someone at McCain’s camp has given him a gimmicky little idea. There was this plumber named Joe, who talked to you for two minutes at a rally in Ohio. He asked you something about his taxes going up, you gave him your standard line about rewarding success and spreading opportunity. Well, McCain’s campaign really latched onto this guy: he keeps bringing up ‘Joe the Plumber’ as a kind of archetypical middle-american business owner who has something to fear from you. He says that your tax increases will drive Joe’s plumbing profits down. Your plan for universal healthcare will be too much for Joe’s poor pocketbook. Your environmental regulations will somehow interfere with the poor guy’s job of pulling lumps of hair out of people’s drains. McCain’s desperation is palpable. Do him a favor and end this charade.\n",
+            "description": "It’s the third and final debate, and someone at McCain’s camp has given him a gimmicky little idea. There was this plumber named Joe who talked to you for two minutes at a rally in Ohio. He asked you something about his taxes going up, and you gave him your standard line about rewarding success and spreading opportunity. Well, McCain’s campaign really latched onto this guy. He keeps bringing up “Joe the Plumber” as a kind of archetypal middle American business owner who has something to fear from you. He says that your tax increases will drive Joe’s plumbing profits down. Your plan for universal health care will be too much for Joe’s poor pocketbook. Your environmental regulations will somehow interfere with the poor guy’s job of pulling lumps of hair out of people’s drains. McCain’s desperation is palpable. Do him a favor and end this charade.\n",
             "likelihood": 1
         }
     },
@@ -490,7 +490,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1291,
         "fields": {
             "priority": 2,
-            "description": "When you called for endorsements in advance of Super Tuesday, you expected some high-profile senators, some governors, maybe even an endorsement from a former presidential candidate. But you’re shocked at the phone call you get: Ted Kennedy, lion of the senate, has agreed to endorse your campaign, citing your support for progressive causes including the cause of his life: universal healthcare. With his endorsement it’s a sweep. You’ve won the majority of delegates in Super Tuesday, and your two opponents see the writing on the wall. Congratulations, John, you’ll be the Democratic nominee for president.",
+            "description": "When you called for endorsements in advance of Super Tuesday, you expected some high-profile senators, some governors, maybe even an endorsement from a former presidential candidate. But you’re shocked by the phone call you get: Ted Kennedy, lion of the Senate, has agreed to endorse your campaign, citing your support for progressive causes, including the cause of his life: universal health care. With his endorsement, it’s a sweep. You’ve won the majority of delegates on Super Tuesday, and your two opponents see the writing on the wall. Congratulations, John, you’ll be the Democratic nominee for president.",
             "likelihood": 1
         }
     },
@@ -508,7 +508,7 @@ campaignTrail_temp.questions_json = [
         "pk": 40,
         "fields": {
             "priority": 2,
-            "description": "Perhaps it was your ground game, perhaps it was your advertising, perhaps it was the strategic endorsements of Al Gore and Dick Gephardt; your hard work has finally paid off. You’ve won the hearts and minds of enough democrats in enough states to secure a lead in Super Tuesday delegates. Combined with your previous wins, it’s a mandate; Obama and Hillary see the writing on the wall. Congratulations, John, you’ll be the Democratic nominee for president.\n",
+            "description": "Perhaps it was your ground game, perhaps it was your advertising, perhaps it was the strategic endorsements of Al Gore and Dick Gephardt, but your hard work has finally paid off. You’ve won the hearts and minds of enough Democrats in enough states to secure a lead in Super Tuesday delegates. Combined with your previous wins, it’s a mandate; Obama and Hillary see the writing on the wall. Congratulations, John, you’ll be the Democratic nominee for president.\n",
             "likelihood": 1
         }
     },
@@ -517,7 +517,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1319,
         "fields": {
             "priority": 2,
-            "description": "For your vice presidential pick, you’ve chosen Joe Biden, a man with three decades of experience as a senator, including being the chair of the Foreign Relations Committee. He’s qualified, no doubt, but he also whipped votes for the Iraq war, spearheaded Bill Clinton’s Crime Bill, and is something of a turnoff to more progressive democrats. What comments will you make about your decision?",
+            "description": "For your vice presidential pick, you’ve chosen Joe Biden, a man with three decades of experience as a senator, including service as chair of the Foreign Relations Committee. He’s qualified, no doubt, but he also whipped votes for the Iraq war, spearheaded Bill Clinton’s Crime Bill, and is something of a turnoff to more progressive Democrats, not to mention women and people of color. What comments will you make about your decision?",
             "likelihood": 1
         }
     },
@@ -526,7 +526,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1333,
         "fields": {
             "priority": 2,
-            "description": "For your Vice Presidential nominee, you’ve chosen Kansas governor Kathleen Sebelius. She’s been successful in implementing her agenda by reaching out to republicans in the state legislature, but she’s no squish on social issues. Plus, nominating the first woman vice president is exciting to voters disappointed in Clinton’s loss. What comments will you make about your decision?",
+            "description": "For your Vice Presidential nominee, you’ve chosen Kansas governor Kathleen Sebelius. She’s been successful in implementing her agenda by reaching out to Republicans in the state legislature, but she’s no squish on social issues. Plus, nominating the first woman vice president is exciting to many voters disappointed in Clinton’s loss. What comments will you make about your decision??",
             "likelihood": 1
         }
     },
@@ -535,7 +535,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1349,
         "fields": {
             "priority": 2,
-            "description": " For your Vice Presidential nominee, you’ve chosen Pennsylvania governor Ed Rendell. A populist and a straight talker with executive experience, Rendell is a confident choice. However, some of his positions, such as his support of the death penalty and high-profile fights with public sector unions, may cause trouble among the party base. What comments will you make about your decision?",
+            "description": "For your Vice Presidential nominee, you’ve chosen Pennsylvania governor Ed Rendell. A populist and a straight talker with executive experience, Rendell is a confident choice and will surely help in his home state. However, some of his positions, such as his support of the death penalty and high-profile fights with public sector unions, may cause trouble among the party base. What comments will you make about your decision?",
             "likelihood": 1
         }
     },
@@ -544,7 +544,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1365,
         "fields": {
             "priority": 2,
-            "description": "As a result of your deal with Obama, he’s the vice president on the ticket. Pundits have taken to calling this the ABC ticket, standing for “Anyone But Clinton,” and her supporters are predictably unhappy about this development. His selection will make history as the first black candidate on a presidential ticket, but some fear that his liberal record in the senate and lack of significant government experience will drag down the candidacy. Still, he’s not without his strengths: his DNC address in 2004 has gone down in history as one of the best modern political speeches; hopefully he can bring that magic to your campaign. What comments will you make about him?",
+            "description": "As a result of your deal with Obama, he’s the Vice Presidential nominee on the ticket. Pundits have taken to calling this the ABC ticket, short for “Anyone But Clinton,” and her supporters are predictably unhappy about this development. His selection will make history as the first Black candidate on a presidential ticket, but some fear that his liberal record in the Senate and lack of significant government experience will drag down the candidacy. Still, he’s not without his strengths: his DNC address in 2004 has gone down in history as one of the best modern political speeches. Hopefully he can bring that magic to your campaign. What comments will you make about him?",
             "likelihood": 1
         }
     },
@@ -562,7 +562,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1411,
         "fields": {
             "priority": 2,
-            "description": "For your vice presidential nominee, you’ve chosen Caroline Kennedy. She’s the last surviving relative from John’s immediate family, and is generally beloved by the public. Though she has no direct experience in government, she’s worked several high profile jobs in NGOs, nonprofits, and public institutions throughout her career. Many have speculated when she might finally enter politics, and now you’ve given the people what they want. What will you say about Caroline Kennedy?",
+            "description": "For your vice presidential nominee, you’ve chosen Caroline Kennedy. She’s the last surviving child of President John F. Kennedy, and is generally beloved by the public. Though she has no direct experience in government, she’s worked several high-profile jobs in NGOs, nonprofits, and public institutions throughout her career. Many have speculated when she might finally enter politics, and now you’ve given the people what they want. What will you say about Caroline Kennedy?",
             "likelihood": 1
         }
     },
@@ -571,7 +571,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1569,
         "fields": {
             "priority": 1,
-            "description": "Your phone rings. It’s Andrew’s number, but as you pick up the phone, you’re shocked to hear Rielle’s voice. “John, I’ve had enough. All this moving around California, hiding in hotel rooms with the baby. It’s no way to live. You know, Bob says I should just come clean, and I’m beginning to think so too. It makes me sick to hide away like this. It’s making me sick and it’s making the whole country sick. You don’t love me anymore, I know it. You wish your baby was never born.” Think fast. ",
+            "description": "Your cell phone rings. It’s Andrew’s number, but as you pick up the phone, you’re shocked to hear Rielle’s voice. “John, I’ve had enough. All this moving around California, hiding in hotel rooms with the baby. It’s no way to live. You know, Bob says I should just come clean, and I’m beginning to think so too. It makes me sick to hide away like this. It’s making me sick, and it’s making the whole country sick. You don’t love me anymore, I know it. You wish your baby was never born.” You feel a cold sweat. Think fast. ",
             "likelihood": 1
         }
     },
@@ -580,7 +580,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1605,
         "fields": {
             "priority": 0,
-            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
+            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter, Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
             "likelihood": 1
         }
     },
@@ -589,7 +589,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1615,
         "fields": {
             "priority": 0,
-            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
+            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter, Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
             "likelihood": 1
         }
     },
@@ -598,7 +598,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1625,
         "fields": {
             "priority": 0,
-            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
+            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter, Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
             "likelihood": 1
         }
     },
@@ -607,7 +607,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1635,
         "fields": {
             "priority": 0,
-            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
+            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter, Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
             "likelihood": 1
         }
     },
@@ -616,7 +616,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1665,
         "fields": {
             "priority": 0,
-            "description": "John McCain, having united republicans and most independents behind him, has now pledged to run a “bipartisan administration” with a cabinet made up of members of both parties. As a result, Democrats are shifting to McCain in numbers not seen since 1984. Feeling confident, McCain and Palin have cancelled their remaining debate appearances, and a record number of Americans are curious about the campaigns of Ralph Nader and Cynthia McKinney. It seems nobody thinks of you as a legitimate candidate anymore. Do you have any response to this?",
+            "description": "John McCain, having united Republicans and most independents behind him, has now pledged to run a “bipartisan administration,” with a cabinet made up of members of both parties. As a result, Democrats are shifting to McCain in numbers not seen since 1984. Feeling confident, McCain and Palin have cancelled their remaining debate appearances, and a record number of Americans are now curious about the campaigns of Ralph Nader and Cynthia McKinney. It seems nobody thinks of you as a legitimate candidate anymore. Do you have any response to this?",
             "likelihood": 1
         }
     },
@@ -625,7 +625,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1645,
         "fields": {
             "priority": 0,
-            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
+            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter, Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
             "likelihood": 1
         }
     },
@@ -634,7 +634,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1655,
         "fields": {
             "priority": 0,
-            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
+            "description": "You want to talk about the economy, about Iraq, about the important issues this country will have to reckon with, but they only want to hear you talk about one thing. The affair, the baby, the coverup. The shuffling around of Rielle and her babysitter, Andrew Young. The press has started asking you point blank: are you even still running for president? Do you believe you have a chance, and will you even attempt to serve the term if people do somehow vote for you?\n",
             "likelihood": 1
         }
     },
@@ -683,7 +683,7 @@ campaignTrail_temp.questions_json = [
         "model": "campaign_trail.question",
         "pk": 2039,
         "fields": {
-            "description": "Organized labor in America has been in a state of persistent decline since the 70s, but the Culinary Workers' Union of Las Vegas is a winner among losers. Its membership is growing, not shrinking. It's winning serious concessions from some of the most predatory corporations in the country. And it's become a power player in state politics. Bruce Raynor, leader of the CWU, has agreed to meet with you to discuss an endorsement of your campaign. It's clear that you're not the only candidate trying to win his endorsement, so give him your best shot."
+            "description": "Organized labor in America has been in a state of persistent decline since the 70s, but the Culinary Workers' Union of Las Vegas is a winner among losers. Its membership is growing, not shrinking. It's winning serious concessions from some of the most predatory corporations in the country. And it's become a power player in state politics. Bruce Raynor, leader of the CWU, has agreed to meet with you to discuss endorsing your campaign. It's clear that you're not the only candidate trying to win his endorsement, so give him your best shot."
         }
     }
 ]
@@ -990,7 +990,7 @@ campaignTrail_temp.answers_json = [
         "pk": 197,
         "fields": {
             "question": 51,
-            "description": "Okay, Andrew, I get it. Rielle can take a vacation, and you two will get a vacation from her. I know how much you’ve done for me, but you can’t give up now. You’re in this with me to the end. And when I’m the president, you’ll be taken care of, your name will be cleared. I promise you that. It’ll all work itself out.\n"
+            "description": "Okay, Andrew, I get it. Rielle can take a vacation, and you two can get a vacation from her. I know how much you’ve done for me, but you can’t give up now. You’re in this with me to the end. And when I’m president, you’ll be taken care of, and your name will be cleared. I promise you that. It’ll all work itself out.\n"
         }
     },
     {
@@ -1126,7 +1126,7 @@ campaignTrail_temp.answers_json = [
         "pk": 347,
         "fields": {
             "question": 98,
-            "description": "Four years ago I spoke to you about two Americas. An America which has the best healthcare money can buy, and an America brought to the brink by medical bills. An America prospering from our new economy, and an America where factories are shuttered and main street shops are closing their doors. An America divided by race, class, north and south, east and west. But a house divided amongst itself cannot stand. Together, my friends, we will work to build One America, where nobody is left behind!"
+            "description": "Four years ago I spoke to you about two Americas. An America which has the best healthcare money can buy, and an America brought to the brink by medical bills. An America prospering from our new economy, and an America where factories are shuttered and main street shops are closing their doors. An America divided by race, class, north and south, east and west. But a house divided against itself cannot stand. Together, my friends, we will work to build One America, where nobody is left behind!"
         }
     },
     {
@@ -1598,7 +1598,7 @@ campaignTrail_temp.answers_json = [
         "pk": 1584,
         "fields": {
             "question": 1582,
-            "description": "A woman I don’t know and, to the best of my knowledge, never met, is claiming that I’m the father of her child on ABC news? Never happened! She’s clearly an attention seeking woman who didn’t get the press she was looking for by having an affair with my ex staffer. These accusations are completely baseless, and this entire story is just false. \n"
+            "description": "A woman I don’t know and, to the best of my knowledge, have never met, is claiming on ABC News that I’m the father of her child? This <i>never</i> happened! She’s clearly an attention-seeking woman who didn’t get the press she was looking for by having an affair with a former staffer of mine. These accusations are completely baseless, and this entire story is just false. \n"
         }
     },
     {
@@ -2054,7 +2054,7 @@ campaignTrail_temp.answers_json = [
         "pk": 1836,
         "fields": {
             "question": 1830,
-            "description": "John McCain recently said that the fundamentals of the American economy were sound. I take a different view. We’re in a crisis right now, but for farmers, manufacturers, coal miners, this crisis didn’t start in 2008. It started much earlier, with the jobless recovery in 2002, with NAFTA, or with Welfare Reform. We need to use this crisis to rethink business as usual and build an America that doesn’t leave working people behind.\n"
+            "description": "John McCain recently said that the fundamentals of the American economy were sound. I take a different view. We’re in a crisis right now, but for farmers, manufacturers, coal miners, this crisis didn’t start in 2008. It started much earlier, with the jobless recovery in 2002, with NAFTA, and with welfare reform. We need to use this crisis to rethink business as usual and build an America that doesn’t leave working people behind.\n"
         }
     },
     {
@@ -2366,7 +2366,7 @@ campaignTrail_temp.answers_json = [
         "pk": 1981,
         "fields": {
             "question": 1978,
-            "description": "The Republican Party promised you that if the rich get richer, you’d get richer too. That if we deregulated the big banks, they’d use their best judgement and regulate themselves. That if we shipped jobs off to other countries we’d only be wealthier for it. It wasn’t just bad politics, it was a lie. And they knew it."
+            "description": "The Republican Party promised you that if the rich get richer, you’d get richer too. That if we deregulated the big banks, they’d use their best judgment and regulate themselves. That if we shipped jobs off to other countries, we’d only be wealthier for it. It wasn’t just bad politics, it was a lie. And they knew it."
         }
     },
     {
@@ -3155,19 +3155,19 @@ campaignTrail_temp.issues_json = [
         "fields": {
             "name": "Health Care",
             "description": 0,
-            "stance_1": "Hands off my HMO",
+            "stance_1": "Hands Off My HMO",
             "stance_desc_1": 0,
-            "stance_2": "System works fine",
+            "stance_2": "System Works Fine",
             "stance_desc_2": 0,
-            "stance_3": "System works okay",
+            "stance_3": "System Works Okay",
             "stance_desc_3": 0,
-            "stance_4": "Some tweaks needed",
+            "stance_4": "Some Tweaks Needed",
             "stance_desc_4": 0,
-            "stance_5": "Changes needed",
+            "stance_5": "Changes Needed",
             "stance_desc_5": 0,
-            "stance_6": "Big changes needed",
+            "stance_6": "Big Changes Needed",
             "stance_desc_6": 0,
-            "stance_7": "Medicare for All",
+            "stance_7": "Medicare For All",
             "stance_desc_7": 0,
             "election": 3
         }
@@ -3178,7 +3178,7 @@ campaignTrail_temp.issues_json = [
         "fields": {
             "name": "Iraq War",
             "description": 0,
-            "stance_1": "Put a Boot in their Ass!",
+            "stance_1": "Put A Boot In Their Ass!",
             "stance_desc_1": 0,
             "stance_2": "Hawkish",
             "stance_desc_2": 0,
@@ -3186,11 +3186,11 @@ campaignTrail_temp.issues_json = [
             "stance_desc_3": 0,
             "stance_4": "Conflicted",
             "stance_desc_4": 0,
-            "stance_5": "Somewhat Doveish",
+            "stance_5": "Somewhat Dovish",
             "stance_desc_5": 0,
             "stance_6": "Dovish",
             "stance_desc_6": 0,
-            "stance_7": "Come Home America!",
+            "stance_7": "Come Home, America!",
             "stance_desc_7": 0,
             "election": 3
         }
@@ -3213,7 +3213,7 @@ campaignTrail_temp.issues_json = [
             "stance_desc_5": 0,
             "stance_6": "Liberal",
             "stance_desc_6": 0,
-            "stance_7": "Coexist Bumper Sticker",
+            "stance_7": "Coexist Bumper-Sticker Liberal",
             "stance_desc_7": 0,
             "election": 3
         }
@@ -6232,7 +6232,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 23,
-            "state_multiplier": 0.9765
+            "state_multiplier": 0.98985
         }
     },
     {
@@ -6313,7 +6313,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 32,
-            "state_multiplier": 1.1951
+            "state_multiplier": 1.2055511
         }
     },
     {
