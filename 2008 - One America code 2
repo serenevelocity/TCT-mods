@@ -1046,7 +1046,7 @@ campaignTrail_temp.answers_json = [
         "pk": 288,
         "fields": {
             "question": 80,
-            "description": "We’re going to target Western Iowa by talking about Farm issues. My rural southern background will make me more credible on this than Hillary and Obama, who both come from big cities.\n"
+            "description": "We’re going to target Western Iowa by talking about farm issues. My rural southern background will make me more credible on this than Hillary and Obama, who both come from big cities.\n"
         }
     },
     {
@@ -1190,7 +1190,7 @@ campaignTrail_temp.answers_json = [
         "pk": 1232,
         "fields": {
             "question": 80,
-            "description": "We’re going to focus on the whole damn state! We’re going to tour the whole thing, county by county, nonstop in my campaign bus. All aboard the Main Street Express!\n"
+            "description": "We’re going to focus on the whole damn state! We’re going to tour the whole thing, county by county, nonstop on my campaign bus. All aboard the Main Street Express!\n"
         }
     },
     {
@@ -6232,7 +6232,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 23,
-            "state_multiplier": 0.98985
+            "state_multiplier": 1.00085
         }
     },
     {
