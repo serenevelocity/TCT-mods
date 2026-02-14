@@ -199,7 +199,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
-            "description_as_running_mate": <p>Barack Obama is the junior senator from Illinois - and thanks to your deal, he's now your running mate. He’s young, handsome, extremely telegenic, a gifted orator, and a solid liberal to rival yourself. He ran an impressive primary campaign on the theme of hope and change, and he can bring this inspiring optimism to your campaign as well. He was also an outspoken critic of the Iraq war from the start, which gives him a lot of credibility with voters opposed to the war.</p><p>However, he’s not particularly experienced, and his liberalism may turn some voters off. In addition, Illinois shouldn't be competitive this year, and he won't exactly help you in the rest of the midwest.</p>",
+            "description_as_running_mate": "<p>Barack Obama is the junior senator from Illinois - and thanks to your deal, he's now your running mate. He’s young, handsome, extremely telegenic, a gifted orator, and a solid liberal to rival yourself. He ran an impressive primary campaign on the theme of hope and change, and he can bring this inspiring optimism to your campaign as well. He was also an outspoken critic of the Iraq war from the start, which gives him a lot of credibility with voters opposed to the war.</p><p>However, he’s not particularly experienced, and his liberalism may turn some voters off. In addition, Illinois shouldn't be competitive this year, and he won't exactly help you in the rest of the midwest.</p>",
             "candidate_score": 1,
             "running_mate": true
         }
