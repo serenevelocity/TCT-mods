@@ -29,7 +29,7 @@ campaignTrail_temp.election_json = [
         "pk": 3,
         "fields": {
             "year": 2012,
-            "summary": "<p>America is in crisis. The War in Iraq, which so fiercely divided the country, is now spiralling out of control. Hurricane Katrina has devastated New Orleans and left thousands destitute. The corruption of the Bush government is finally seeing the light of day. Wall Street is gambling with the mortgages of hard-working Americans. Now is not the time for half-measures. Now is the time to build <b>One America</b>.\n<p>\nAnd John Edwards is the man to do it.",
+            "summary": "</p><p>America is in crisis. The War in Iraq, which so fiercely divided the country, is now spiraling out of control. Hurricane Katrina has devastated New Orleans and left thousands destitute. The corruption of the Bush government is finally coming to light. Wall Street is gambling with the mortgages of hard-working Americans. Now is not the time for half-measures. Now is the time to build <b>One America</b>.</p><p>And John Edwards is the man to do it.</p>",
             "image_url": "https://i.imgur.com/QN5pdJZ.jpeg",
             "winning_electoral_vote_number": 270,
             "advisor_url": "https://i.imgur.com/NyBfHlm.jpeg",
@@ -53,7 +53,7 @@ campaignTrail_temp.candidate_json = [
             "party": "Democrat",
             "state": "North Carolina",
             "priority": 1,
-            "description": "<p>John Edwards has a youthful face and a boyish haircut. He speaks with a thick southern accent and poses for photos with a winning smile. But don’t underestimate him: he’s the only candidate willing to fight -- truly fight -- for working people. \n<p>His path to the presidency has been thrown off course by John Kerry’s loss in 2004 with Edwards on the ticket, but that loss can't be the end of his story. Edwards has what it takes to win, to reduce inequality, to defeat poverty once and for all, and to build One America.\n",
+            "description": "<p>John Edwards has a youthful face and a boyish haircut. He speaks with a thick Southern accent and poses for photos with a winning smile. But don’t underestimate him: he’s the only candidate willing to fight, truly fight, for working people.</p><p>In 2008, he is trying to end the game in Washington by taking on the political establishment and the entrenched power structure. His path to the presidency was thrown off course by John Kerry’s loss in 2004, with Edwards on the ticket, but that loss can't be the end of his story. Edwards has what it takes to win, to reduce inequality, to defeat poverty once and for all, and to build One America.</p>",
             "color_hex": "#053ADA",
             "secondary_color_hex": "#b4c3f3",
             "is_active": 1,
@@ -153,7 +153,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "n/a",
             "electoral_loss_message": "n/a",
             "no_electoral_majority_message": "n/a",
-            "description_as_running_mate": "<p>Joe Biden has been the senator for Delaware since 1972, and is now one of the longest continuously serving Democrats in the senate. He is the chair of the senate foreign relations committee, and thus would bring foreign policy experience to the ticket. He is a charismatic speaker, though he can be somewhat gaffe-prone, and is well respected by both parties. \n<p>However, his vote in favor of the Iraq War may turn off the party base, and his reputation as a centrist New Democrat may undermine your appeal as a populist. Delaware will not be competitive this year, and Biden won’t help you in any particular region of the country. \n</p>",
+            "description_as_running_mate": "<p>Joe Biden has been the senator for Delaware since 1972, and is now one of the longest continuously serving Democrats in the senate. He is the chair of the senate foreign relations committee, and thus would bring foreign policy experience to the ticket. He is a charismatic speaker, though he can be somewhat gaffe-prone, and is well respected by both parties.</p><p>However, his vote in favor of the Iraq War may turn off the party base, and his reputation as a centrist New Democrat may undermine your appeal as a populist. Delaware will not be competitive this year, and Biden won’t help you in any particular region of the country.</p>",
             "candidate_score": 0,
             "running_mate": true
         }
@@ -176,7 +176,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "n/a",
             "electoral_loss_message": "n/a",
             "no_electoral_majority_message": "n/a",
-            "description_as_running_mate": "<p>Hillary Clinton needs no introduction, and she’s not particularly happy to be stuck in the Number Two spot. She has accepted this position only at the assurance that she will not be a typical figurehead Vice President. She will be deeply involved in important executive decisions - particularly involving foreign affairs.\n<p>She is appealing to women, to working class white voters, and to the professional class. Young voters think she’s too hawkish. Republicans hate her guts. But she got you across the finish line to the nomination, and you believe she’ll do it again. \n</p>",
+            "description_as_running_mate": "<p>Hillary Clinton needs no introduction, and she’s not particularly happy to be stuck in the Number Two spot. She has accepted this position only at the assurance that she will not be a typical ceremonial figurehead Vice President. She will be deeply involved in important executive decisions - particularly involving foreign affairs.</p><p>She is appealing to women, to working class white voters, and to the professional class. Young voters think she’s too hawkish. Republicans hate her guts. But she got you across the finish line to the nomination, and you believe she’ll do it again.</p>",
             "candidate_score": 0,
             "running_mate": true
         }
@@ -199,7 +199,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
-            "description_as_running_mate": "<p>\nBarack Obama is the junior senator from Illinois - and thanks to your deal, he's now your running mate. He’s young, handsome, extremely telegenic, a gifted orator, and a solid liberal to rival yourself. He ran an impressive primary campaign on the theme of hope and change, and he can bring this inspiring optimism to your campaign as well. He was also an outspoken critic of the Iraq war from the start, which gives him a lot of credibility with voters opposed to the war. \n\n<p>However, he’s not particularly experienced, and his liberalism may turn some voters off. In addition, Illinois shouldn't be competitive this year, and he won't exactly help you in the rest of the midwest.\n</p>",
+            "description_as_running_mate": <p>Barack Obama is the junior senator from Illinois - and thanks to your deal, he's now your running mate. He’s young, handsome, extremely telegenic, a gifted orator, and a solid liberal to rival yourself. He ran an impressive primary campaign on the theme of hope and change, and he can bring this inspiring optimism to your campaign as well. He was also an outspoken critic of the Iraq war from the start, which gives him a lot of credibility with voters opposed to the war.</p><p>However, he’s not particularly experienced, and his liberalism may turn some voters off. In addition, Illinois shouldn't be competitive this year, and he won't exactly help you in the rest of the midwest.</p>",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -222,7 +222,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
-            "description_as_running_mate": "<p>\nBill Richardson is the democratic governor of New Mexico and a former cabinet secretary in the Clinton administration. His executive experience compliments your time in the senate, and his expertise in foreign policy will be an asset if the election continues to be about Iraq. His experience as the head of the chair of the Democratic Governors Association could also help you with the implementation of your agenda, if you manage to get elected. \n<p>New Mexico is unlikely to be a competitive state this year, but it’s possible Richardson could help you in the rest of the southwest. However, you’re running significantly to the left of Richardson, and there are some additional questions about his business interests. \n</p>",
+            "description_as_running_mate": "<p>Bill Richardson is the Democratic governor of New Mexico and a former cabinet secretary in the Clinton administration. His executive experience compliments your time in the senate, and his expertise in foreign policy will be an asset if the election continues to be about Iraq. His experience as the head of the chair of the Democratic Governors Association could also help you with the implementation of your agenda, if you manage to get elected.</p><p>New Mexico is unlikely to be a competitive state this year, but it’s possible Richardson could help you in the rest of the southwest. However, you’re running significantly to the left of Richardson, and there are some additional questions about his business interests.</p>",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -245,7 +245,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
-            "description_as_running_mate": "<p>\nEd Rendell is the popular democratic governor of Pennsylvania, and former mayor of Philadelphia. Famous for his straight-talking persona, Rendell would be a good choice if you want to double down on your appeal as a populist while adding executive experience to the ticket.\n<p>Pennsylvania is a must-win state for any Democrat, and Rendell could help you out in the rest of the Rust Belt. However, he doesn’t add any foreign policy expertise to the ticket, and some on your team argue that picking a white man for VP would fail to capture any energy from the Clinton or Obama campaigns. Also, he holds some unorthodox positions for a democrat: such as his support for the death penalty and shale gas extraction.\n</p>",
+            "description_as_running_mate": "<p>Ed Rendell is the popular Democratic governor of Pennsylvania, and former mayor of Philadelphia. Famous for his straight-talking persona, Rendell would be a good choice if you want to double down on your appeal as a populist while adding executive experience to the ticket.</p><p>Pennsylvania is a must-win state for any Democrat, and Rendell could help you out in the rest of the Rust Belt. However, he doesn’t add any foreign policy expertise to the ticket, and some on your team argue that picking a white man for VP would fail to capture any energy from the Clinton or Obama campaigns. Also, he holds some unorthodox positions for a Democrat: such as his support for the death penalty and shale gas extraction.</p>",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -268,7 +268,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
-            "description_as_running_mate": "<p>Kathleen Sebelius is the democratic governor of Kansas, elected twice. She would be an inspiring choice for Clinton voters disappointed that they won’t get to elect the first woman president, and her experience as governor of a red state would lend bipartisanship and moderation to the campaign. She is also experienced in healthcare policy, and served as the state insurance commissioner before she was governor. <p>Kansas is unlikely to be competitive this year, but Sebelius could potentially help you in other farm states. She is not well known nationally, however, and is significantly more moderate than yourself.</p>\n",
+            "description_as_running_mate": "<p>Kathleen Sebelius is the Democratic governor of Kansas, elected twice. She would be an inspiring choice for Clinton voters disappointed that they won’t get to elect the first woman president, and her experience as governor of a red state would lend bipartisanship and moderation to the campaign. She is also experienced in healthcare policy, and served as the state insurance commissioner before she was governor.</p><p>Kansas is unlikely to be competitive this year, but Sebelius could potentially help you in other farm states. She is not well known nationally, however, and is significantly more moderate than you.</p>",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -291,7 +291,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
-            "description_as_running_mate": "<p>On paper, Caroline Kennedy would be a strange choice for a running mate. She resides in the safest state in the country, she has no direct experience in government, and she’s a descendent of America’s most famous political dynasty — hardly the best compliment to a populist campaign.\n<p>But as you’ve been considering the history-making factor of the Obama and Clinton campaigns, the thought lingers in your mind: the first woman ever to hold the vice presidency, and the first Kennedy in the white house since 1963. Bunny did always say you reminded her of Jack…\n</p>",
+            "description_as_running_mate": "<p>On paper, Caroline Kennedy would be a strange choice for a running mate. She resides in the safest state in the country, she has no direct experience in government, and she’s a descendent of America’s most famous political dynasty, hardly the best compliment to a populist campaign.</p><p>But as you’ve been considering the history-making factor of the Obama and Clinton campaigns, the thought lingers in your mind: the first woman ever to hold the vice presidency, and the first Kennedy in the White House since 1963. Bunny did always say you reminded her of Jack…</p>",
             "candidate_score": 1,
             "running_mate": true
         }
