@@ -6061,7 +6061,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 16,
             "state": 4,
-            "state_multiplier": 1.055149892198741
+            "state_multiplier": 1.065987349149892198741
         }
     },
     {
@@ -13593,6 +13593,7 @@ campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/bvrQPNQr/johnkerr
 campaignTrail_temp.candidate_last_name = 'Kerry';
 campaignTrail_temp.running_mate_image_url = 'https://i.postimg.cc/gJ0tfW0S/johnedwards2004.png';
 campaignTrail_temp.running_mate_last_name = 'Edwards';
+e.election_json[0].fields.has_visits = 0;
 
 e=campaignTrail_temp
 
@@ -13790,6 +13791,7 @@ if(ans == 25){
 	campaignTrail_temp.candidate_json[0]["fields"].last_name = "Edwards";
 	campaignTrail_temp.candidate_last_name = 'Edwards';
 	campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/fLF9kF5r/johnedwards2008.jpg';
+    e.election_json[0].fields.has_visits = 1;
 }
 if(ans == 87){
     console.log("The people of South Carolina will appreciate this answer.");
