@@ -11848,7 +11848,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 118,
             "candidate": 16,
-            "answer_feedback": "You've issued a strong denial, and you've \n"
+            "answer_feedback": "You've issued a strong denial, and made a statement most primary voters will agree with. The downside is that you've drawn more attention to the story this way, but that's only a problem if people believe it, which they almost universally don't.\n"
         }
     },
     {
