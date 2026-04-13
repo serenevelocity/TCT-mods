@@ -1,3 +1,9 @@
+//start code 1
+
+e=campaignTrail_temp
+if (!e.done) {
+e.done = true;
+
 campaignTrail_temp.global_parameter_json = [
     {
         "model": "campaign_trail.global_parameter",
@@ -36,7 +42,7 @@ campaignTrail_temp.election_json = [
             "recommended_reading": "<h4 style=\"margin-top: 0.5em;\">Political News and Analysis</h4> <a href=\"http://www.realclearpolitics.com/\" target=\"_blank\">Real Clear Politics</a> -- <a href=\"http://www.theatlantic.com/\" target=\"_blank\">The Atlantic</a> -- <a href=\"http://www.politico.com/\" target=\"_blank\">Politico</a> -- <a href=\"http://www.huffingtonpost.com/\" target=\"_blank\">Huffington Post</a> -- <a href=\"http://www.foxnews.com/politics/index.html\" target=\"_blank\">Fox News Politics</a> <h4>Books by the Candidates</h4>Barack Obama - <a href=\"http://www.amazon.com/exec/obidos/ASIN/1400082773/amhius20-20\" target=\"_blank\">Dreams from My Father: A Story of Race and Inheritance</a><br>Barack Obama - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0307455874/amhius20-20\" target=\"_blank\">The Audacity of Hope: Thoughts on Reclaiming the American Dream (Vintage)</a><br> Mitt Romney - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0312671733/amhius20-20\" target=\"_blank\">No Apology: Believe in America</a><br> Gary Johnson - <a href=\"http://www.amazon.com/exec/obidos/ASIN/B008PXW0C0/amhius20-20\" target=\"_blank\">Seven Principles of Good Government</a><h4>Politics in 2012</h4> Edward Klein - <a href=\"http://www.amazon.com/exec/obidos/ASIN/1596987855/amhius20-20\" target=\"_blank\">The Amateur</a><br>Michael Kranish & Scott Helman - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0062123289/amhius20-20\" target=\"_blank\">The Real Romney</a><br>Lawrence Lessig - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0446576433/amhius20-20\" target=\"_blank\">Republic, Lost: How Money Corrupts Congress--and a Plan to Stop It</a><br>Ron Suskind - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0061429252/amhius20-20\" target=\"_blank\">Confidence Men: Wall Street, Washington, and the Education of a President</a><h4>The Financial Crisis</h4> Johan Norberg - <a href=\"http://www.amazon.com/exec/obidos/ASIN/1935308130/amhius20-20\" target=\"_blank\">Financial Fiasco: How America's Infatuation with Home Ownership and Easy Money Created the Economic Crisis</a><br>John Bellamy Foster & Fred Magdoff - <a href=\"http://www.amazon.com/exec/obidos/ASIN/1583671846/amhius20-20\" target=\"_blank\">The Great Financial Crisis: Causes and Consequences</a>",
             "has_visits": 1,
             "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/2012-no-majority.jpg",
-            "creator": "Dan Bryan",
+            "creator": "u/serenevelocity",
             "display_year": "2008: One America"
         }
     }
@@ -444,105 +450,116 @@ style.innerHTML = `
 
 document.head.appendChild(style);
 
-
-
-// This is just so that we can prevent the VP observer
-// from running running more than once. taken from 2012LBM
-(function() {
-    'use strict';
-
-    function handleNavigation() {
-        const gameWindow = document.getElementById("game_window");
-        if (!gameWindow) return;
-
-        // detect VP screen
-        const summary = document.getElementById("running_mate_summary");
-        
-        if (summary) {
-            // check if we are moving backwards (triggered by the opponent screen back button)
-            const isGoingBack = window.sessionStorage.getItem("skip_direction") === "backward";
-
-            if (isGoingBack) {
-                const backBtn = document.getElementById("running_mate_id_back");
-                if (backBtn && !backBtn.dataset.autoClicked) {
-                    console.log("VP selection screen detected. Skipping...");
-                    // clear the flag so forward movement works next time
-                    window.sessionStorage.removeItem("skip_direction");
-                    backBtn.dataset.autoClicked = "true";
-                    backBtn.click();
-                }
-            } else {
-                // move forward
-                const nextBtn = document.getElementById("running_mate_id_button");
-                // ensure we don't click buttons with custom switchers
-                if (nextBtn && !nextBtn.hasAttribute("data-custom-switcher") && !nextBtn.dataset.autoClicked) {
-                    console.log("VP selection screen detected. Skipping...");
-                    nextBtn.dataset.autoClicked = "true"; 
-                    nextBtn.click();
-                }
-            }
+//tooltip stuff 
+function addDynamicCSS() {
+    var css = `
+        .inner_window_question h3 .mytooltip{
+            background-color: lightskyblue;
         }
 
-        // detect opponent selection screen
-        const opponentBack = document.getElementById("opponent_selection_id_back");
-        if (opponentBack && !opponentBack.dataset.skipListener) {
-            // when user clicks Back, set flag to 'backward'
-            opponentBack.addEventListener("click", () => {
-                window.sessionStorage.setItem("skip_direction", "backward");
-            });
-            opponentBack.dataset.skipListener = "true";
-        }
-    }
-
-    window.handleNavigation = handleNavigation;
-})();
-
-// This is a catch-all mutation observer so that
-// we keep one having them all run at once. taken from 2012LBM
-(function() {
-    'use strict';
-
-    if (window.glorble) {
-        window.glorble.disconnect();
-    }
-	
-	window.glorbleTasks = [];
-	
-	const initialTasks = () => {
-        // VP screen skipper
-        if (document.getElementById("game_window") && typeof window.handleNavigation === 'function') {
-            window.handleNavigation();
+        .mytooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            background-color: lightblue;
         }
 
-        // candidate blocking
-		if (window.tctAutoStart?.tick) {
-			window.tctAutoStart.tick();
-		}
-    };
-	
-	window.glorbleTasks.push(initialTasks);
-	
-	const handleMutations = (mutationsList) => {
-        if (!window.glorbleTasks) return;
-        
-        for (let i = 0; i < window.glorbleTasks.length; i++) {
-            try {
-                window.glorbleTasks[i]();
-            } catch (e) {
-                console.error("Zoinks! Error in glorble task:", e);
-            }
+        .mytooltip .mytooltiptext {
+            width: 240px;
+            background-color: lightblue;
+            color: black;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 99;
+            bottom: 20%;
+            left: 20%;
+            margin-left: -90px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            border: 1px solid black;
+            pointer-events: none;
+            font-size: 13px !important;
+            line-height: 1.5em !important;
+            font-weight: normal !important;
+            font-style: normal !important;
         }
-    };
 
-    const targetNode = document.getElementById("game_window");
-    const config = { childList: true, subtree: true };
+        .mytooltip .mytooltiptext img {
+            max-width: 240px;
+            height: auto;
+        }
 
-    window.glorble = new MutationObserver(handleMutations);
-    window.glorble.observe(targetNode, config);
+        .mytooltip:hover .mytooltiptext {
+            opacity: 1;
+            transition-delay: 0.5s;
+        }
+        .inner_window_question {
+            height: auto;
+        }
+        .inner_window_question .inner_inner_window {
+            height: auto;
+        }
+        .inner_window_question .inner_inner_window .question_form {
+            height: auto;
+        }
 
-    handleMutations();
-    //console.log("glorble...");
-})();
+.overlay_window {
+            height: auto;
+        }
+    `;
+
+    var styleElem = document.createElement('style');
+    styleElem.type = 'text/css';
+    
+    styleElem.appendChild(document.createTextNode(css));
+    
+    document.head.appendChild(styleElem);
+}
+
+addDynamicCSS();
+
+tooltipList = [
+  {searchString: "Lauch Faircloth", explanationText: "<img src=https://i.postimg.cc/RCfhSSXN/faircloth.jpg style='width:75%;height:75%;'><br>Hog farmer turned conservative senator from North Carolina, who switched parties from Democrat to Republican. "},
+  {searchString: "Cheney", explanationText: "<img src=https://i.postimg.cc/h4xvDDpG/cheney.jpg style='width:75%;height:75%;'><br>“Vice” President. The demon sucking the marrow out of America’s bones."},
+  {searchString: "Halliburton", explanationText: "<img src=https://i.postimg.cc/Kv2z46H1/halliburton.jpg style='width:75%;height:75%;'><br>Follow the money."},
+  {searchString: "Bush", explanationText: "<img src=https://i.postimg.cc/SQ8RSSDk/bush.jpg style='width:75%;height:75%;'><br>When I was a boy I was told that anybody could become president. I'm beginning to believe it. - Clarence Darrow."},
+  {searchString: "Kerry", explanationText: "<img src=https://i.postimg.cc/SNhsjBvK/kerry.jpg style='width:75%;height:75%;'><br>Born with a silver spoon up his ass. Your chaperone to the white house, unless he blows it."},
+  {searchString: "Elizabeth", explanationText: "<img src=https://i.postimg.cc/SsccXS9L/elizabeth.jpg style='width:75%;height:75%;'><br>Future first lady of America. A fighter, a genius, and anything but a prop."},
+  {searchString: "Wade", explanationText: "<img src=https://i.postimg.cc/PrQqDSgB/wade.jpg style='width:75%;height:75%;'><br>First son of John and Elizabeth Edwards, tragically killed in a car accident at the age of 16."},
+  {searchString: "Fred Barron", explanationText: "<img src=https://i.postimg.cc/zDWvzz0y/fredbaron.jpg style='width:75%;height:75%;'><br>President of the American Association of Trial Lawyers and Democratic party fundraising powerhouse. He has graciously loaned you his private jet."},
+  {searchString: "Bunny", explanationText: "<img src=https://i.postimg.cc/zDWvzz0J/bunnymellon.jpg style='width:75%;height:75%;'><br>Eccentric horticulturist and heir to the Mellon fortune. Designed the White House Rose Garden for Jack Kennedy, and landscaped several of his homes. Nice lady."},
+  {searchString: "Trippi", explanationText: "<img src=https://i.postimg.cc/yYyNRLM5/trippi.jpg style='width:75%;height:75%;'><br>Campaign manager for Howard Dean in 2004, and now one of your senior advisors. Pioneered the technique of raising small dollar internet donations."},
+  {searchString: "Rubey", explanationText: "<img src=https://i.postimg.cc/ncGLm3yw/rubey.jpg style='width:75%;height:75%;'><br>Kim Rubey. Your press secretary, who’s worked on both of your campaigns."},
+  {searchString: "Brumburger", explanationText: "<img src=https://i.postimg.cc/kM8GJJfm/brumburger.jpg style='width:75%;height:75%;'><br>Josh Brumburger. A young, eager staffer of yours."},
+  {searchString: "Ginsberg", explanationText: "<img src=https://i.postimg.cc/VsMvffDr/ginsberg.jpg style='width:75%;height:75%;'><br>David Ginsberg. Your longtime communications adviser."},
+  {searchString: "National Enquirer", explanationText: "<img src=https://i.postimg.cc/66RqWWYq/enquirer.jpg style='width:75%;height:75%;'><br>Full of lies."},
+  {searchString: "Rielle Hunter", explanationText: "<img src=https://i.postimg.cc/Hs9LM6qt/rielle.jpg style='width:75%;height:75%;'><br>Documentarian, produced several ‘day in the life’ webisodes languishing deep in your campaign website. Lightly tethered to Earth."},
+  {searchString: "bodyman", explanationText: "A high powered executive assistant who follows a powerful man around night and day. Handles both types of dirty laundry."},
+  {searchString: "Andrew Young", explanationText: "<img src=https://i.postimg.cc/CMD5hhJ2/andrewyoung.jpg style='width:75%;height:75%;'><br>Your friend and bodyman since ‘98. He’d bury a body for you."},
+  {searchString: "blubbering in a Portsmouth diner", explanationText: "<img src=https://i.postimg.cc/kXv5ST0T/portsmouthdiner.jpg style='width:75%;height:75%;'><br>Following her loss in Iowa, Clinton appeared to cry during a town hall in New Hampshire when a woman asked her how she finds the motivation to keep going."},
+  {searchString: "his comments about Reagan", explanationText: "Obama described Reagan as a “transformative” figure who “changed the trajectory of America.”"},
+  {searchString: "on the board of Walmart", explanationText: "<img src=https://i.postimg.cc/L63sPydK/walmart.jpg style='width:75%;height:75%;'><br>From 1986 until 1992, Hillary Clinton served on Walmart’s board of directors."},
+  {searchString: "Tony Rezko", explanationText: "<img src=https://i.postimg.cc/yYyNRLMv/rezko.jpg style='width:75%;height:75%;'><br>“Real estate developer” in Chicago. Financier of the political campaigns of Rod Blagojevic and Barack Obama. Convicted of wire fraud in 2006."},
+  {searchString: "Our guys should talk", explanationText: "<img src=https://i.postimg.cc/65X3TkmY/ourguysshouldtalk.jpg style='width:75%;height:75%;'><br>You and Clinton were caught on a hot mic discussing the size of the democratic candidate field after a debate. ''We should try to have a more serious and a smaller group,'' you said, and she agreed: ''Our guys should talk.''"},
+  {searchString: "Patients’ Bill of Rights", explanationText: "A bill authored by yourself, Senator Kennedy, and Senator McCain which sought to reform and expand health insurance. It was gutted by the House, and ultimately never passed."},
+  {searchString: "Keating Five", explanationText: "<img src=https://i.postimg.cc/pXHTyw6L/keating.jpg style='width:75%;height:75%;'><br>Charles Keating, chairman of Lincoln Savings & Loan, donated $1.3 million to senators Cranston, Glenn, Riegle, DeConcini, and McCain. Those five senators shielded the company from a regulatory investigation. The company collapsed two years later, defrauding thousands and costing the government billions."},
+  {searchString: "Bob McGovern", explanationText: "<img src=https://i.postimg.cc/J4Lntf2H/mcgovern.jpg style='width:75%;height:75%;'><br>Professional spiritual healer, dear friend of Rielle Hunter, leech, nutcase."},
+  {searchString: "NAFTA", explanationText: "<img src=https://i.postimg.cc/3JTRWscj/nafta.jpg style='width:75%;height:75%;'><br>The trade deal that enriched businessmen and shuttered your father’s bill."},
+  {searchString: "Peru", explanationText: "<img src=https://i.postimg.cc/J4Lntf2q/peru.jpg style='width:75%;height:75%;'><br>The United States–Peru Trade Promotion Agreement was intended to prop up legitimate businesses in the Americas as an alternative to narcotics. The unfortunate side effects include the butchering of the rainforest and the hollowing out of small American farms."},
+  {searchString: "Breitbart", explanationText: "<img src=https://i.postimg.cc/T2m1ddCT/breitbart.jpg style='width:75%;height:75%;'><br>A far right internet rag run by a bloated racist demagogue."},
+  {searchString: "Lehman Brothers", explanationText: "<img src=https://i.postimg.cc/gkWJrCT6/lehman.jpg style='width:75%;height:75%;'><br>America’s fourth largest investment bank and a leader in ‘subprime’ mortgage loans."},
+  {searchString: "Bernanke", explanationText: "<img src=https://i.postimg.cc/Dfs0vv5t/bernanke.jpg style='width:75%;height:75%;'><br>Fed Chairman, appointed in 2006. Deficit Hawk when it comes to Social Security and Medicare, but to save a failing bank there’s no amount he won’t print."},
+  {searchString: "Quinn", explanationText: "<img src=https://i.postimg.cc/tCNg6BKN/quinn.jpg style='width:75%;height:75%;'><br>Everything happens for a reason."},
+  {searchString: "Ralph Nader", explanationText: "<img src=https://i.postimg.cc/fTNLkGrx/nader.jpg style='width:75%;height:75%;'><br>Perennial left wing spoiler candidate. If you’re even thinking about him, that’s a bad sign."},
+  {searchString: "Cynthia McKinney", explanationText: "<img src=https://i.postimg.cc/yYHdWMbZ/mckinney.jpg style='width:75%;height:75%;'><br>Green Party presidential nominee, talks much more about Jews than solar panels."},
+  {searchString: "the CPD", explanationText: "<img src=https://i.postimg.cc/BZDbSSMP/cpd.jpg style='width:75%;height:75%;'><br>The Commission on Presidential Debates has sponsored and televised all presidential debates in America since 1988."},
+  {searchString: "Shaggy Defense", explanationText: "<img src=https://i.postimg.cc/rFNp4fBP/shaggydefense.jpg style='width:75%;height:75%;'><br>A revolutionary legal defense in which the defendant claims “it wasn’t me” despite vast amounts of contrary evidence. Pioneered in the song “It wasn’t me” by Shaggy, featuring RikRok."},
+  {searchString: "your palatial home", explanationText: "<img src=https://i.postimg.cc/sDrX1kNK/palatial.jpg style='width:75%;height:75%;'><br>You worked hard to get where you are."},
+  {searchString: "Joe the Plumber", explanationText: "<img src=https://i.postimg.cc/3JTRWscR/joetheplumber.jpg style='width:75%;height:75%;'><br>Not making enough to give a shit about tax increases, and not even really a plumber."},
+
+];
 
 // Initialise custom music
 
@@ -757,6 +774,10 @@ var soundtracks = {
       name: "Johnny's iPod",
       tracklist: [
         {
+          "name": "Dave Matthews Band - American Baby",
+          "url": "https://audio.jukehost.co.uk/FuyIlJeiYJKU4q8kd9Dq4CQg3UTIBqeO"
+        },
+        {
           "name": "Hootie & the Blowfish - Only Wanna Be With You",
           "url": "https://audio.jukehost.co.uk/QPUEUdiAL33auZrhdMUnPhbSkbHDQqYB"
         },
@@ -768,10 +789,7 @@ var soundtracks = {
           "name": "Jackson Browne - I Am a Patriot",
           "url": "https://audio.jukehost.co.uk/x7hmgrtUnK5YC11qp7xKpJKSZvOc6911"
         },
-        {
-          "name": "Dave Matthews Band - American Baby",
-          "url": "https://audio.jukehost.co.uk/FuyIlJeiYJKU4q8kd9Dq4CQg3UTIBqeO"
-        },
+        
         {
           "name": "Bonnie Raitt - Angel From Montgomery",
           "url": "https://audio.jukehost.co.uk/4o5MIUUVg3fL45psHuweTJf3iP9phKol"
@@ -784,7 +802,6 @@ var soundtracks = {
           "name": "Chuck Berry - Johnny B. Goode",
           "url": "https://audio.jukehost.co.uk/WuNMAffglUOSfAhxiG3lp0lTaMEA6Nnt"
         },
-        
       ]
     },
     1: {
@@ -825,5 +842,59 @@ var soundtracks = {
 // Set up new music player
 
 newMusicPlayer()
+/*
+//stop question text from overflowing
+function addDynamicCSS() {
+    var css = `
+        .inner_window_question {
+            height: auto;
+        }
+        .inner_window_question .inner_inner_window {
+            height: auto;
+        }
+        .inner_window_question .inner_inner_window .question_form {
+            height: auto;
+        }
 
-//#endcode
+.overlay_window {
+            height: auto;
+        }
+
+    
+    ;
+`
+    var styleElem = document.createElement('style');
+    styleElem.type = 'text/css';
+
+    styleElem.appendChild(document.createTextNode(css));
+
+    document.head.appendChild(styleElem);
+}
+
+addDynamicCSS();
+*/
+//vp skipper?
+
+styling = document.createElement("style");
+document.head.appendChild(styling);
+
+styling.innerHTML = `
+#opponent_selection_id_back {
+    display: none;
+}
+`
+
+let z = new MutationObserver((mutationsList, observer) => {
+    let runningMateSummary = document.querySelector("#running_mate_summary");
+    if (runningMateSummary) {
+        $("#running_mate_id_button").click();
+        observer.disconnect()
+    }
+});
+
+
+z.observe(document, { subtree: true, childList: true });
+
+}
+
+//#endcode1
