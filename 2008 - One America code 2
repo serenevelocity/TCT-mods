@@ -1,3 +1,5 @@
+//start code 2
+
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -1118,7 +1120,7 @@ campaignTrail_temp.answers_json = [
         "pk": 346,
         "fields": {
             "question": 98,
-            "description": "In my travels across this country, I have never doubted our ability to do great things. My faith in the hardworking men and women in this country has never been shaken. We must build a fair healthcare system, we must build an economy that works for all, we must build a brighter tomorrow. The time for waiting is over: Tomorrow Begins Today!\n"
+            "description": "In my travels across this country, I have never doubted our ability to do great things. My faith in the hardworking men and women in this country has never been shaken. We must build a fair healthcare system, we must build an economy that works for all, we must build a brighter tomorrow. The time for waiting is over: <b>Tomorrow Begins Today!</b>\n"
         }
     },
     {
@@ -1126,7 +1128,7 @@ campaignTrail_temp.answers_json = [
         "pk": 347,
         "fields": {
             "question": 98,
-            "description": "Four years ago I spoke to you about two Americas. An America which has the best healthcare money can buy, and an America brought to the brink by medical bills. An America prospering from our new economy, and an America where factories are shuttered and main street shops are closing their doors. An America divided by race, class, north and south, east and west. But a house divided against itself cannot stand. Together, my friends, we will work to build One America, where nobody is left behind!"
+            "description": "Four years ago I spoke to you about two Americas. An America which has the best healthcare money can buy, and an America brought to the brink by medical bills. An America prospering from our new economy, and an America where factories are shuttered and main street shops are closing their doors. An America divided by race, class, north and south, east and west. But a house divided against itself cannot stand. Together, my friends, we will work to build <b>One America</b>, where nobody is left behind!"
         }
     },
     {
@@ -13587,6 +13589,69 @@ campaignTrail_temp.jet_data = [{
 
 // end of base code
 
+//tooltips
+function getTooltips(str) {
+    let matches = [];
+
+    tooltipList.forEach((tooltip, index) => {
+        // Adjust the regex to match searchString potentially surrounded by “ and followed by optional punctuation
+       let regex = new RegExp(`(?<=\\b|\\s|^|“)${tooltip.searchString}(?=[.,;!?]?\\b|\\s|”|$)`, 'g');
+
+
+        let match;
+        while ((match = regex.exec(str)) !== null) {
+            matches.push({
+                start: match.index + (match[0].startsWith('“') ? 1 : 0), // Adjust for potential starting “
+                end: match.index + match[0].length - (match[0].endsWith('”') ? 1 : 0) - (match[2] ? 1 : 0), 
+                tooltipIndex: index
+            });
+        }
+    });
+
+    // Sort by starting position; if two start at the same position, longer match comes first
+    matches.sort((a, b) => a.start - b.start || b.end - b.start - (a.end - a.start));
+
+    // Filter out overlaps
+    for (let i = 0; i < matches.length - 1; ) {
+        if (matches[i + 1].start < matches[i].end) {
+            matches.splice(i + 1, 1); // Remove the next match since it overlaps
+        } else {
+            i++; // Move to next match
+        }
+    }
+
+    return matches;
+}
+function applyTooltips(str) {
+    const matches = getTooltips(str);
+    let result = '';
+    let lastIndex = 0;
+
+    matches.forEach(match => {
+        const tooltip = tooltipList[match.tooltipIndex];
+        result += str.slice(lastIndex, match.start);
+        result += `<span class='mytooltip'>${tooltip.searchString}<span class='mytooltiptext'>${tooltip.explanationText}</span></span>`;
+        lastIndex = match.end;
+    });
+
+    result += str.slice(lastIndex); // Add the remainder of the original string
+    return result;
+}
+
+function applyTooltipsToObject(obj) {
+    for (let key in obj) {
+        if (typeof obj[key] === 'string') {
+            obj[key] = applyTooltips(obj[key]);
+        } else if (typeof obj[key] === 'object') {
+            applyTooltipsToObject(obj[key]); // Recursive call
+        }
+    }
+}
+
+applyTooltipsToObject(campaignTrail_temp.questions_json);
+applyTooltipsToObject(campaignTrail_temp.answers_json);
+applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
+
 campaignTrail_temp.candidate_json[1]["fields"].last_name = "Bush";
 campaignTrail_temp.candidate_json[0]["fields"].last_name = "Kerry";
 campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/bvrQPNQr/johnkerry2004.png';
@@ -14309,28 +14374,28 @@ else if((ans == 161 && funds >= 3 && rhetoric > 0) || (ans == 162 && funds > 3 &
     campaignTrail_temp.questions_json[15] = tunnel(40);
 }//regular victory
 
-//question 17, push  ambush
+//question 17, push ambush
 if (ans == 1296){ // contested convention triggers ambush
     campaignTrail_temp.questions_json[16] = tunnel(1299);
 }
 
 //question 18, push vp question
- if(e.running_mate_last_name==="Sebelius"){
+if((ans == 346 || ans == 347)&&(e.running_mate_last_name==="Sebelius")){
     campaignTrail_temp.questions_json[17] = tunnel(1333);
 }
-else if(e.running_mate_last_name==="Biden"){
+if((ans == 346 || ans == 347)&&(e.running_mate_last_name==="Biden")){
     campaignTrail_temp.questions_json[17] = tunnel(1319);
 }
-else if(e.running_mate_last_name==="Rendell"){
+if((ans == 346 || ans == 347)&&(e.running_mate_last_name==="Rendell")){
     campaignTrail_temp.questions_json[17] = tunnel(1349);
 }
-else if(e.running_mate_last_name==="Clinton"){
+if((ans == 346 || ans == 347)&&(e.running_mate_last_name==="Clinton")){
     campaignTrail_temp.questions_json[17] = tunnel(1389);
 }
-else if(e.running_mate_last_name==="Obama"){
+if((ans == 346 || ans == 347)&&(e.running_mate_last_name==="Obama")){
     campaignTrail_temp.questions_json[17] = tunnel(1365);
 }
-else if(e.running_mate_last_name==="Kennedy"){
+if((ans == 346 || ans == 347)&&(e.running_mate_last_name==="Kennedy")){
     campaignTrail_temp.questions_json[17] = tunnel(1411);
 }
 
@@ -14518,11 +14583,12 @@ if (ans == 1292){ //push kennedy vp
     )
 }
 
+
 //set vp screen to trigger on question 18
-if (e.question_number == 16) {
+if (e.question_number == 15) {
       window.setTimeout(e.vpSwitcher, 20)
     }
-
+} // end cyoa function
 
  var changeGameDisp = (hide) => {
       disp = "";
@@ -14616,10 +14682,12 @@ if (e.question_number == 16) {
               $("#campaign_sign").html(`<p>${e.candidate_last_name}</p><p>${e.running_mate_last_name}</p>`);
               $("#running_mate_pic").attr("src", e.running_mate_image_url)
           }
+         $("#inner_window_4").remove();
+        changeGameDisp(false);
         })
     
     }
-}
+
 // campaign hq
 e=campaignTrail_temp
 
@@ -14845,7 +14913,7 @@ function openHeadquarter() {
 //</b></u></i>
     
 }
-
+//vp switcher stuff
 function handleMutations(mutationsList, observer) {
     if (observerRunning) return;
     observerRunning = true;
@@ -14868,3 +14936,5 @@ if (!element) {
 	controlElement.id = 'controlElement';
 	document.body.appendChild(controlElement);
 }
+
+//endcode2
