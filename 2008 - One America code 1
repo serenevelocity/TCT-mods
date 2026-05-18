@@ -374,7 +374,7 @@ jet_data = {
 //#startcode
 
 
-corrr = '\n              <h2>THE MAIN STREET EXPRESS!</h2><font id="wittyquote" size="4" color="white"><em>"I don\'t think God\'s through with me." - John Edwards</em></font>\n            ';
+corrr = '\n              <h2>THE MAIN STREET EXPRESS!</h2><font id="wittyquote" size="4" color="white"><em>"A man who tells the truth doesn't have to remember what he said." - Mark Twain</em></font>\n            ';
 
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#1d4065";
