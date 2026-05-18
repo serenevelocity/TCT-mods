@@ -305,52 +305,13 @@ campaignTrail_temp.candidate_json = [
 ]
 
 campaignTrail_temp.running_mate_json = [
-    {
-        "model": "campaign_trail.running_mate",
-        "pk": 1,
-        "fields": {
-            "candidate": 16,
-            "running_mate": 30
-        }
-    },
+    
     {
         "model": "campaign_trail.running_mate",
         "pk": 2,
         "fields": {
             "candidate": 16,
             "running_mate": 34
-        }
-    },
-    {
-        "model": "campaign_trail.running_mate",
-        "pk": 93111,
-        "fields": {
-            "candidate": 16,
-            "running_mate": 50005
-        }
-    },
-    {
-        "model": "campaign_trail.running_mate",
-        "pk": 99733,
-        "fields": {
-            "candidate": 16,
-            "running_mate": 50004
-        }
-    },
-    {
-        "model": "campaign_trail.running_mate",
-        "pk": 81004,
-        "fields": {
-            "candidate": 16,
-            "running_mate": 50003
-        }
-    },
-    {
-        "model": "campaign_trail.running_mate",
-        "pk": 120698,
-        "fields": {
-            "candidate": 16,
-            "running_mate": 50002
         }
     },
     {
@@ -404,7 +365,7 @@ jet_data = {
     "containerColor": "#d8e4e2",
     "innerWindowColor": "#a2b9d6",
     "bannerImageUrl": "https://i.imgur.com/p66GtNU.png",
-    "backgroundImageUrl": "https://i.imgur.com/wgaigow.jpeg",
+    "backgroundImageUrl": "https://cdn.imgchest.com/files/f3654139c5ff.jpeg",
     "endingTextColor": "#000000",
     "customQuote": "\"I don't think God's through with me.\" - John Edwards",
     "gameTitle": "THE MAIN STREET EXPRESS!"
@@ -428,7 +389,7 @@ $(".container")[0].style.backgroundColor = "#d8e4e2";
 
 document.getElementById("header").src = "https://i.imgur.com/p66GtNU.png";
 
-document.body.background = "https://i.imgur.com/wgaigow.jpeg";
+document.body.background = "https://cdn.imgchest.com/files/f3654139c5ff.jpeg";
 
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#a2b9d6!important;}</style>";
 
@@ -522,9 +483,9 @@ addDynamicCSS();
 
 tooltipList = [
   {searchString: "Lauch Faircloth", explanationText: "<img src=https://i.postimg.cc/RCfhSSXN/faircloth.jpg style='width:75%;height:75%;'><br>Hog farmer turned conservative senator from North Carolina, who switched parties from Democrat to Republican. "},
-  {searchString: "Cheney", explanationText: "<img src=https://i.postimg.cc/h4xvDDpG/cheney.jpg style='width:75%;height:75%;'><br>“Vice” President. The demon sucking the marrow out of America’s bones."},
+  {searchString: "Dick Cheney", explanationText: "<img src=https://i.postimg.cc/h4xvDDpG/cheney.jpg style='width:75%;height:75%;'><br>“Vice” President. The demon sucking the marrow out of America’s bones."},
   {searchString: "Halliburton", explanationText: "<img src=https://i.postimg.cc/Kv2z46H1/halliburton.jpg style='width:75%;height:75%;'><br>Follow the money."},
-  {searchString: "Bush", explanationText: "<img src=https://i.postimg.cc/SQ8RSSDk/bush.jpg style='width:75%;height:75%;'><br>When I was a boy I was told that anybody could become president. I'm beginning to believe it. - Clarence Darrow."},
+  {searchString: "President Bush", explanationText: "<img src=https://i.postimg.cc/SQ8RSSDk/bush.jpg style='width:75%;height:75%;'><br>'When I was a boy I was told that anybody could become president. I'm beginning to believe it'.' - Clarence Darrow."},
   {searchString: "Kerry", explanationText: "<img src=https://i.postimg.cc/SNhsjBvK/kerry.jpg style='width:75%;height:75%;'><br>Born with a silver spoon up his ass. Your chaperone to the white house, unless he blows it."},
   {searchString: "Elizabeth", explanationText: "<img src=https://i.postimg.cc/SsccXS9L/elizabeth.jpg style='width:75%;height:75%;'><br>Future first lady of America. A fighter, a genius, and anything but a prop."},
   {searchString: "Wade", explanationText: "<img src=https://i.postimg.cc/PrQqDSgB/wade.jpg style='width:75%;height:75%;'><br>First son of John and Elizabeth Edwards, tragically killed in a car accident at the age of 16."},
@@ -542,7 +503,7 @@ tooltipList = [
   {searchString: "his comments about Reagan", explanationText: "Obama described Reagan as a “transformative” figure who “changed the trajectory of America.”"},
   {searchString: "on the board of Walmart", explanationText: "<img src=https://i.postimg.cc/L63sPydK/walmart.jpg style='width:75%;height:75%;'><br>From 1986 until 1992, Hillary Clinton served on Walmart’s board of directors."},
   {searchString: "Tony Rezko", explanationText: "<img src=https://i.postimg.cc/yYyNRLMv/rezko.jpg style='width:75%;height:75%;'><br>“Real estate developer” in Chicago. Financier of the political campaigns of Rod Blagojevic and Barack Obama. Convicted of wire fraud in 2006."},
-  {searchString: "Our guys should talk", explanationText: "<img src=https://i.postimg.cc/65X3TkmY/ourguysshouldtalk.jpg style='width:75%;height:75%;'><br>You and Clinton were caught on a hot mic discussing the size of the democratic candidate field after a debate. ''We should try to have a more serious and a smaller group,'' you said, and she agreed: ''Our guys should talk.''"},
+  {searchString: "our guys should talk", explanationText: "<img src=https://i.postimg.cc/65X3TkmY/ourguysshouldtalk.jpg style='width:75%;height:75%;'><br>You and Clinton were caught on a hot mic discussing the size of the democratic candidate field after a debate. ''We should try to have a more serious and a smaller group,'' you said, and she agreed: ''Our guys should talk.''"},
   {searchString: "Patients’ Bill of Rights", explanationText: "A bill authored by yourself, Senator Kennedy, and Senator McCain which sought to reform and expand health insurance. It was gutted by the House, and ultimately never passed."},
   {searchString: "Keating Five", explanationText: "<img src=https://i.postimg.cc/pXHTyw6L/keating.jpg style='width:75%;height:75%;'><br>Charles Keating, chairman of Lincoln Savings & Loan, donated $1.3 million to senators Cranston, Glenn, Riegle, DeConcini, and McCain. Those five senators shielded the company from a regulatory investigation. The company collapsed two years later, defrauding thousands and costing the government billions."},
   {searchString: "Bob McGovern", explanationText: "<img src=https://i.postimg.cc/J4Lntf2H/mcgovern.jpg style='width:75%;height:75%;'><br>Professional spiritual healer, dear friend of Rielle Hunter, leech, nutcase."},
@@ -842,38 +803,8 @@ var soundtracks = {
 // Set up new music player
 
 newMusicPlayer()
-/*
-//stop question text from overflowing
-function addDynamicCSS() {
-    var css = `
-        .inner_window_question {
-            height: auto;
-        }
-        .inner_window_question .inner_inner_window {
-            height: auto;
-        }
-        .inner_window_question .inner_inner_window .question_form {
-            height: auto;
-        }
 
-.overlay_window {
-            height: auto;
-        }
-
-    
-    ;
-`
-    var styleElem = document.createElement('style');
-    styleElem.type = 'text/css';
-
-    styleElem.appendChild(document.createTextNode(css));
-
-    document.head.appendChild(styleElem);
-}
-
-addDynamicCSS();
-*/
-//vp skipper?
+//vp skipper
 
 styling = document.createElement("style");
 document.head.appendChild(styling);
