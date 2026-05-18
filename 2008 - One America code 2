@@ -14399,6 +14399,11 @@ if((ans == 346 || ans == 347)&&(e.running_mate_last_name==="Kennedy")){
     campaignTrail_temp.questions_json[17] = tunnel(1411);
 }
 
+//question 20, push party unity question
+//if hillaryscore is < -1 push pk ____
+//elif running mate last name === obama push pk ___
+//elif obamascore is < -1 push pk ______
+//elif running mate last name === clinton push pk ____
 
 // question 25, push rielle encounter
 if(ans == 197){
@@ -14450,6 +14455,9 @@ if ((ans == 1562) || (ans == 1563) || (ans == 1572) || (ans == 1574)){
     campaignTrail_temp.questions_json[33] = tunnel(1978);
     campaignTrail_temp.questions_json[34] = tunnel(1988);
 }
+// question 31 denial or admittance path 
+
+
 
 // question 32 sex tape path
 if (ans == 1586){
@@ -14457,8 +14465,8 @@ if (ans == 1586){
     campaignTrail_temp.questions_json[32] = tunnel(1820);
     // trigger early end (WIP)
 }
-// alternate question 32 veep surrender options
 
+// alternate question 32 veep surrender options
 if ((ans == 1579)&&(e.running_mate_last_name==="Sebelius")){
     campaignTrail_temp.questions_json[31] = tunnel(1605);
 }
@@ -14478,13 +14486,15 @@ else if ((ans == 1579)&&(e.running_mate_last_name==="Kennedy")){
     campaignTrail_temp.questions_json[31] = tunnel(1655);
 }
 
+// question 33 denial or admittance path
+
 // alternate question 33 veep options
 if ((ans == 1579)&&((e.running_mate_last_name==="Clinton") || (e.running_mate_last_name==="Biden") || (e.running_mate_last_name==="Obama") || (e.running_mate_last_name==="Kennedy"))){
     campaignTrail_temp.questions_json[32] = tunnel(1665);
 }
 
 // question 34 successes
-
+// // question 34 denial or admittance path
 if ((ans == 1579)&&(deny === true && admit === false)){
     campaignTrail_temp.questions_json[33] = tunnel(1685);
 } else if ((ans == 1579)&&(deny === false && admit === true)){
@@ -14504,8 +14514,9 @@ if ((ans == 1598) || (ans == 1612) || (ans == 1622) || (ans== 1632) || (ans==164
 
 
 if((ans == 164) && (ans == 157)){ // hillary deal
-    console.log("You're with her.");  
-    campaignTrail_temp.running_mate_json.push({
+    console.log("You're with her.");
+    campaignTrail_temp.running_mate_json.pop()
+    /*campaignTrail_temp.running_mate_json.push({
         "model":"campaign_trail.running_mate",
         "pk": 1,
         "fields" : {
@@ -14513,11 +14524,12 @@ if((ans == 164) && (ans == 157)){ // hillary deal
             "running_mate": 34
             }
         }
-    )
+    )*/
 }
 if((ans == 163) && (ans == 157)){ // obama deal
-    console.log("Yes you can!");  
-    campaignTrail_temp.running_mate_json.push({
+    console.log("Yes you can!");
+    campaignTrail_temp.running_mate_json.shift()
+    /*campaignTrail_temp.running_mate_json.push({
         "model":"campaign_trail.running_mate",
         "pk": 2,
         "fields" : {
@@ -14525,7 +14537,7 @@ if((ans == 163) && (ans == 157)){ // obama deal
             "running_mate": 50001
             }
         }
-    )
+    )*/
 }
 else if ((ans == 1292 || ans == 157) && !(ans == 163 || ans == 164)) { //push richardson, sebelius, biden if no deal
     console.log("Normal Veepstakes");
@@ -14556,6 +14568,8 @@ else if ((ans == 1292 || ans == 157) && !(ans == 163 || ans == 164)) { //push ri
             }
         }
     )
+    campaignTrail_temp.running_mate_json.shift()
+    campaignTrail_temp.running_mate_json.shift()
 }
 if ((rhetoric >= 4) && (ans == 1292 || ans == 157) && !(ans == 163 || ans == 164)){ //push rendell vp
     console.log("America's Mayor");
