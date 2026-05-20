@@ -364,7 +364,7 @@ jet_data = {
     "windowColor": "#a2b9d6",
     "containerColor": "#d8e4e2",
     "innerWindowColor": "#a2b9d6",
-    "bannerImageUrl": "https://cdn.imgchest.com/files/2f4ec7d8a13b.webp",
+    "bannerImageUrl": "https://cdn.imgchest.com/files/3c2f0ad28618.png",
     "backgroundImageUrl": "https://cdn.imgchest.com/files/bd0de02a7ed5.jpeg",
     "endingTextColor": "#000000",
     "customQuote": "\"A man who tells the truth doesn\'t have to remember what he said.\" - Mark Twain",
@@ -387,11 +387,11 @@ $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selected
 
 $(".container")[0].style.backgroundColor = "#d8e4e2";
 
-document.getElementById("header").src = "https://cdn.imgchest.com/files/2f4ec7d8a13b.webp";
+document.getElementById("header").src = "https://cdn.imgchest.com/files/3c2f0ad28618.png";
 
 document.body.background = "https://cdn.imgchest.com/files/bd0de02a7ed5.jpeg";
 
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#a2b9d6!important;}</style>";
+
 
 let style = document.createElement('style');
 style.type = 'text/css';
@@ -410,6 +410,41 @@ style.innerHTML = `
 `;
 
 document.head.appendChild(style);
+
+// Note: this was initially taken from the Things That Never Were scenario,
+// and lightly adapted to work here. I'm not sure who actually wrote this, and
+// this probably *wasn't* made for that scenario only, so this is embarrassing.
+// Regardless, all attributions go to the respective authors of the respective
+// mods who coined this rather useful feature.
+
+function ensureMetaViewport() {
+  if (!document.querySelector('meta[name="viewport"]')) {
+    const m = document.createElement('meta');
+    m.name = 'viewport';
+    m.content = 'width=device-width, initial-scale=1';
+    document.head.appendChild(m);
+  }
+}
+
+function applyGlobalStyles(css, id = 'app-theme') {
+  if ('adoptedStyleSheets' in document && 'replaceSync' in CSSStyleSheet.prototype) {
+    if (!applyGlobalStyles.sheets) applyGlobalStyles.sheets = {};
+    if (!applyGlobalStyles.sheets[id]) {
+      applyGlobalStyles.sheets[id] = new CSSStyleSheet();
+      document.adoptedStyleSheets = [...document.adoptedStyleSheets, applyGlobalStyles.sheets[id]];
+    }
+    applyGlobalStyles.sheets[id].replaceSync(css);
+    return;
+  }
+
+  let el = document.getElementById(id);
+  if (!el) {
+    el = document.createElement('style');
+    el.id = id;
+    document.head.appendChild(el);
+  }
+  el.textContent = css;
+}
 
 //tooltip stuff 
 function addDynamicCSS() {
@@ -456,6 +491,88 @@ function addDynamicCSS() {
             opacity: 1;
             transition-delay: 0.5s;
         }
+
+        //
+      .inner_window_question p:last-of-type { /* so this doesn't overlap with the candidate images */
+                margin: .6em auto;
+                background: linear-gradient(to bottom, transparent, #e8e8e8);
+                border-radius: 1em;
+                width: fit-content;
+                display: inline-block;
+            }
+
+      #question_form br { display: none; }
+			#question_form form {
+				display: grid;
+				grid-template-columns: auto 1fr;
+				align-items: start;
+				row-gap: 0;
+				max-width: 930px
+			}
+
+			#question_form input[type="radio"] {
+				grid-column: 1;
+				margin: 0 10px 0 0;
+				align-self: center;
+				transform: translateY(-1px);
+			}
+
+			#question_form input[type="radio"] + label {
+				grid-column: 2;
+				display: block;
+				padding: 3px 6px;
+				margin: 0;
+				line-height: 1.32;
+				border: none;
+				border-bottom: 1px dashed #bbb;
+				transition: background-color .2s, border-color .2s;
+				cursor: pointer;
+				width: min(100%, 930px);
+			}
+
+			#question_form form > input[type="radio"]:last-of-type + label {
+				border-bottom: none;
+			}
+
+			#question_form label {
+				font-size: 14px;
+				font-weight: 400;
+				margin: 1px; /* prevent any bottom margin */
+				line-height: 1.2;
+			}
+
+			#question_form input[type="radio"]:checked + label {
+				background: #EDF3F7;
+				border-bottom-color: #548EAD;
+				border-bottom: 1px dotted !important;
+				border-radius: 0 1em 1em 0;
+			}
+
+			#question_form input[type="radio"] + label:hover,
+			#question_form input[type="radio"] + label:focus {
+				font-size: 14px;
+				font-weight: 400;
+				background: #f0f0f0;
+			}
+      .inner_window_question {
+				height: auto !important;
+				min-height: 0 !important;
+				max-height: none !important;
+				position: static !important;
+				top: auto !important;
+				bottom: auto !important;
+				flex: 0 1 auto !important;
+				align-self: auto !important;
+				grid-row: auto !important;
+				grid-column: auto !important;
+				justify-self: auto !important;
+				display: flow-root !important;
+				overflow: visible !important;
+				box-sizing: border-box !important;
+				max-height: 395px;
+      } 
+        
+      // auto window stuff
         .inner_window_question {
             height: auto;
         }
@@ -466,9 +583,10 @@ function addDynamicCSS() {
             height: auto;
         }
 
-.overlay_window {
+        .overlay_window {
             height: auto;
         }
+        
     `;
 
     var styleElem = document.createElement('style');
@@ -524,248 +642,8 @@ tooltipList = [
 
 // Initialise custom music
 
-$("#music_player")[0].children[0].style.display="none"
-$("#music_player")[0].children[1].style.display="none"
-
-document.getElementById("modLoadReveal").style.display="none"
-document.getElementById("modloaddiv").style.display="none"
-
-musicBox = document.getElementById("music_player")
-musicBox.style.display=""
-
-var trackSel;
-e = campaignTrail_temp
-e.selectedSoundtrack = 0
-
-toTime = (seconds) => {
-  var date = new Date(null);
-  date.setSeconds(seconds);
-  return date.toISOString().substr(11, 8);
-}
-
-generateTime = () => {
-    // Get the audio element
-    var audio = document.getElementById("campaigntrailmusic");
-
-    timeTracker = document.createElement("div");
-    timeTracker.style = `
-      text-align:left;
-      border-style:solid;
-      border-width:3px;
-      height:150px;
-      width:200px;
-      background-color:#999999;
-      float:right;
-      padding: 10px;
-    `
-    $("#trackSelParent")[0].prepend(timeTracker);
-    $("#trackSelParent")[0].prepend(document.createElement("br"));
-
-    // Create a new element to display the current position of the audio
-    var positionDisplay = document.createElement("gg");
-    positionDisplay.id = "position-display";
-
-    // Create a new slider element to change the time
-    var timeSlider = document.createElement("input");
-    timeSlider.type = "range";
-    timeSlider.min = 0;
-    timeSlider.max = 1;
-    timeSlider.step = 0.001;
-    timeSlider.value = 0;
-    timeSlider.style.width = "200px";
-    timeSlider.id = "time-slider";
-
-    var pausePlay = document.createElement("button");
-    pausePlay.id = "position-display";
-    pausePlay.innerHTML = "<b>Pause</b>"
-    pausePlay.style.width = "100%";
-
-
-    pausePlay.addEventListener("click", event => {
-      event.preventDefault();
-      updatePositionDisplay();
-      let audio = document.getElementById("campaigntrailmusic");
-      if (audio.paused) {
-        audio.play();
-        event.target.innerHTML = "<b>Pause</b>";
-        return;
-      }
-      audio.pause();
-      event.target.innerHTML = "<b>Play</b>";
-      return;
-    })
-
-    var volumeLabel = document.createElement("gg");
-    volumeLabel.id = "volume-label";
-    volumeLabel.innerHTML = "<br><b>Volume: </b>"
-
-    var volumeSlider = document.createElement("input");
-    volumeSlider.type = "range";
-    volumeSlider.min = 0;
-    volumeSlider.max = 1;
-    volumeSlider.step = 0.001;
-    volumeSlider.value = 0;
-    volumeSlider.style.width = "200px";
-    volumeSlider.id = "volume-slider";
-
-    volumeSlider.value = audio.volume;
-
-    timeTracker.appendChild(pausePlay);
-    timeTracker.appendChild(document.createElement("br"));
-    timeTracker.appendChild(document.createElement("br"));
-    timeTracker.appendChild(positionDisplay);
-    timeTracker.appendChild(timeSlider);
-    timeTracker.appendChild(volumeLabel);
-    timeTracker.appendChild(volumeSlider);
-
-    updatePositionDisplay();
-
-    //for (let i = 0; i < 10; i++)
-    //timeTracker.append(document.createElement("br"));
-
-
-    // Function to update the position display
-    function updatePositionDisplay() {
-      positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
-      timeSlider.value = audio.duration ? audio.currentTime / audio.duration : 0;
-    }
-
-    // Function to change the time of the audio
-    function changeTime() {
-      positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
-      audio.currentTime = timeSlider.value * audio.duration;
-    }
-
-    updateVolume = event => {
-      audio.volume = event.target.value;
-    }
-    
-    // Update the position display and slider every second
-    setInterval(updatePositionDisplay, 1000);
-
-    // Listen for changes to the time slider and change the time of the audio
-    timeSlider.addEventListener("input", changeTime);
-    volumeSlider.addEventListener("input", updateVolume)
-}
-
-function newMusicPlayer() {
-  trackSel = document.createElement("div");
-  trackSel.id = "trackSelParent"
-  let z = `<br><br><br><br><br><br><br><br><br><br><div id='trackSel' style="text-align:left;border-style:solid;border-width:3px;overflow-y: scroll;overflow-x: hidden;height:200px; width:400px;background-color:#999999;float:right;">`
-  z += `<b><select id='selectSoundtrack'><option value='`+soundtracks[e.selectedSoundtrack].name+`'>`+soundtracks[e.selectedSoundtrack].name+"</option>"
-  for (i in soundtracks) {
-    if (soundtracks[e.selectedSoundtrack] != soundtracks[i]) {
-      z += `<option value='`+soundtracks[i].name+`'>`+soundtracks[i].name+`</option>`
-    }
-  }
-  z += `</select></b><br><br>`
-  // <label><input type="radio" name="option" value="option1">Option 1</label><br>
-  for (i in soundtracks[e.selectedSoundtrack].tracklist) {
-    let a = soundtracks[e.selectedSoundtrack].tracklist[i]
-    let b = `<label><input class="trackSelector" type="radio" name="trackSelector" value="`+i+`">`+a.name+`</label><br>`
-    z += b
-  }
-  z += "</div><br><br>"
-  trackSel.innerHTML = z
-
-  // select correct song
-
-  musicBox.appendChild(trackSel);
-  Array.from(document.getElementById("trackSel").children).filter(f=>{
-    return f.tagName == "LABEL"
-  }).map(f=>f.children[0])[0].checked = true
-
-  // set soundtrack changer
-
-  soundtrackSelector = document.getElementById("selectSoundtrack")
-  soundtrackSelector.onchange = function() {
-    for (i in soundtracks) {
-      if (soundtracks[i].name == soundtrackSelector.value) {
-        e.selectedSoundtrack = i
-        break
-      }
-    }
-    document.getElementById("trackSelParent").remove()
-    newMusicPlayer()
-  }
-
-  var matches = document.querySelectorAll('.trackSelector');
-
-  for (match in matches) {
-    matches[match].onchange = function() {
-      audio = $("#campaigntrailmusic")[0];
-      audio.src = soundtracks[e.selectedSoundtrack].tracklist[this.value].url
-      audio.currentTime = 0
-    }
-  }
-
-  musicBox.children[2].loop = false
-  musicBox.children[2].src = soundtracks[e.selectedSoundtrack].tracklist[0].url
-
-  musicBox.children[2].onended = function() {
-    console.log("next track")
-    let selected = Number(document.querySelector('input[name="trackSelector"]:checked').value);
-    let newSel = clamp(selected+1, soundtracks[e.selectedSoundtrack].tracklist.length-1, 0)
-    let buttons = Array.from(document.getElementById("trackSel").children).filter(f=>{
-      return f.tagName == "LABEL"
-    }).map(f=>f.children[0])
-    //let selectedIndex = buttons.map(f=>f.children[0]).map(f=>f.checked)
-    buttons[newSel].click()
-  }
-
-  for (w = 0; w < 7; w++) {
-    document.getElementById("trackSelParent").appendChild(document.createElement("br"))
-  }
-  
-  generateTime();
-}
-
-clamp = function(a, max, min, overflow=true) {
-  if (overflow) {
-    return a > max ? min : a < min ? max : a;
-  }
-  return a > max ? max : a < min ? min : a;
-}
-
-
 // Track list
-
-var soundtracks = {
-    0: {
-      name: "Johnny's iPod",
-      tracklist: [
-        {
-          "name": "Dave Matthews Band - American Baby",
-          "url": "https://audio.jukehost.co.uk/FuyIlJeiYJKU4q8kd9Dq4CQg3UTIBqeO"
-        },
-        {
-          "name": "Hootie & the Blowfish - Only Wanna Be With You",
-          "url": "https://audio.jukehost.co.uk/QPUEUdiAL33auZrhdMUnPhbSkbHDQqYB"
-        },
-        {
-          "name": "John Mellencamp - Our Country",
-          "url": "https://audio.jukehost.co.uk/1ppUOF7lpPURRm3Z8rYhUFRfgzV90Uj8"
-        },
-        {
-          "name": "Jackson Browne - I Am a Patriot",
-          "url": "https://audio.jukehost.co.uk/x7hmgrtUnK5YC11qp7xKpJKSZvOc6911"
-        },
-        
-        {
-          "name": "Bonnie Raitt - Angel From Montgomery",
-          "url": "https://audio.jukehost.co.uk/4o5MIUUVg3fL45psHuweTJf3iP9phKol"
-        },
-        {
-          "name": "Stevie Ray Vaughan - The House is Rockin'",
-          "url": "https://audio.jukehost.co.uk/3eCXpwDpqi2ezFqOAjXgSZILytfru6hA"
-        },
-        {
-          "name": "Chuck Berry - Johnny B. Goode",
-          "url": "https://audio.jukehost.co.uk/WuNMAffglUOSfAhxiG3lp0lTaMEA6Nnt"
-        },
-      ]
-    },
-    1: {
+/*
       name: "Ending Songs (Spoilers!)",
       tracklist: [
         {
@@ -799,10 +677,701 @@ var soundtracks = {
       ]
     }
   }
+*/
 
-// Set up new music player
+class Song {
+	constructor(title, artist, album, coverLink, audioLink) {
+		this.title = title;
+		this.artist = artist;
+		this.album = album;
+		this.coverLink = coverLink;
+		this.audioLink = audioLink;
+	}
+}
 
-newMusicPlayer()
+class Playlist {
+	constructor(songs = []) {
+		this.songs = songs;
+		this.currentSongIndex = 0;
+	}
+
+	addSong(song) {
+		this.songs.push(song);
+	}
+
+	getCurrentSong() {
+		if (this.songs.length === 0) {
+			return new Song("No Songs", "N/A", "Unknown Album", "N/A", "https://itsastronomical.com/assets/music/buttons.png", "");
+		}
+		return this.songs[this.currentSongIndex];
+	}
+
+	playNext() {
+		if (this.songs.length === 0) return;
+		this.currentSongIndex = (this.currentSongIndex + 1) % this.songs.length;
+	}
+
+	playPrevious() {
+		if (this.songs.length === 0) return;
+		this.currentSongIndex = (this.currentSongIndex - 1 + this.songs.length) % this.songs.length;
+	}
+}
+
+// player logic
+const QuickTimePlayer = {
+	playlist: null,
+	audio: null,
+	isPlaying: false,
+	dom: {},
+
+	init(targetSelector, initialPlaylist) {
+		const targetElement = document.querySelector(targetSelector);
+		if (!targetElement) {
+			console.error("Music player: target element not found.", targetSelector);
+			return;
+		}
+
+		this._injectCSS();
+		this._createPlayerHTML(targetElement);
+		this._cacheDOMElements();
+
+		this.audio = new Audio();
+
+		this._bindEvents();
+		this._bindScrubbing();
+		this.loadPlaylist(initialPlaylist);
+		this._setVolume(parseFloat(this.dom.volumeSlider.value));
+	},
+
+	loadPlaylist(newPlaylist) {
+		this.playlist = newPlaylist;
+		this.playlist.currentSongIndex = 0;
+		this._playSongAtIndex(0, false);
+	},
+
+	_createPlayerHTML(targetElement) {
+		const playerHTML = `
+			<div class="player qt-window">
+				<div class="qt-title-bar">
+					<div class="qt-window-controls">
+						<div class="qt-control-button qt-close"></div>
+						<div class="qt-control-button qt-minimize"></div>
+						<div class="qt-control-button qt-maximize"></div>
+					</div>
+					<span class="qt-title-bar-text">QuickTime Player</span>
+				</div>
+
+				<div class="qt-menu-bar">
+					<span>File</span>
+					<span>Edit</span>
+					<span>View</span>
+					<span>Window</span>
+					<span>Help</span>
+				</div>
+
+				<div class="player__chrome">
+					<div class="player__top-row">
+						<div class="player__art-container">
+							<img src="" alt="Album Cover" class="player__album-art">
+						</div>
+
+						<div class="player__info-panel">
+							<div class="player__lcd">
+								<div class="player__song-title"></div>
+								<div class="player__song-artist"></div>
+								<div class="player__song-album"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="player__progress-section">
+						<span class="player__timecode">00:00:00</span>
+						<div class="progress-bar-wrapper">
+							<div class="player__progress-bar"></div>
+						</div>
+					</div>
+
+					<div class="player__bottom-row">
+						<div class="player__volume-container">
+							<svg viewBox="0 0 24 24" class="volume-icon">
+								<path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path>
+							</svg>
+							<input type="range" class="player__volume-slider" min="0" max="1" step="0.01" value="0.7">
+						</div>
+
+						<div class="player__buttons">
+							<button class="player__btn player__btn--start" title="Go to Start">
+								<svg viewBox="0 0 24 24"><path d="M6 6 H 8 V 18 H 6 Z M 18 12 L 10 18 V 6 Z"></path></svg>
+							</button>
+							<button class="player__btn player__btn--prev" title="Previous">
+								<svg viewBox="0 0 24 24"><path d="M18 6 L 18 18 L 13 12 Z M 11 6 L 11 18 L 6 12 Z"></path></svg>
+							</button>
+							<button class="player__btn player__btn--toggle player__btn--main" title="Play/Pause">
+								<svg viewBox="0 0 24 24" class="player__toggle-icon">
+									<path d="M8 5v14l11-7z"></path>
+								</svg>
+							</button>
+							<button class="player__btn player__btn--next" title="Next">
+								<svg viewBox="0 0 24 24"><path d="M6 18 l 5 -6 l -5 -6 z M 13 18 l 5 -6 l -5 -6 z"></path></svg>
+							</button>
+							<button class="player__btn player__btn--stop" title="Stop">
+								<svg viewBox="0 0 24 24"><path d="M7 7h10v10H7z"></path></svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		`;
+		targetElement.insertAdjacentHTML('afterend', playerHTML);
+	},
+
+	_cacheDOMElements() {
+		const player = document.querySelector('.player');
+		this.dom = {
+			player,
+			albumArt: player.querySelector('.player__album-art'),
+			songTitle: player.querySelector('.player__song-title'),
+			songArtist: player.querySelector('.player__song-artist'),
+			songAlbum: player.querySelector('.player__song-album'),
+			startBtn: player.querySelector('.player__btn--start'),
+			prevBtn: player.querySelector('.player__btn--prev'),
+			toggleBtn: player.querySelector('.player__btn--toggle'),
+			stopBtn: player.querySelector('.player__btn--stop'),
+			nextBtn: player.querySelector('.player__btn--next'),
+			progressBar: player.querySelector('.player__progress-bar'),
+			progressWrapper: player.querySelector('.progress-bar-wrapper'),
+			volumeSlider: player.querySelector('.player__volume-slider'),
+			timecode: player.querySelector('.player__timecode'),
+			toggleIcon: player.querySelector('.player__toggle-icon'),
+		};
+	},
+
+	_bindEvents() {
+		this.dom.toggleBtn.addEventListener('click', () => {
+			if (this.audio.paused) {
+				this.play();
+			} else {
+				this.pause();
+			}
+		});
+
+		this.dom.stopBtn.addEventListener('click', () => this.stop());
+
+		this.dom.startBtn.addEventListener('click', () => {
+			this.audio.currentTime = 0;
+			this._updateProgress();
+		});
+
+		this.dom.nextBtn.addEventListener('click', () => this.playNext());
+		this.dom.prevBtn.addEventListener('click', () => this.playPrev());
+
+		this.audio.addEventListener('timeupdate', () => this._updateProgress());
+		this.audio.addEventListener('loadedmetadata', () => this._updateProgress());
+
+		this.audio.addEventListener('ended', () => {
+			this.isPlaying = false;
+			this._updateControlsState();
+			this.playNext();
+		});
+
+		this.audio.addEventListener('play', () => {
+			this.isPlaying = true;
+			this._updateControlsState();
+		});
+
+		this.audio.addEventListener('pause', () => {
+			this.isPlaying = false;
+			this._updateControlsState();
+		});
+
+		this.dom.volumeSlider.addEventListener('input', (e) => {
+			this._setVolume(parseFloat(e.target.value));
+		});
+
+		this.dom.progressWrapper.addEventListener('click', (e) => {
+			const rect = this.dom.progressWrapper.getBoundingClientRect();
+			const percent = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+			if (!isNaN(this.audio.duration)) {
+				this.audio.currentTime = percent * this.audio.duration;
+			}
+		});
+	},
+
+	_playSongAtIndex(index, autoplay = this.autoplay) {
+		this.playlist.currentSongIndex = index;
+		const song = this.playlist.getCurrentSong();
+
+		this.audio.src = song.audioLink;
+		this._updateUI();
+
+		if (autoplay) {
+			this.play();
+		} else {
+			this.audio.pause();
+			this.audio.currentTime = 0;
+			this._updateProgress();
+		}
+	},
+
+	_setVolume(value) {
+		this.audio.volume = value;
+	},
+
+	_updateUI() {
+		const song = this.playlist.getCurrentSong();
+		this.dom.albumArt.src = song.coverLink;
+		this.dom.songTitle.textContent = song.title;
+		this.dom.songArtist.textContent = song.artist;
+		this.dom.songAlbum.textContent = song.album;
+	},
+
+	play() {
+		if (!this.audio.src) return;
+
+		this.audio.play().catch(e => {
+			this.isPlaying = false;
+			this._updateControlsState();
+			console.warn("Playback failed or autoplay was blocked.", e);
+		});
+	},
+
+	pause() {
+		this.audio.pause();
+	},
+
+	stop() {
+		this.audio.pause();
+		this.audio.currentTime = 0;
+		this._updateProgress();
+	},
+
+	playNext() {
+		this.playlist.playNext();
+		this._playSongAtIndex(this.playlist.currentSongIndex, true);
+	},
+
+	playPrev() {
+		this.playlist.playPrevious();
+		this._playSongAtIndex(this.playlist.currentSongIndex, true);
+	},
+
+	_updateControlsState() {
+		if (this.isPlaying) {
+			this.dom.toggleBtn.title = 'Pause';
+			this.dom.toggleIcon.innerHTML = '<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path>';
+		} else {
+			this.dom.toggleBtn.title = 'Play';
+			this.dom.toggleIcon.innerHTML = '<path d="M8 5v14l11-7z"></path>';
+		}
+	},
+
+	_formatTime(seconds) {
+		const h = Math.floor(seconds / 3600).toString().padStart(2, '0');
+		const m = Math.floor((seconds % 3600) / 60).toString().padStart(2, '0');
+		const s = Math.floor(seconds % 60).toString().padStart(2, '0');
+		return `${h}:${m}:${s}`;
+	},
+
+	_updateProgress() {
+		const currentTime = this.audio.currentTime;
+		const duration = this.audio.duration;
+		const progressPercent = (currentTime / duration) * 100;
+		const safePercent = isNaN(progressPercent) ? 0 : progressPercent;
+
+		this.dom.progressBar.style.width = `${safePercent}%`;
+		this.dom.timecode.textContent = this._formatTime(isNaN(currentTime) ? 0 : currentTime);
+	},
+
+	_bindScrubbing() {
+		let isScrubbing = false;
+
+		const seek = (clientX) => {
+			const rect = this.dom.progressWrapper.getBoundingClientRect();
+			const percent = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+			if (!isNaN(this.audio.duration)) {
+				this.audio.currentTime = percent * this.audio.duration;
+			}
+		};
+
+		this.dom.progressWrapper.addEventListener('mousedown', (e) => {
+			isScrubbing = true;
+			seek(e.clientX);
+		});
+
+		document.addEventListener('mousemove', (e) => {
+			if (!isScrubbing) return;
+			seek(e.clientX);
+		});
+
+		document.addEventListener('mouseup', () => {
+			isScrubbing = false;
+		});
+
+		this.dom.progressWrapper.addEventListener('click', (e) => {
+			seek(e.clientX);
+		});
+	},
+
+	_injectCSS() {
+		const style = document.createElement('style');
+		style.textContent = `
+			.player * { box-sizing: border-box; }
+
+			.qt-window {
+				width: 760px;
+				margin: 20px auto;
+				border-radius: 10px;
+				overflow: hidden;
+				border: 1px solid #6e6e6e;
+				background:
+					linear-gradient(to bottom, #f6f6f6 0%, #dddddd 8%, #cfcfcf 50%, #bebebe 100%);
+				box-shadow:
+					0 10px 28px rgba(0,0,0,0.35),
+					inset 0 1px 0 rgba(255,255,255,0.85);
+				font-family: "Lucida Grande", "Segoe UI", Arial, sans-serif;
+				color: #222;
+			}
+
+			.qt-title-bar {
+				position: relative;
+				height: 24px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: linear-gradient(to bottom, #efefef, #cfcfcf);
+				border-bottom: 1px solid #9d9d9d;
+				user-select: none;
+				font-size: 12px;
+				font-weight: bold;
+				color: #3a3a3a;
+				text-shadow: 0 1px 0 rgba(255,255,255,0.7);
+			}
+
+			.qt-title-bar-text {
+				pointer-events: none;
+			}
+
+			.qt-window-controls {
+				position: absolute;
+				left: 8px;
+				top: 50%;
+				transform: translateY(-50%);
+				display: flex;
+				gap: 6px;
+			}
+
+			.qt-control-button {
+				width: 11px;
+				height: 11px;
+				border-radius: 50%;
+				border: 1px solid rgba(0,0,0,0.25);
+				box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+			}
+
+			.qt-close { background: #ff5f57; }
+			.qt-minimize { background: #ffbd2e; }
+			.qt-maximize { background: #28c840; }
+
+			.qt-menu-bar {
+				display: flex;
+				gap: 18px;
+				padding: 4px 10px 5px;
+				font-size: 12px;
+				background: linear-gradient(to bottom, #ececec, #d9d9d9);
+				border-bottom: 1px solid #b3b3b3;
+				color: #1f1f1f;
+				user-select: none;
+			}
+
+			.player__chrome {
+				padding: 14px;
+				background:
+					linear-gradient(to bottom, rgba(255,255,255,0.28), rgba(0,0,0,0.04)),
+					linear-gradient(to bottom, #d7d7d7, #bfbfbf);
+			}
+
+			.player__top-row {
+				display: flex;
+				gap: 14px;
+				align-items: stretch;
+				margin-bottom: 14px;
+			}
+
+			.player__art-container {
+				width: 110px;
+				height: 110px;
+				flex-shrink: 0;
+				padding: 4px;
+				background: linear-gradient(to bottom, #f2f2f2, #bdbdbd);
+				border: 1px solid #8c8c8c;
+				border-radius: 6px;
+				box-shadow:
+					inset 0 1px 0 rgba(255,255,255,0.75),
+					0 1px 2px rgba(0,0,0,0.15);
+			}
+
+			.player__album-art {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				display: block;
+				border-radius: 3px;
+				border: 1px solid #5f5f5f;
+				background: #111;
+			}
+
+			.player__info-panel {
+				flex: 1;
+				display: flex;
+				align-items: stretch;
+			}
+
+			.player__lcd {
+				width: 100%;
+				min-height: 110px;
+				padding: 12px 14px;
+				border-radius: 7px;
+				border: 1px solid #5b5f52;
+				background:
+					linear-gradient(to bottom, #3f4a35, #1f281a);
+				box-shadow:
+					inset 0 2px 6px rgba(0,0,0,0.45),
+					inset 0 1px 0 rgba(255,255,255,0.05);
+				color: #d8f2b8;
+				text-shadow: 0 0 4px rgba(170,255,120,0.18);
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				gap: 6px;
+				overflow: hidden;
+			}
+
+			.player__song-title,
+			.player__song-artist,
+			.player__song-album {
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			.player__song-title {
+				font-size: 20px;
+				font-weight: bold;
+				letter-spacing: 0.2px;
+			}
+
+			.player__song-artist {
+				font-size: 14px;
+				color: #c8e7a6;
+			}
+
+			.player__song-album {
+				font-size: 12px;
+				color: #a9c98d;
+			}
+
+			.player__progress-section {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				margin-bottom: 14px;
+				padding: 0 2px;
+			}
+
+			.player__timecode {
+				width: 64px;
+				flex-shrink: 0;
+				font-size: 11px;
+				font-family: Consolas, IBM Courier, Couriew New, monospace;
+				color: #2d2d2d;
+				text-align: right;
+				user-select: none;
+			}
+
+			.progress-bar-wrapper {
+				position: relative;
+				flex: 1;
+				height: 12px;
+				padding: 2px;
+				border-radius: 999px;
+				border: 1px solid #7f7f7f;
+				background: linear-gradient(to bottom, #8e8e8e, #cfcfcf);
+				box-shadow:
+					inset 0 1px 3px rgba(0,0,0,0.35),
+					0 1px 0 rgba(255,255,255,0.5);
+			}
+
+			.player__progress-bar {
+				position: relative;
+				width: 0%;
+				height: 100%;
+				border-radius: 999px;
+				background: linear-gradient(to bottom, #c6ecff, #4fa4df);
+				box-shadow: inset 0 1px 0 rgba(255,255,255,0.55);
+			}
+
+			.player__progress-bar::after {
+				content: '';
+				position: absolute;
+				right: -6px;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background: linear-gradient(to bottom, #ffffff, #dcdcdc);
+				border: 1px solid #777;
+				box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+			}
+
+			.player__bottom-row {
+				display: grid;
+				grid-template-columns: 140px 1fr 140px;
+				align-items: center;
+				gap: 10px;
+			}
+
+			.player__volume-container {
+				display: flex;
+				align-items: center;
+				gap: 6px;
+			}
+
+			.volume-icon {
+				width: 16px;
+				height: 16px;
+				fill: #4f4f4f;
+				flex-shrink: 0;
+			}
+
+			input[type=range].player__volume-slider {
+				-webkit-appearance: none;
+				appearance: none;
+				width: 100px;
+				height: 6px;
+				border-radius: 999px;
+				border: 1px solid #7f7f7f;
+				background: linear-gradient(to bottom, #8e8e8e, #d1d1d1);
+				box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+				outline: none;
+			}
+
+			input[type=range].player__volume-slider::-webkit-slider-thumb {
+				-webkit-appearance: none;
+				appearance: none;
+				width: 13px;
+				height: 13px;
+				border-radius: 50%;
+				border: 1px solid #7f7f7f;
+				background: linear-gradient(to bottom, #ffffff, #d8d8d8);
+				box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+				cursor: pointer;
+				margin-top: -4px;
+			}
+
+			input[type=range].player__volume-slider::-moz-range-thumb {
+				width: 13px;
+				height: 13px;
+				border-radius: 50%;
+				border: 1px solid #7f7f7f;
+				background: linear-gradient(to bottom, #ffffff, #d8d8d8);
+				box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+				cursor: pointer;
+			}
+
+			.player__buttons {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 8px;
+			}
+
+			.player__btn {
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				border: 1px solid #7b7b7b;
+				background: linear-gradient(to bottom, #fefefe, #d3d3d3);
+				box-shadow:
+					inset 0 1px 0 rgba(255,255,255,0.8),
+					0 1px 2px rgba(0,0,0,0.25);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+			}
+
+			.player__btn:hover {
+				filter: brightness(1.03);
+			}
+
+			.player__btn:active {
+				background: linear-gradient(to bottom, #cdcdcd, #f3f3f3);
+				box-shadow: inset 0 2px 3px rgba(0,0,0,0.22);
+			}
+
+			.player__btn svg {
+				width: 14px;
+				height: 14px;
+				fill: #4f4f4f;
+			}
+
+			.player__btn--main {
+				width: 40px;
+				height: 40px;
+			}
+
+			.player__btn--main svg {
+				width: 18px;
+				height: 18px;
+			}
+
+			.player__btn--play {
+				background: linear-gradient(to bottom, #ffffff, #cfcfcf);
+			}
+
+			@media (max-width: 820px) {
+				.qt-window {
+					width: 95%;
+				}
+
+				.player__bottom-row {
+					grid-template-columns: 1fr;
+					gap: 12px;
+				}
+
+				.player__volume-container {
+					justify-content: center;
+				}
+
+				.player__top-row {
+					flex-direction: column;
+				}
+
+				.player__art-container {
+					width: 120px;
+					height: 120px;
+					margin: 0 auto;
+				}
+			}
+		`;
+		document.head.appendChild(style);
+	}
+};
+
+
+const mainPlaylist = new Playlist([
+	new Song("American Baby", "Dave Matthews Band", "Stand Up", "https://cdn.imgchest.com/files/05c9cd043247.jpg", "https://audio.jukehost.co.uk/FuyIlJeiYJKU4q8kd9Dq4CQg3UTIBqeO"),
+	new Song("Only Wanna Be With You", "Hootie & the Blowfish", "Cracked Rear View", "https://cdn.imgchest.com/files/d41bd72ead9c.jpg","https://audio.jukehost.co.uk/QPUEUdiAL33auZrhdMUnPhbSkbHDQqYB"),
+	new Song("Our Country",	"John Mellencamp", "Freedom's Road", "https://cdn.imgchest.com/files/ee78245e8779.jpeg",	"https://audio.jukehost.co.uk/1ppUOF7lpPURRm3Z8rYhUFRfgzV90Uj8"),
+	new Song("I Am a Patriot", "Jackson Browne", "World in Motion", "https://cdn.imgchest.com/files/14b6ae946783.jpg","https://audio.jukehost.co.uk/x7hmgrtUnK5YC11qp7xKpJKSZvOc6911"),
+	new Song("Angel from Montgomery",	"Bonnie Raitt",  "Streetlights",	"https://cdn.imgchest.com/files/1bbea18859a6.jpeg",	"https://audio.jukehost.co.uk/4o5MIUUVg3fL45psHuweTJf3iP9phKol"),
+	new Song("The House is Rockin'", "Stevie Ray Vaughan", "The Essential Stevie Ray Vaughan","https://cdn.imgchest.com/files/e7704e468e5b.jpg","https://audio.jukehost.co.uk/3eCXpwDpqi2ezFqOAjXgSZILytfru6hA"),
+	new Song("Johnny B. Goode", "Chuck Berry", "Hits and Johnny B. Goode", "https://cdn.imgchest.com/files/99871987c0d8.jpeg", "https://audio.jukehost.co.uk/WuNMAffglUOSfAhxiG3lp0lTaMEA6Nnt"),
+]);
+
+// kick it off!
+QuickTimePlayer.init("#game_window", mainPlaylist);
 
 //vp skipper
 
