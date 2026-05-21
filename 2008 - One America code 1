@@ -544,8 +544,6 @@ function addDynamicCSS() {
 			#question_form input[type="radio"]:checked + label {
 				background: #EDF3F7;
 				border-bottom-color: #548EAD;
-				border-bottom: 1px dotted !important;
-				border-radius: 0 1em 1em 0;
 			}
 
 			#question_form input[type="radio"] + label:hover,
